@@ -6,41 +6,41 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
-// ÄÁÅ×ÀÌ³Ê »ı¼º ¹æ¹ı 1 : JFrame »ó¼Ó
+// ì»¨í…Œì´ë„ˆ ìƒì„± ë°©ë²• 1 : JFrame ìƒì†
 public class JFrameView1 extends JFrame{
 	
 	public JFrameView1() {
 		
-		// ÇÁ·¹ÀÓ ÀÌ¸§ ÁöÁ¤ 2 : ºÎ¸ğ ¼Ä»óÀÚ ÀÌ¿ë
-		super("super ÀÌ¸§ ÁöÁ¤");
+		// í”„ë ˆì„ ì´ë¦„ ì§€ì • 2 : ë¶€ëª¨ ì…ìƒì ì´ìš©
+		super("super ì´ë¦„ ì§€ì •");
 		
-		// ÇÁ·¹ÀÓ Å©±â ÁöÁ¤
+		// í”„ë ˆì„ í¬ê¸° ì§€ì •
 		this.setSize(800, 500);
 		
-		// ÇÁ·¹ÀÓÀ» º¸ÀÌ°Ô ¼³Á¤
+		// í”„ë ˆì„ì„ ë³´ì´ê²Œ ì„¤ì •
 		setVisible(true);
 		
-		// ´İ±â ¹öÆ°À» ´­·¶À» ¶§ ÇÁ·Î¼¼½ºµµ ÇÔ²² Á¾·á°¡ µÇµµ·Ï ¼³Á¤
+		// ë‹«ê¸° ë²„íŠ¼ì„ ëˆŒë €ì„ ë•Œ í”„ë¡œì„¸ìŠ¤ë„ í•¨ê»˜ ì¢…ë£Œê°€ ë˜ë„ë¡ ì„¤ì •
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		// Ãß°¡ÀûÀÎ ¼³Á¤
-		// ÇÁ·¹ÀÓ À§Ä¡ ¼³Á¤
+		// ì¶”ê°€ì ì¸ ì„¤ì •
+		// í”„ë ˆì„ ìœ„ì¹˜ ì„¤ì •
 		setLocation(300, 200);
 		
-		// Å©±â¿Í À§Ä¡¸¦ ÇÑ ¹ø¿¡ ÁöÁ¤
+		// í¬ê¸°ì™€ ìœ„ì¹˜ë¥¼ í•œ ë²ˆì— ì§€ì •
 		setBounds(300, 200, 800, 500);
 		
-		// ÇÁ·¹ÀÓ ÀÌ¸§ ÁöÁ¤ 1 : setTitle() ÀÌ¿ë
+		// í”„ë ˆì„ ì´ë¦„ ì§€ì • 1 : setTitle() ì´ìš©
 		setTitle("My First Frame");
 		
-		// ÇÁ·¹ÀÓ ·Î°í ÁöÁ¤
+		// í”„ë ˆì„ ë¡œê³  ì§€ì •
 		try {
 			setIconImage(ImageIO.read(new File("image/icon.png")));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
-		// ÇÁ·¹ÀÓ »çÀÌÁî Á¶Á¤
+		// í”„ë ˆì„ ì‚¬ì´ì¦ˆ ì¡°ì •
 		setResizable(false);
 		
 		

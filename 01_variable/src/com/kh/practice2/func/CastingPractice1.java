@@ -6,7 +6,7 @@ public class CastingPractice1 {
 	
 	public void practiceMethod() {
 		
-		// Å°º¸µå·Î ¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·Â ¹Ş¾Æ ±× ¹®ÀÚÀÇ À¯´ÏÄÚµå¸¦ Ãâ·ÂÇÏ¼¼¿ä.
+		// í‚¤ë³´ë“œë¡œ ë¬¸ì í•˜ë‚˜ë¥¼ ì…ë ¥ ë°›ì•„ ê·¸ ë¬¸ìì˜ ìœ ë‹ˆì½”ë“œë¥¼ ì¶œë ¥í•˜ì„¸ìš”.
 		
 		Scanner sc = new Scanner(System.in);
 		char char1;
@@ -15,7 +15,7 @@ public class CastingPractice1 {
 		int charInt2;
 		
 		
-		System.out.println("¹®ÀÚ : ");
+		System.out.println("ë¬¸ì : ");
 		char1 = sc.next().charAt(0);
 		
 		charInt1 = (int)char1;
@@ -23,7 +23,7 @@ public class CastingPractice1 {
 		System.out.printf("%c unicode : %d \n", char1, charInt1);
 		
 		
-		System.out.println("¹®ÀÚ : ");
+		System.out.println("ë¬¸ì : ");
 		char2 = sc.next().charAt(0);
 		
 		charInt2 = (int)char2;

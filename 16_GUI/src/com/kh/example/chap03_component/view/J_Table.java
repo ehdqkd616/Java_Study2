@@ -15,11 +15,11 @@ public class J_Table {
 	public void doTable() {
 		JFrame frame = new JFrame();
 		
-		String[] header = {"ÀÌ¸§", "ÀÚ¹Ù", "µğºñ", "È­¸é"};
-		Object[][] data = {{"°­°Ç°­", 100, 95, 85},
-							{"³²³ª´®", 58, 95, 78},
-							{"¹Ú¼­Áø", 42, 14, 100},
-							{"ÀÓÁ¤Çö", 65, 67, 55}};
+		String[] header = {"ì´ë¦„", "ìë°”", "ë””ë¹„", "í™”ë©´"};
+		Object[][] data = {{"ê°•ê±´ê°•", 100, 95, 85},
+							{"ë‚¨ë‚˜ëˆ”", 58, 95, 78},
+							{"ë°•ì„œì§„", 42, 14, 100},
+							{"ì„ì •í˜„", 65, 67, 55}};
 		
 //		JTable table = new JTable(data, header);
 //		frame.add(table);
@@ -39,7 +39,7 @@ public class J_Table {
 		JScrollPane jScrollPane = new JScrollPane(table);		
 		frame.add(jScrollPane, "North");
 		
-		Object[] addArr = {"¹®¹Ì¹Ì", 58, 75, 71};
+		Object[] addArr = {"ë¬¸ë¯¸ë¯¸", 58, 75, 71};
 		dtm.addRow(addArr);
 		
 		System.out.println(dtm.getRowCount());

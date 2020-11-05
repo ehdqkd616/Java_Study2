@@ -26,7 +26,7 @@ public class ScoreFrame extends JFrame{
 	public ScoreFrame() {
 		setLayout(new BorderLayout());
 		
-		JLabel infoLabel = new JLabel("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		JLabel infoLabel = new JLabel("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		infoLabel.setFont(infoLabel.getFont().deriveFont(50.0f));
 		add(infoLabel, "North");
 		
@@ -35,7 +35,7 @@ public class ScoreFrame extends JFrame{
 		JPanel scorePanel = new JPanel(new GridLayout(1, 2));
 		
 		JPanel javaPanel = new JPanel();
-		javaPanel.add(new JLabel("ÀÚ¹Ù : "));
+		javaPanel.add(new JLabel("ìë°” : "));
 		javaScore = new JTextField(10);
 		javaPanel.add(javaScore);
 		
@@ -52,7 +52,7 @@ public class ScoreFrame extends JFrame{
 		JPanel emptyPanel1 = new JPanel();
 		emptyPanel1.setPreferredSize(new Dimension(100, 50));
 		
-		calcBtn = new JButton("°è»êÇÏ±â");
+		calcBtn = new JButton("ê³„ì‚°í•˜ê¸°");
 		JPanel realButtonPanel = new JPanel(new FlowLayout());
 		realButtonPanel.add(calcBtn);
 		
@@ -67,12 +67,12 @@ public class ScoreFrame extends JFrame{
 		JPanel calcPanel = new JPanel(new GridLayout(1, 2));
 		
 		JPanel totalPanel = new JPanel();
-		totalPanel.add(new JLabel("ÃÑÁ¡ : "));
+		totalPanel.add(new JLabel("ì´ì  : "));
 		total = new JTextField(10);
 		totalPanel.add(total);
 		
 		JPanel avgPanel = new JPanel();
-		avgPanel.add(new JLabel("Æò±Õ : "));
+		avgPanel.add(new JLabel("í‰ê·  : "));
 		average = new JTextField(10);
 		avgPanel.add(average);
 		

@@ -18,12 +18,12 @@ import javax.swing.event.ListSelectionListener;
 public class F_List {
 	public void doList() {
 		JFrame frame = new JFrame();
-		String[] cities = {"¼­¿ï", "´ëÀü", "´ë±¸", "ºÎ»ê", "°æ±â", "ÀÎÃµ", "°­¿ø", "Á¦ÁÖ"};
+		String[] cities = {"ì„œìš¸", "ëŒ€ì „", "ëŒ€êµ¬", "ë¶€ì‚°", "ê²½ê¸°", "ì¸ì²œ", "ê°•ì›", "ì œì£¼"};
 		
 		JList<String> list = new JList<String>(cities);
 		
 		JPanel resultPanel = new JPanel();
-		JLabel label = new JLabel("¼±ÅÃµÈ Ç×¸ñ : ");
+		JLabel label = new JLabel("ì„ íƒëœ í•­ëª© : ");
 		JTextField selected = new JTextField(10);
 		selected.setEditable(false);
 		

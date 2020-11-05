@@ -18,7 +18,7 @@ public class I_Dialog {
 		JButton button1 = new JButton("Simple Dialog");
 		panel.add(button1);
 		
-		Dialog dialog = new Dialog(frame, "»õ·Î¿î Âü ÀÌ¸§");
+		Dialog dialog = new Dialog(frame, "ìƒˆë¡œìš´ ì°¸ ì´ë¦„");
 		dialog.setBounds(150, 250, 200, 200);
 		dialog.add(new JLabel("simple dialog test"), "North");
 		
@@ -48,21 +48,21 @@ public class I_Dialog {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// 1. ÀÔ·Â ´ÙÀÌ¾î·Î±×
-//				String result = JOptionPane.showInputDialog("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+				// 1. ì…ë ¥ ë‹¤ì´ì–´ë¡œê·¸
+//				String result = JOptionPane.showInputDialog("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”");
 //				System.out.println(result);
 				
-				// 2. È®ÀÎ ´ÙÀÌ¾î·Î±×
-//				int result2 = JOptionPane.showConfirmDialog(null, "È®ÀÎÇÏ½Ã°Ú½À´Ï±î?", "È®ÀÎ Ã¢", JOptionPane.YES_NO_OPTION);
-//				int result2 = JOptionPane.showConfirmDialog(null, "È®ÀÎÇÏ½Ã°Ú½À´Ï±î?", "È®ÀÎ Ã¢", JOptionPane.YES_NO_CANCEL_OPTION);
+				// 2. í™•ì¸ ë‹¤ì´ì–´ë¡œê·¸
+//				int result2 = JOptionPane.showConfirmDialog(null, "í™•ì¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?", "í™•ì¸ ì°½", JOptionPane.YES_NO_OPTION);
+//				int result2 = JOptionPane.showConfirmDialog(null, "í™•ì¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?", "í™•ì¸ ì°½", JOptionPane.YES_NO_CANCEL_OPTION);
 //				System.out.println(result2);
 				
-				// 3. ¾Ë¸² ´ÙÀÌ¾î·Î±×
-				JOptionPane.showMessageDialog(null, "À§ÇèÇÕ´Ï´Ù", "danger", JOptionPane.ERROR_MESSAGE);
-				JOptionPane.showMessageDialog(null, "À§ÇèÇÕ´Ï´Ù", "danger", JOptionPane.INFORMATION_MESSAGE);
-				JOptionPane.showMessageDialog(null, "À§ÇèÇÕ´Ï´Ù", "danger", JOptionPane.PLAIN_MESSAGE);
-				JOptionPane.showMessageDialog(null, "À§ÇèÇÕ´Ï´Ù", "danger", JOptionPane.QUESTION_MESSAGE);
-				JOptionPane.showMessageDialog(null, "À§ÇèÇÕ´Ï´Ù", "danger", JOptionPane.WARNING_MESSAGE);
+				// 3. ì•Œë¦¼ ë‹¤ì´ì–´ë¡œê·¸
+				JOptionPane.showMessageDialog(null, "ìœ„í—˜í•©ë‹ˆë‹¤", "danger", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ìœ„í—˜í•©ë‹ˆë‹¤", "danger", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ìœ„í—˜í•©ë‹ˆë‹¤", "danger", JOptionPane.PLAIN_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ìœ„í—˜í•©ë‹ˆë‹¤", "danger", JOptionPane.QUESTION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ìœ„í—˜í•©ë‹ˆë‹¤", "danger", JOptionPane.WARNING_MESSAGE);
 			}
 		});
 		

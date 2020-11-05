@@ -12,34 +12,34 @@ public class B_FlowLayout extends JFrame {
 		setBounds(300, 200, 800, 500);
 		
 		// FlowLayout
-		//		±âº»ÀûÀ¸·Î ¿ŞÂÊ -> ¿À¸¥ÂÊÀ¸·Î ÄÄÆ÷³ÍÆ®°¡ Èê·¯°¡´Â ¹æ½ÄÀÇ ·¹ÀÌ¾Æ¿ô
+		//		ê¸°ë³¸ì ìœ¼ë¡œ ì™¼ìª½ -> ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì»´í¬ë„ŒíŠ¸ê°€ í˜ëŸ¬ê°€ëŠ” ë°©ì‹ì˜ ë ˆì´ì•„ì›ƒ
 		
 		setLayout(new FlowLayout());
 		
-		add(new JButton("1¹ø"));
-		add(new JButton("2¹ø"));
-		add(new JButton("3¹ø"));
-		add(new JButton("4¹ø"));
-		add(new JButton("5¹ø"));
-		add(new JButton("6¹ø"));
-		add(new JButton("7¹ø"));
-		add(new JButton("8¹ø"));
-		add(new JButton("9¹ø"));
-		add(new JButton("10¹ø"));
-		add(new JButton("11¹ø"));
-		add(new JButton("12¹ø"));
-		add(new JButton("13¹ø"));
-		add(new JButton("14¹ø"));
-		add(new JButton("15¹ø"));
+		add(new JButton("1ë²ˆ"));
+		add(new JButton("2ë²ˆ"));
+		add(new JButton("3ë²ˆ"));
+		add(new JButton("4ë²ˆ"));
+		add(new JButton("5ë²ˆ"));
+		add(new JButton("6ë²ˆ"));
+		add(new JButton("7ë²ˆ"));
+		add(new JButton("8ë²ˆ"));
+		add(new JButton("9ë²ˆ"));
+		add(new JButton("10ë²ˆ"));
+		add(new JButton("11ë²ˆ"));
+		add(new JButton("12ë²ˆ"));
+		add(new JButton("13ë²ˆ"));
+		add(new JButton("14ë²ˆ"));
+		add(new JButton("15ë²ˆ"));
 		
-		// ±âº»ÀûÀ¸·Î °¡¿îµ¥ Á¤·Ä
+		// ê¸°ë³¸ì ìœ¼ë¡œ ê°€ìš´ë° ì •ë ¬
 //		setLayout(new FlowLayout(FlowLayout.CENTER));
 		
-		// ¿ŞÂÊ Á¤·Ä
+		// ì™¼ìª½ ì •ë ¬
 //		setLayout(new FlowLayout(FlowLayout.LEFT));
 //		setLayout(new FlowLayout(FlowLayout.LEADING));
 		
-		// ¿À¸¥ÂÊ Á¤·Ä
+		// ì˜¤ë¥¸ìª½ ì •ë ¬
 //		setLayout(new FlowLayout(FlowLayout.RIGHT));
 //		setLayout(new FlowLayout(FlowLayout.TRAILING));
 		

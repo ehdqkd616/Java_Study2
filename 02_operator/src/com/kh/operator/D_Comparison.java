@@ -1,21 +1,21 @@
 package com.kh.operator;
 
 public class D_Comparison {
-	// ºñ±³ ¿¬»êÀÚ
-	// µÎ °³ÀÇ µ¥ÀÌÅÍÀÇ °ü°è¸¦ µûÁö´Â ¿¬»êÀÚ
-	// Á¶°ÇÀ» ¸¸Á·ÇÏ¸é true, ¸¸Á·ÇÏÁö ¸øÇÏ¸é false ¹İÈ¯
-	// <	a < b : a°¡ bº¸´Ù ÀÛÀº°¡? (a°¡ bº¸´Ù ÀÛÀ¸¸é true ¹İÈ¯)
-	// >	a > b : a°¡ bº¸´Ù Å«°¡? (a°¡ bº¸´Ù Å©¸é true ¹İÈ¯)
-	// <=	a <= b : a°¡ bº¸´Ù ÀÛ°Å³ª °°Àº°¡?
-	// >=	a >= b : a°¡ bº¸´Ù Å©°Å³ª °°Àº°¡?
-	// ==	a == b : a¿Í b´Â °°Àº°¡?
-	// !=	a != b : a¿Í b´Â ´Ù¸¥°¡?
+	// ë¹„êµ ì—°ì‚°ì
+	// ë‘ ê°œì˜ ë°ì´í„°ì˜ ê´€ê³„ë¥¼ ë”°ì§€ëŠ” ì—°ì‚°ì
+	// ì¡°ê±´ì„ ë§Œì¡±í•˜ë©´ true, ë§Œì¡±í•˜ì§€ ëª»í•˜ë©´ false ë°˜í™˜
+	// <	a < b : aê°€ bë³´ë‹¤ ì‘ì€ê°€? (aê°€ bë³´ë‹¤ ì‘ìœ¼ë©´ true ë°˜í™˜)
+	// >	a > b : aê°€ bë³´ë‹¤ í°ê°€? (aê°€ bë³´ë‹¤ í¬ë©´ true ë°˜í™˜)
+	// <=	a <= b : aê°€ bë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ì€ê°€?
+	// >=	a >= b : aê°€ bë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì€ê°€?
+	// ==	a == b : aì™€ bëŠ” ê°™ì€ê°€?
+	// !=	a != b : aì™€ bëŠ” ë‹¤ë¥¸ê°€?
 	
 	public void method1() {
 		int a = 10;
 		int b = 25;
 		
-		// º¯¼ö ¼±¾ğ
+		// ë³€ìˆ˜ ì„ ì–¸
 		boolean result1;
 		boolean result2;
 		boolean result3;
@@ -28,11 +28,11 @@ public class D_Comparison {
 		System.out.println("result2 : " + result2);
 		System.out.println("result3 : " + result3);
 		
-		// b°¡ Â¦¼öÀÎ°¡
-		System.out.println("b°¡ Â¦¼öÀÎ°¡? " + (b % 2 == 0));
-		// b°¡ È¦¼öÀÎ°¡
-		System.out.println("b°¡ È¦¼öÀÎ°¡? " + (b % 2 == 1));
-		System.out.println("b°¡ È¦¼öÀÎ°¡? " + (b % 2 != 0));
+		// bê°€ ì§ìˆ˜ì¸ê°€
+		System.out.println("bê°€ ì§ìˆ˜ì¸ê°€? " + (b % 2 == 0));
+		// bê°€ í™€ìˆ˜ì¸ê°€
+		System.out.println("bê°€ í™€ìˆ˜ì¸ê°€? " + (b % 2 == 1));
+		System.out.println("bê°€ í™€ìˆ˜ì¸ê°€? " + (b % 2 != 0));
 		
 	}
 	

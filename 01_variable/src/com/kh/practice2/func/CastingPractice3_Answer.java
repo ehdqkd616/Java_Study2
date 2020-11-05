@@ -19,7 +19,7 @@ public class CastingPractice3_Answer {
         
         System.out.println(dNum); // 2.5
         System.out.println((double)iNum1/iNum2); // 2.5
-        // System.out.println((double)(iNum1/iNum2)); // 2.0 ==> ÀÌ¹Ì ³ª´²Áø ¸òÀ» °¡Áö°í double·Î Çüº¯È¯ ÇØ¼­
+        // System.out.println((double)(iNum1/iNum2)); // 2.0 ==> ì´ë¯¸ ë‚˜ëˆ ì§„ ëª«ì„ ê°€ì§€ê³  doubleë¡œ í˜•ë³€í™˜ í•´ì„œ
         
         System.out.println((int)fNum); // 3
         System.out.println(iNum1 / (int)fNum); // 3

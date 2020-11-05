@@ -1,21 +1,21 @@
 package com.kh.example.chap01_thread.thread;
 
-// ½º·¹µå »ı¼º
-// 1. Thread class »ó¼Ó ¹Ş±â
+// ìŠ¤ë ˆë“œ ìƒì„±
+// 1. Thread class ìƒì† ë°›ê¸°
 public class Thread1 extends Thread {
 	
 	
 	@Override
 	public void run() {
 		
-		setName("±Í¿©¿î Thread1");
+		setName("ê·€ì—¬ìš´ Thread1");
 		
 		for (int i = 0; i < 10; i++) {
 			System.out.println(Thread.currentThread().getName() + " ON...");
-			// getName() : ½º·¹µå ÀÌ¸§ ¹İÈ¯
+			// getName() : ìŠ¤ë ˆë“œ ì´ë¦„ ë°˜í™˜
 			
 			try {
-				Thread.sleep(500); // ½º·¹µå Áö¿¬ ¸Ş¼Òµå(1ÃÊ = 1000)
+				Thread.sleep(500); // ìŠ¤ë ˆë“œ ì§€ì—° ë©”ì†Œë“œ(1ì´ˆ = 1000)
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

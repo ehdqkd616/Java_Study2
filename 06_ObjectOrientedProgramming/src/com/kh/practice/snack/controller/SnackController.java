@@ -15,7 +15,7 @@ public class SnackController {
 		s.setNumOf(numOf);
 		s.setPrice(price);
 		
-		return "ÀúÀå ¿Ï·áµÇ¾ú½À´Ï´Ù.";
+		return "ì €ì¥ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.";
 	}
 	
 	public String confirmData() {

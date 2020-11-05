@@ -3,30 +3,30 @@ package com.kh.variable;
 public class E_PrintMethod {
 	
 	public void printlnMethod() {
-		String str1 = "¾È³çÇÏ¼¼¿ä";
-		String str2 = "¹İ°©½À´Ï´Ù";		
+		String str1 = "ì•ˆë…•í•˜ì„¸ìš”";
+		String str2 = "ë°˜ê°‘ìŠµë‹ˆë‹¤";		
 		System.out.println(str1);
 		System.out.println(str2);
 	}
 	
 	public void printMethod() {
-		String str1 = "¾È³çÇÏ¼¼¿ä";
-		String str2 = "¹İ°©½À´Ï´Ù";		
+		String str1 = "ì•ˆë…•í•˜ì„¸ìš”";
+		String str2 = "ë°˜ê°‘ìŠµë‹ˆë‹¤";		
 		System.out.print(str1);
 		System.out.print(str2);
 		
-		System.out.printf("%s, ±è¿¬¿ìÀÔ´Ï´Ù. %s.", str1, str2);
+		System.out.printf("%s, ê¹€ì—°ìš°ì…ë‹ˆë‹¤. %s.", str1, str2);
 		
 		System.out.println();
 //		System.out.print();
 //		System.out.printf();
 		
-		// ¹Ì´Ï ¹®Á¦
-		// ¾È³çÇÏ¼¼¿ä, Àú´Â 20»ì ±è¿¬¿ì ÇĞ»ıÀÔ´Ï´Ù. ¸¸³ª¼­ ¹İ°©½À´Ï´Ù.
+		// ë¯¸ë‹ˆ ë¬¸ì œ
+		// ì•ˆë…•í•˜ì„¸ìš”, ì €ëŠ” 20ì‚´ ê¹€ì—°ìš° í•™ìƒì…ë‹ˆë‹¤. ë§Œë‚˜ì„œ ë°˜ê°‘ìŠµë‹ˆë‹¤.
 		int age = 20;
-		String name = "±è¿¬¿ì";
-		String job = "ÇĞ»ı";
-		System.out.printf("%s, Àú´Â %d»ì %s %sÀÔ´Ï´Ù. ¸¸³ª¼­ %s.\n", str1, age, job, name, str2);
+		String name = "ê¹€ì—°ìš°";
+		String job = "í•™ìƒ";
+		System.out.printf("%s, ì €ëŠ” %dì‚´ %s %sì…ë‹ˆë‹¤. ë§Œë‚˜ì„œ %s.\n", str1, age, job, name, str2);
 	}
 	
 	

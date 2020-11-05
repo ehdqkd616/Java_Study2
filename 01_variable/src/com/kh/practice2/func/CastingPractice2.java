@@ -6,8 +6,8 @@ public class CastingPractice2 {
 	
 	public void practiceMethod() {
 		
-		// ¼ú¼öÇüÀ¸·Î ±¹¾î, ¿µ¾î, ¼öÇĞ ¼¼ °ú¸ñÀÇ Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ ÃÑÁ¡°ú Æò±ÕÀ» Ãâ·ÂÇÏ¼¼¿ä.
-		// ÀÌ ¶§ ÃÑÁ¡°ú Æò±ÕÀº Á¤¼öÇüÀ¸·Î Ã³¸®ÇÏ¼¼¿ä.
+		// ìˆ ìˆ˜í˜•ìœ¼ë¡œ êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì„¸ ê³¼ëª©ì˜ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ ì´ì ê³¼ í‰ê· ì„ ì¶œë ¥í•˜ì„¸ìš”.
+		// ì´ ë•Œ ì´ì ê³¼ í‰ê· ì€ ì •ìˆ˜í˜•ìœ¼ë¡œ ì²˜ë¦¬í•˜ì„¸ìš”.
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -17,20 +17,20 @@ public class CastingPractice2 {
 		int sum;
 		int avg;
 		
-		System.out.println("±¹¾î : ");
+		System.out.println("êµ­ì–´ : ");
 		korean = sc.nextDouble();
 		
-		System.out.println("¿µ¾î : ");
+		System.out.println("ì˜ì–´ : ");
 		english = sc.nextDouble();
 		
-		System.out.println("¼öÇĞ : ");
+		System.out.println("ìˆ˜í•™ : ");
 		math = sc.nextDouble();
 		
 		sum = (int)(korean+math+english);
 		avg = (int)(korean+math+english)/3;
 		
-		System.out.println("ÃÑÁ¡ : " + sum);
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("ì´ì  : " + sum);
+		System.out.println("í‰ê·  : " + avg);
 		
 	}
 	

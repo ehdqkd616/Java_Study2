@@ -12,68 +12,68 @@ import java.util.Scanner;
 
 public class Server {
 	// TCP(Transmission Control Protocol)
-	//		¼­¹ö¿Í Å¬¶óÀÌ¾ðÆ® °£ÀÇ 1:1 ¼ÒÄÏÅë½Å(¿¬°á ÁöÇâÀû ÇÁ·ÎÅäÄÝ)
-	//		µ¥ÀÌÅÍ Àü¼Û Àü ¸ÕÀú ¼­¹ö¿Í Å¬¶óÀÌ¾ðÆ®°¡ ¿¬°á µÇ¾îÀÖ¾î¾ß ÇÔ
-	//			==> ¼­¹ö°¡ ¸ÕÀú ½ÇÇàµÇ¾î Å¬¶óÀÌ¾ðÆ®ÀÇ ¿äÃ»À» ±â´Ù¸²
-	//			==> ¼­¹ö, Å¬¶óÀÌži´À¿ë ÇÁ·Î±×·¥À» µû·Î ±¸ÇöÇØ¾ß ÇÔ
-	//		µ¥ÀÌÅÍ Àü¼Û ¼ø¼­°¡ º¸ÀåµÇ°í ¼ö½Å ¿©ºÎ¸¦ ÆÇ´ÜÇÏ¿© ¼Õ½Ç ½Ã ÀçÀü¼Û
-	//		UDPº¸´Ù ¼Óµµ°¡ ´À¸²
+	//		ì„œë²„ì™€ í´ë¼ì´ì–¸íŠ¸ ê°„ì˜ 1:1 ì†Œì¼“í†µì‹ (ì—°ê²° ì§€í–¥ì  í”„ë¡œí† ì½œ)
+	//		ë°ì´í„° ì „ì†¡ ì „ ë¨¼ì € ì„œë²„ì™€ í´ë¼ì´ì–¸íŠ¸ê°€ ì—°ê²° ë˜ì–´ìžˆì–´ì•¼ í•¨
+	//			==> ì„œë²„ê°€ ë¨¼ì € ì‹¤í–‰ë˜ì–´ í´ë¼ì´ì–¸íŠ¸ì˜ ìš”ì²­ì„ ê¸°ë‹¤ë¦¼
+	//			==> ì„œë²„, í´ë¼ì´ì—ëŠìš© í”„ë¡œê·¸ëž¨ì„ ë”°ë¡œ êµ¬í˜„í•´ì•¼ í•¨
+	//		ë°ì´í„° ì „ì†¡ ìˆœì„œê°€ ë³´ìž¥ë˜ê³  ìˆ˜ì‹  ì—¬ë¶€ë¥¼ íŒë‹¨í•˜ì—¬ ì†ì‹¤ ì‹œ ìž¬ì „ì†¡
+	//		UDPë³´ë‹¤ ì†ë„ê°€ ëŠë¦¼
 	//		
 	
 	
 	
-	//		ÇÁ·Î¼¼½º °£ Åë½Å ´ã´ç
-	//		InputStream/OutputStream º¸À¯
-	//			ÀÌ ½ºÆ®¸²À» ÅëÇØ ÇÁ·Î¼¼½º °£ÀÇ Åë½Å(ÀÔÃâ·Â)ÀÌ ÀÌ·ç¾îÁü
+	//		í”„ë¡œì„¸ìŠ¤ ê°„ í†µì‹  ë‹´ë‹¹
+	//		InputStream/OutputStream ë³´ìœ 
+	//			ì´ ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ í”„ë¡œì„¸ìŠ¤ ê°„ì˜ í†µì‹ (ìž…ì¶œë ¥)ì´ ì´ë£¨ì–´ì§
 	
 	public void serverStart() {
-		// ¼­¹ö¿ë TCP¼ÒÄÏ ÇÁ·Î±×·¡¹Ö ¼ø¼­
-		// 1. ¼­¹öÀÇ Æ÷Æ®¹øÈ£ ¼³Á¤
-		// 2. ¼­¹ö¿ë ¼ÒÄÏ °´Ã¼ »ý¼º ÈÄ Æ÷Æ®¿Í °áÇÔ
-		// 3. Å¬¶óÀÌ¾ðÆ® ÂÊ¿¡¼­ Á¢¼Ó ¿äÃ»ÀÌ ¿À±æ ±â´Ù¸²
-		// 4. Á¢¼Ó ¿äÃ»ÀÌ ¿À¸é ¿äÃ» ¼ö¶ô ÈÄ ÇØ´ç Å¬¶óÀÌ¾ðÆ®¿¡ ´ëÇÑ ¼ÒÄÏ °´Ã¼ »ý¼º
-		// 5. ¿¬°áµÈ Å¬¶óÀÌ¾ðÆ®¿Í ÀÔÃâ·Â ½ºÆ®¸² »ý¼º
-		// 6. º¸Á¶½ºÆ®¸²À» ÅëÇØ ¼º´É °³¼±
-		// 7. ½ºÆ®¸²À» ÅëÇØ ÀÐ°í ¾²±â
-		// 8. Åë½Å Á¾·á
+		// ì„œë²„ìš© TCPì†Œì¼“ í”„ë¡œê·¸ëž˜ë° ìˆœì„œ
+		// 1. ì„œë²„ì˜ í¬íŠ¸ë²ˆí˜¸ ì„¤ì •
+		// 2. ì„œë²„ìš© ì†Œì¼“ ê°ì²´ ìƒì„± í›„ í¬íŠ¸ì™€ ê²°í•¨
+		// 3. í´ë¼ì´ì–¸íŠ¸ ìª½ì—ì„œ ì ‘ì† ìš”ì²­ì´ ì˜¤ê¸¸ ê¸°ë‹¤ë¦¼
+		// 4. ì ‘ì† ìš”ì²­ì´ ì˜¤ë©´ ìš”ì²­ ìˆ˜ë½ í›„ í•´ë‹¹ í´ë¼ì´ì–¸íŠ¸ì— ëŒ€í•œ ì†Œì¼“ ê°ì²´ ìƒì„±
+		// 5. ì—°ê²°ëœ í´ë¼ì´ì–¸íŠ¸ì™€ ìž…ì¶œë ¥ ìŠ¤íŠ¸ë¦¼ ìƒì„±
+		// 6. ë³´ì¡°ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì„±ëŠ¥ ê°œì„ 
+		// 7. ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì½ê³  ì“°ê¸°
+		// 8. í†µì‹  ì¢…ë£Œ
 		
-		// 1. ¼­¹öÀÇ Æ÷Æ® ¹øÈ£ Á¤ÇÔ
+		// 1. ì„œë²„ì˜ í¬íŠ¸ ë²ˆí˜¸ ì •í•¨
 		int port = 8500;
-		// 0 <= port <= 65535 ÁöÁ¤ °¡´É
-		// 1023¹ø ÀÌÇÏÀÇ Æ÷Æ® ¹øÈ£´Â ÀÌ¹Ì »ç¿ë ÁßÀÎ Æ÷Æ®°¡ ¸¹À¸´Ï ÀÌ¿ÜÀÇ Æ÷Æ® ÁöÁ¤
+		// 0 <= port <= 65535 ì§€ì • ê°€ëŠ¥
+		// 1023ë²ˆ ì´í•˜ì˜ í¬íŠ¸ ë²ˆí˜¸ëŠ” ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ í¬íŠ¸ê°€ ë§Žìœ¼ë‹ˆ ì´ì™¸ì˜ í¬íŠ¸ ì§€ì •
 		
-		// 2. ServerSocket »ý¼ºÇÏ¿© Æ÷Æ® °áÇÕ
+		// 2. ServerSocket ìƒì„±í•˜ì—¬ í¬íŠ¸ ê²°í•©
 		try {
-			// 2. ServerSocket »ý¼ºÇÏ¿© Æ÷Æ® °áÇÕ
+			// 2. ServerSocket ìƒì„±í•˜ì—¬ í¬íŠ¸ ê²°í•©
 			ServerSocket server = new ServerSocket(port);
 			
-			// 3. Å¬¶óÀÌ¾ðÆ®·ÎºÎÅÍ Á¢¼Ó ¿äÃ»ÀÌ ¿Ã ¶§±îÁö ´ë±â
-			System.out.println("Å¬¶óÀÌ¾ðÆ®ÀÇ ¿äÃ»À» ±â´Ù¸®°í ÀÖ½À´Ï´Ù.");
+			// 3. í´ë¼ì´ì–¸íŠ¸ë¡œë¶€í„° ì ‘ì† ìš”ì²­ì´ ì˜¬ ë•Œê¹Œì§€ ëŒ€ê¸°
+			System.out.println("í´ë¼ì´ì–¸íŠ¸ì˜ ìš”ì²­ì„ ê¸°ë‹¤ë¦¬ê³  ìžˆìŠµë‹ˆë‹¤.");
 			
-			// 4. Á¢¼Ó ¿äÃ»ÀÌ ¿À¸é ¿äÃ» ¼ö¶ô ÈÄ ÇØ´ç Å¬¶óÀÌ¾ðÆ®¿¡ ´ëÇÑ ¼ÒÄÏ °´Ã¼ »ý¼º
+			// 4. ì ‘ì† ìš”ì²­ì´ ì˜¤ë©´ ìš”ì²­ ìˆ˜ë½ í›„ í•´ë‹¹ í´ë¼ì´ì–¸íŠ¸ì— ëŒ€í•œ ì†Œì¼“ ê°ì²´ ìƒì„±
 			Socket client = server.accept();
 			
 			String clientIP = client.getInetAddress().getHostAddress();
-			System.out.println(clientIP + "°¡ ¿¬°áÀ» ¿äÃ»ÇÔ...");
+			System.out.println(clientIP + "ê°€ ì—°ê²°ì„ ìš”ì²­í•¨...");
 			
-			// 5. ¿¬°áµÈ Å¬¶óÀÌ¾ðÆ®¿Í ÀÔÃâ·Â ½ºÆ®¸² »ý¼º
+			// 5. ì—°ê²°ëœ í´ë¼ì´ì–¸íŠ¸ì™€ ìž…ì¶œë ¥ ìŠ¤íŠ¸ë¦¼ ìƒì„±
 			InputStream input = client.getInputStream();
 			OutputStream output = client.getOutputStream();
 			
-			// 6. º¸Á¶½ºÆ®¸²À» ÅëÇØ ¼º´É °³¼±
-			//		InputStream/OutputStreamÀº ¹ÙÀÌÆ® ±â¹ÝÀÌ¶ó¼­
-			//		¹®ÀÚ ÇüÅÂ·Î Åë½ÅÇÏ±â Èûµê ==> ¹®ÀÚ ½ºÆ®¸²À¸·Î º¯È¯
+			// 6. ë³´ì¡°ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì„±ëŠ¥ ê°œì„ 
+			//		InputStream/OutputStreamì€ ë°”ì´íŠ¸ ê¸°ë°˜ì´ë¼ì„œ
+			//		ë¬¸ìž í˜•íƒœë¡œ í†µì‹ í•˜ê¸° íž˜ë“¦ ==> ë¬¸ìž ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ë³€í™˜
 			//								(InputStreamReader)
 			InputStreamReader isr = new InputStreamReader(input);
 			BufferedReader br = new BufferedReader(isr);
 			PrintWriter pw = new PrintWriter(output);
 			
-			// 7. ½ºÆ®¸²À» ÅëÇØ ÀÐ°í ¾²±â
-			// Å¬¶óÀÌ¾ðÆ® -> ¼­¹ö·Î Àü¼ÛÇÑ ¸Þ¼¼Áö ÀÐ±â
+			// 7. ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì½ê³  ì“°ê¸°
+			// í´ë¼ì´ì–¸íŠ¸ -> ì„œë²„ë¡œ ì „ì†¡í•œ ë©”ì„¸ì§€ ì½ê¸°
 			String message = br.readLine();
-			System.out.println(clientIP + "°¡ º¸³½ ¸Þ¼¼Áö : " + message);
-			// ¼­¹ö -> Å¬¶óÀÌ¾ðÆ®·Î ¸Þ¼¼Áö Àü¼Û
-			pw.println("¸¸³ª¼­ ¹Ý°©½À´Ï´Ù.");
+			System.out.println(clientIP + "ê°€ ë³´ë‚¸ ë©”ì„¸ì§€ : " + message);
+			// ì„œë²„ -> í´ë¼ì´ì–¸íŠ¸ë¡œ ë©”ì„¸ì§€ ì „ì†¡
+			pw.println("ë§Œë‚˜ì„œ ë°˜ê°‘ìŠµë‹ˆë‹¤.");
 //			Scanner sc = new Scanner(System.in);
 //			String s = sc.nextLine();
 //			pw.print(s);

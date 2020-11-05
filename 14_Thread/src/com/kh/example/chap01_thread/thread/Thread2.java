@@ -1,14 +1,14 @@
 package com.kh.example.chap01_thread.thread;
 
-// ½º·¹µå »ı¼º
-// 2. Runnable ÀÎÅÍÆäÀÌ½º ±¸Çö
+// ìŠ¤ë ˆë“œ ìƒì„±
+// 2. Runnable ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„
 
 public class Thread2 implements Runnable{
 
 	@Override
 	public void run() {
 		
-		Thread.currentThread().setName("¸ÚÁø Thread2");
+		Thread.currentThread().setName("ë©‹ì§„ Thread2");
 		
 		for (int i = 0; i < 10; i++) {
 			System.out.println(Thread.currentThread().getName() + " ON...");

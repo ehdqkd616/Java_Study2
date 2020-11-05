@@ -2,7 +2,7 @@ package com.kh.practice.practice3.model.vo;
 
 public class Dog extends Animal{
 	
-	public static final String PLACE = "¾Ö°ßÄ«Æä";
+	public static final String PLACE = "ì• ê²¬ì¹´íŽ˜";
 	private int weight;
 	
 	public Dog() {}
@@ -23,7 +23,7 @@ public class Dog extends Animal{
 
 	@Override
 	public void speak() {
-		System.out.println(super.toString() + " ¸ö¹«°Ô´Â " + weight + "kgÀÔ´Ï´Ù.");
+		System.out.println(super.toString() + " ëª¸ë¬´ê²ŒëŠ” " + weight + "kgìž…ë‹ˆë‹¤.");
 	}
 
 }

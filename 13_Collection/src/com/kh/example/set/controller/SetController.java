@@ -14,59 +14,59 @@ public class SetController {
 	public void doSet() {
 		HashSet<Dog> set = new HashSet<Dog>();
 //		HashSet<Dog> set = new HashSet<>();
-//									Å¸ÀÔ Ãß·Ğ
+//									íƒ€ì… ì¶”ë¡ 
 		
-		set.add(new Dog("¼·¼·ÀÌ", 3.5));
-		set.add(new Dog("º¹½ÇÀÌ", 10.3));
-		set.add(new Dog("È÷¸´", 20.8));
+		set.add(new Dog("ì„­ì„­ì´", 3.5));
+		set.add(new Dog("ë³µì‹¤ì´", 10.3));
+		set.add(new Dog("íˆë¦¿", 20.8));
 		
 		System.out.println("set : " + set);
 		
-		set.add(new Dog("¼·¼·ÀÌ", 3.5));
+		set.add(new Dog("ì„­ì„­ì´", 3.5));
 		System.out.println("set : " + set);	
 		
-		set.add(new Dog("¼·¼·ÀÌ", 5.7));
+		set.add(new Dog("ì„­ì„­ì´", 5.7));
 		System.out.println("set : " + set);
 		
 		// LinkedHashSet
 		LinkedHashSet<Dog> set2 = new LinkedHashSet<Dog>();
-		set2.add(new Dog("·çµğ", 1.8));
-		set2.add(new Dog("±ôÀÌ", 10.6));
-		set2.add(new Dog("È­´Ï", 4.7));
-		set2.add(new Dog("¸¶Ãò", 6.3));
-		set2.add(new Dog("½Åµğ", 1.8));
-		set2.add(new Dog("·çµğ", 3.5));
+		set2.add(new Dog("ë£¨ë””", 1.8));
+		set2.add(new Dog("ê¹œì´", 10.6));
+		set2.add(new Dog("í™”ë‹ˆ", 4.7));
+		set2.add(new Dog("ë§ˆì¸„", 6.3));
+		set2.add(new Dog("ì‹ ë””", 1.8));
+		set2.add(new Dog("ë£¨ë””", 3.5));
 		
 		System.out.println("set2 : " + set2);	
 		
 		TreeSet<Dog> set3 = new TreeSet<Dog>(new DogCompare());
-		set3.add(new Dog("·çµğ", 1.8));
-		set3.add(new Dog("±ôÀÌ", 10.6));
-		set3.add(new Dog("È­´Ï", 4.7));
-		set3.add(new Dog("¸¶Ãò", 6.3));
-		set3.add(new Dog("½Åµğ", 1.8));
-		set3.add(new Dog("·çµğ", 3.5));
+		set3.add(new Dog("ë£¨ë””", 1.8));
+		set3.add(new Dog("ê¹œì´", 10.6));
+		set3.add(new Dog("í™”ë‹ˆ", 4.7));
+		set3.add(new Dog("ë§ˆì¸„", 6.3));
+		set3.add(new Dog("ì‹ ë””", 1.8));
+		set3.add(new Dog("ë£¨ë””", 3.5));
 		
 		System.out.println("set3 : " + set3);	
 		
 		TreeSet<Dog> set4 = new TreeSet<Dog>(new DogCompare());
-		set4.add(new Dog("·çµğ", 1.8));
-		set4.add(new Dog("±ôÀÌ", 10.6));
-		set4.add(new Dog("È­´Ï", 4.7));
-		set4.add(new Dog("¸¶Ãò", 6.3));
-		set4.add(new Dog("½Åµğ", 1.8));
-		set4.add(new Dog("·çµğ", 3.5));
+		set4.add(new Dog("ë£¨ë””", 1.8));
+		set4.add(new Dog("ê¹œì´", 10.6));
+		set4.add(new Dog("í™”ë‹ˆ", 4.7));
+		set4.add(new Dog("ë§ˆì¸„", 6.3));
+		set4.add(new Dog("ì‹ ë””", 1.8));
+		set4.add(new Dog("ë£¨ë””", 3.5));
 		
 		System.out.println("set4 : " + set4);
 		
-		// Set ¾È¿¡ ÀÖ´Â element Á¢±ÙÇÏ±â
-		// Á¢±Ù 1. SetÀ» List·Î ¿Å±â±â
+		// Set ì•ˆì— ìˆëŠ” element ì ‘ê·¼í•˜ê¸°
+		// ì ‘ê·¼ 1. Setì„ Listë¡œ ì˜®ê¸°ê¸°
 		ArrayList<Dog> list = new ArrayList<Dog>();
 		list.addAll(set4);
 		System.out.println("list : " + list);
 		System.out.println("list.get(4) : " + list.get(4));
 		
-		// Á¢±Ù 2. Iterator »ç¿ë
+		// ì ‘ê·¼ 2. Iterator ì‚¬ìš©
 		
 		Iterator<Dog> it = set4.iterator();
 		while(it.hasNext()) {

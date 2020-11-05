@@ -4,29 +4,29 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class InetExample {
-	// InetAddress : IPÁÖ¼Ò¸¦ ´Ù·ç±â À§ÇÑ Å¬·¡½º
+	// InetAddress : IPì£¼ì†Œë¥¼ ë‹¤ë£¨ê¸° ìœ„í•œ í´ë˜ìŠ¤
 	public static void main(String[] args) {
 		// getLocalHost()
 		try {
-			// getLocalHost() : ·ÎÄÃÈ£½ºÆ®ÀÇ Á¤º¸ ¹İÈ¯
+			// getLocalHost() : ë¡œì»¬í˜¸ìŠ¤íŠ¸ì˜ ì •ë³´ ë°˜í™˜
 			InetAddress localIP = InetAddress.getLocalHost();
-			// getHostName : È£½ºÆ®(ÄÄÇ»ÅÍ) ÀÌ¸§ ¹İÈ¯
-			System.out.println("³» PC¸í : " + localIP.getHostName());
-			// getHostAddress() : È£½ºÆ® IP ¹İÈ¯
-			System.out.println("³» IP : " + localIP.getHostAddress());
+			// getHostName : í˜¸ìŠ¤íŠ¸(ì»´í“¨í„°) ì´ë¦„ ë°˜í™˜
+			System.out.println("ë‚´ PCëª… : " + localIP.getHostName());
+			// getHostAddress() : í˜¸ìŠ¤íŠ¸ IP ë°˜í™˜
+			System.out.println("ë‚´ IP : " + localIP.getHostAddress());
 			
-			// getByName(String host) : µµ¸ŞÀÎ ¸íÀ» ÅëÇØ Á¤º¸ ¾òÀ½
+			// getByName(String host) : ë„ë©”ì¸ ëª…ì„ í†µí•´ ì •ë³´ ì–»ìŒ
 			InetAddress iei = InetAddress.getByName("www.iei.or.kr");
-			System.out.println("iei ¼­¹ö ¸í : " + iei.getHostName());
-			System.out.println("iei ¼­¹ö IP : " + iei.getHostAddress());
+			System.out.println("iei ì„œë²„ ëª… : " + iei.getHostName());
+			System.out.println("iei ì„œë²„ IP : " + iei.getHostAddress());
 			
 			// getAllByName(String host)
 			InetAddress[] google = InetAddress.getAllByName("www.google.com");
-			System.out.println("±¸±Û IP°³¼ö : " + google.length);
+			System.out.println("êµ¬ê¸€ IPê°œìˆ˜ : " + google.length);
 			System.out.println(google[0].getHostAddress());
 			
 			InetAddress[] naver = InetAddress.getAllByName("www.naver.com");
-			System.out.println("³×ÀÌ¹ö IP°³¼ö : " + naver.length);
+			System.out.println("ë„¤ì´ë²„ IPê°œìˆ˜ : " + naver.length);
 			
 			for(InetAddress ia : naver) {
 				System.out.println(ia.getHostAddress());

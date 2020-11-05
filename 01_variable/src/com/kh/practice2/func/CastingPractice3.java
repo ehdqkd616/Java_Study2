@@ -6,8 +6,8 @@ public class CastingPractice3 {
 	
 	public void practiceMethod() {
 		
-		// ¼±¾ð ¹× ÃÊ±âÈ­µÈ 5°³ÀÇ º¯¼ö¸¦ °¡Áö°í ¾Ë¸ÂÀº »çÄ¢¿¬»ê(+, -, *, /)°ú Çüº¯È¯À» ÀÌ¿ëÇÏ¿©
-		//ÁÖ¼®¿¡ ÀûÈù °ª°ú °°Àº °ªÀÌ ³ª¿Àµµ·Ï ÄÚµå¸¦ ÀÛ¼ºÇÏ¼¼¿ä.
+		// ì„ ì–¸ ë° ì´ˆê¸°í™”ëœ 5ê°œì˜ ë³€ìˆ˜ë¥¼ ê°€ì§€ê³  ì•Œë§žì€ ì‚¬ì¹™ì—°ì‚°(+, -, *, /)ê³¼ í˜•ë³€í™˜ì„ ì´ìš©í•˜ì—¬
+		//ì£¼ì„ì— ì ížŒ ê°’ê³¼ ê°™ì€ ê°’ì´ ë‚˜ì˜¤ë„ë¡ ì½”ë“œë¥¼ ìž‘ì„±í•˜ì„¸ìš”.
 	
 		int iNum1 = 10;
 		int iNum2 = 4;

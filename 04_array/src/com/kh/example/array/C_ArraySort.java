@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class C_ArraySort {
 	public void method() {
-		// ¹è¿­ Á¤·Ä
+		// ë°°ì—´ ì •ë ¬
 		int[] iArr = {2, 5, 4, 6, 1, 3};
 		for(int i=0; i<iArr.length; i++)
 			System.out.println(iArr[i] + " ");
@@ -12,9 +12,9 @@ public class C_ArraySort {
 	}
 	
 	public void method2() {
-		String[] strArr = {"»ç°ú", "µþ±â", "ÆÄÀÎ¾ÖÇÃ", "¹Ù³ª³ª", "¿À·»Áö"};
+		String[] strArr = {"ì‚¬ê³¼", "ë”¸ê¸°", "íŒŒì¸ì• í”Œ", "ë°”ë‚˜ë‚˜", "ì˜¤ë Œì§€"};
 		
-		System.out.println("Á¤·Ä Àü");
+		System.out.println("ì •ë ¬ ì „");
 		for(int i = 0; i < strArr.length; i++) {
 			System.out.println(strArr[i] + " ");
 		}
@@ -23,7 +23,7 @@ public class C_ArraySort {
 		
 		Arrays.sort(strArr);
 		
-		System.out.println("Á¤·Ä ÈÄ");
+		System.out.println("ì •ë ¬ í›„");
 		for(int i = 0; i < strArr.length; i++) {
 			System.out.println(strArr[i] + " ");
 		}

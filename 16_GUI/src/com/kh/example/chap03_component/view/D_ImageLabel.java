@@ -22,7 +22,7 @@ public class D_ImageLabel {
 		
 		JLabel label = new JLabel(new ImageIcon(icon));
 		
-		JButton button = new JButton("ÀÌ¹ÌÁö º¸±â");
+		JButton button = new JButton("ì´ë¯¸ì§€ ë³´ê¸°");
 		button.addActionListener(new ActionListener() {
 			
 			int status = 0;

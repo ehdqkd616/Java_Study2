@@ -16,7 +16,7 @@ public class D_CardLayout extends JFrame {
 		setBounds(300, 200, 800, 500);
 		
 		// CardLayout
-		//		PanelÀ» ÀÌ¿ëÇØ¼­ Ä«µå ÆÇÀ» °ãÃÄ ³õÀ½
+		//		Panelì„ ì´ìš©í•´ì„œ ì¹´ë“œ íŒì„ ê²¹ì³ ë†“ìŒ
 		CardLayout card = new CardLayout();
 		setLayout(card);
 		

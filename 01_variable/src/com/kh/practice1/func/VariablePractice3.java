@@ -6,24 +6,24 @@ public class VariablePractice3 {
 	
 	public void practiceMethod() {
 		
-	// Å°º¸µå·Î °¡·Î, ¼¼·Î °ªÀ» ½Ç¼öÇüÀ¸·Î ÀÔ·Â ¹Ş¾Æ »ç°¢ÇüÀÇ ¸éÀû°ú µÑ·¹¸¦ °è»êÇÏ¿© Ãâ·ÂÇÏ¼¼¿ä.
+	// í‚¤ë³´ë“œë¡œ ê°€ë¡œ, ì„¸ë¡œ ê°’ì„ ì‹¤ìˆ˜í˜•ìœ¼ë¡œ ì…ë ¥ ë°›ì•„ ì‚¬ê°í˜•ì˜ ë©´ì ê³¼ ë‘˜ë ˆë¥¼ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•˜ì„¸ìš”.
 	
 		Scanner sc = new Scanner(System.in);
 		
 		double horizontal;
 		double vertical;
 		
-		System.out.println("°¡·Î : ");
+		System.out.println("ê°€ë¡œ : ");
 		horizontal = sc.nextDouble();
 		
-		System.out.println("»õ·Î : ");
+		System.out.println("ìƒˆë¡œ : ");
 		vertical = sc.nextDouble();
 		
 		double area = horizontal*vertical;
 		double circum = 2*(horizontal+vertical);
 		
-		System.out.printf("¸éÀû : %.2f\n", area);
-		System.out.printf("µÑ·¹ : %.2f\n", circum);
+		System.out.printf("ë©´ì  : %.2f\n", area);
+		System.out.printf("ë‘˜ë ˆ : %.2f\n", circum);
 	}
 	
 }

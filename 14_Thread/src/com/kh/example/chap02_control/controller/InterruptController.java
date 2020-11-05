@@ -12,9 +12,9 @@ public class InterruptController {
 		thread.start();
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¾Æ¹« °ªÀÌ³ª ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì•„ë¬´ ê°’ì´ë‚˜ ì…ë ¥í•˜ì„¸ìš” : ");
 		String input = sc.nextLine();
-		System.out.println("ÀÔ·ÂÇÑ °ª : " + input);
+		System.out.println("ì…ë ¥í•œ ê°’ : " + input);
 		thread.interrupt();
 		
 	}

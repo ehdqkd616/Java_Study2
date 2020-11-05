@@ -46,7 +46,7 @@ public class Snack implements Comparable<Snack>{
 
 	@Override
 	public boolean equals(Object obj) {
-		// °´Ã¼ ÀÚÃ¼ ºñ±³
+		// ê°ì²´ ìì²´ ë¹„êµ
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -54,7 +54,7 @@ public class Snack implements Comparable<Snack>{
 		if (getClass() != obj.getClass())
 			return false;
 		
-		// ÇÊµå °ª ºñ±³
+		// í•„ë“œ ê°’ ë¹„êµ
 		Snack other = (Snack) obj;
 		if (flavor == null) {
 			if (other.flavor != null)

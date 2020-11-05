@@ -15,17 +15,17 @@ public class C_GridLayout extends JFrame{
 		setBounds(300, 200, 800, 500);
 		
 		// GridLayout
-		//		ÄÄÆ÷³ÍÆ®¸¦ °¡·Î, ¼¼·Î, ÀÏÁ¤ ¼ö¸¸Å­ ¹èÄ¡ÇÏ°íÀÚÇÒ ¶§ ÁÖ·Î »ç¿ë
+		//		ì»´í¬ë„ŒíŠ¸ë¥¼ ê°€ë¡œ, ì„¸ë¡œ, ì¼ì • ìˆ˜ë§Œí¼ ë°°ì¹˜í•˜ê³ ìí•  ë•Œ ì£¼ë¡œ ì‚¬ìš©
 		setLayout(new GridLayout(5, 5, 10, 20));
-		//						°¡·ÎÄ­,	°¡·Î °¸
-		//							¼¼·ÎÄ­,	¼¼·Î °¸
+		//						ê°€ë¡œì¹¸,	ê°€ë¡œ ê°­
+		//							ì„¸ë¡œì¹¸,	ì„¸ë¡œ ê°­
 		
 //		for (int i = 0; i < 26; i++) {
 //			String str = new Integer(i).toString();
 //			add(new JButton(str));
 //		}		
 		
-		// ºù°íÆÇ ¸¸µé±â : Áßº¹Á¦°Å
+		// ë¹™ê³ íŒ ë§Œë“¤ê¸° : ì¤‘ë³µì œê±°
 		Set<Integer> set = new LinkedHashSet<Integer>();
 		while(set.size() < 25) {
 			set.add((int)(Math.random() * 25) + 1);

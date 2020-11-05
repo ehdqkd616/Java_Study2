@@ -37,7 +37,7 @@ public class C_CheckBox {
 		}
 		
 		JPanel resultPanel = new JPanel();
-		JLabel text = new JLabel("¼±ÅÃµÈ °úÀÏÀÌ ¾ø½À´Ï´Ù.");
+		JLabel text = new JLabel("ì„ íƒëœ ê³¼ì¼ì´ ì—†ìŠµë‹ˆë‹¤.");
 		resultPanel.add(text);
 		
 		for (int i = 0; i < buttons.length; i++) {
@@ -58,7 +58,7 @@ public class C_CheckBox {
 					}
 					
 					if(count == 0) {
-						text.setText("¼±ÅÃµÈ °úÀÏÀÌ ¾ø½À´Ï´Ù.");
+						text.setText("ì„ íƒëœ ê³¼ì¼ì´ ì—†ìŠµë‹ˆë‹¤.");
 					}
 				}
 			});

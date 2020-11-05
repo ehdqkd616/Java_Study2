@@ -3,8 +3,8 @@ package com.kh.example.array;
 import java.util.Arrays;
 
 public class B_ArrayCopy {
-	// ¾èÀº º¹»ç : ¹è¿­ÀÇ ÁÖ¼Ò¸¸ º¹»ç
-	// ±íÀº º¹»ç : µ¿ÀÏÇÑ »õ·Î¿î ¹è¿­À» ÇÏ³ª »ı¼ºÇÏ¿© ½ÇÁ¦ ³»ºÎ °ª º¹»ç	
+	// ì–•ì€ ë³µì‚¬ : ë°°ì—´ì˜ ì£¼ì†Œë§Œ ë³µì‚¬
+	// ê¹Šì€ ë³µì‚¬ : ë™ì¼í•œ ìƒˆë¡œìš´ ë°°ì—´ì„ í•˜ë‚˜ ìƒì„±í•˜ì—¬ ì‹¤ì œ ë‚´ë¶€ ê°’ ë³µì‚¬	
 	
 	public void method1() {
 		int[] originArr = {1, 2, 3, 4, 5};
@@ -27,7 +27,7 @@ public class B_ArrayCopy {
 		
 		System.out.println();
 		
-		System.out.println("originArr[0]ÀÇ °ªÀ» 99·Î º¯°æ");	
+		System.out.println("originArr[0]ì˜ ê°’ì„ 99ë¡œ ë³€ê²½");	
 		originArr[0] = 99;
 		
 		System.out.print("originArr : ");
@@ -50,8 +50,8 @@ public class B_ArrayCopy {
 		System.out.println("originArr : " + originArr);
 		System.out.println("copyArr : " + copyArr);
 		
-		// ±íÀº º¹»ç
-		// 1. for¹®À» ÀÌ¿ëÇÑ º¹»ç
+		// ê¹Šì€ ë³µì‚¬
+		// 1. forë¬¸ì„ ì´ìš©í•œ ë³µì‚¬
 		for(int i = 0; i < originArr.length; i++) {
 			copyArr[i] = originArr[i];
 		}
@@ -71,7 +71,7 @@ public class B_ArrayCopy {
 		
 		System.out.println();
 		
-		System.out.println("originArr[0]ÀÇ °ªÀ» 99·Î º¯°æ");	
+		System.out.println("originArr[0]ì˜ ê°’ì„ 99ë¡œ ë³€ê²½");	
 		originArr[0] = 99;
 		
 		System.out.print("originArr : ");
@@ -88,16 +88,16 @@ public class B_ArrayCopy {
 	}
 	
 	public void method3() {
-		// ±íÀº º¹»ç
-		// 2. SystemÅ¬·¡½ºÀÖ¿¡ ´Â arraycopy()¸Ş¼Òµå¸¦ ÀÌ¿ëÇÑ º¹»ç
+		// ê¹Šì€ ë³µì‚¬
+		// 2. Systemí´ë˜ìŠ¤ìˆì— ëŠ” arraycopy()ë©”ì†Œë“œë¥¼ ì´ìš©í•œ ë³µì‚¬
 		int[] originArr = {1, 2, 3, 4, 5};
 		int[] copyArr = new int[10];
 		
-		//										º¹»ç ¹è¿­
-		//										º¹»ç À§Ä¡
+		//										ë³µì‚¬ ë°°ì—´
+		//										ë³µì‚¬ ìœ„ì¹˜
 		// system.arraycop(src, srcPos, dest, destPos, length);
-		//				¿øº» ¹è¿­	¿øº» ¹è¿­					º¹»ç ±æÀÌ
-		//						º¹»ç À§Ä¡
+		//				ì›ë³¸ ë°°ì—´	ì›ë³¸ ë°°ì—´					ë³µì‚¬ ê¸¸ì´
+		//						ë³µì‚¬ ìœ„ì¹˜
 		System.arraycopy(originArr, 0, copyArr, 3, originArr.length);
 				
 		System.out.print("originArr : ");
@@ -117,8 +117,8 @@ public class B_ArrayCopy {
 	
 	
 	public void method4() {
-		// ±íÀº º¹»ç
-		// 3. ArraysÅ¬·¡½º¿¡ ÀÖ´Â copyOf()¸Ş¼Òµå¸¦ ÀÌ¿ëÇÑ º¹»ç
+		// ê¹Šì€ ë³µì‚¬
+		// 3. Arraysí´ë˜ìŠ¤ì— ìˆëŠ” copyOf()ë©”ì†Œë“œë¥¼ ì´ìš©í•œ ë³µì‚¬
 		
 		int[] originArr = {1, 2, 3, 4, 5};
 		int[] copyArr = new int[10];

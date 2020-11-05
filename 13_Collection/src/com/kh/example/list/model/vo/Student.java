@@ -46,7 +46,7 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public boolean equals(Object obj) {
-		// °´Ã¼ ÀÚÃ¼ ºñ±³
+		// ê°ì²´ ìì²´ ë¹„êµ
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -54,7 +54,7 @@ public class Student implements Comparable<Student> {
 		if (getClass() != obj.getClass())
 			return false;
 		
-		// ÇÊµå °ª ºñ±³
+		// í•„ë“œ ê°’ ë¹„êµ
 		Student other = (Student) obj;
 		if (name == null) {
 			if (other.name != null)
@@ -69,7 +69,7 @@ public class Student implements Comparable<Student> {
 //	@Override
 //	public int compareTo(Object o) {
 //		
-//		// ÀÌ¸§ ¿À¸§Â÷¼ø
+//		// ì´ë¦„ ì˜¤ë¦„ì°¨ìˆœ
 //		String otherName = ((Student)o).getName();
 //		
 //		return 0;
@@ -84,19 +84,19 @@ public class Student implements Comparable<Student> {
 		// (this.)name	VS	otherName
 		//		String		String
 		// ArrayList<String> list1 ==> sort()
-		//		String ¾È¿¡ Á¤·Ä ±âÁØ ¼¼¿öÁ®ÀÖ±â ¶§¹®¿¡ ¿À¸§Â÷¼ø Á¤·Ä °¡´É
+		//		String ì•ˆì— ì •ë ¬ ê¸°ì¤€ ì„¸ì›Œì ¸ìˆê¸° ë•Œë¬¸ì— ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ ê°€ëŠ¥
 		
 //		int result = name.compareTo(otherName);
-		// ºñ±³ ÁÖÃ¼.comareTo(ºñ±³´ë»ó)
-		// ºñ±³ ÁÖÃ¼°¡ ºñ±³ ´ë»ó°ú °°À¸¸é 0
-		// ºñ±³ ÁÖÃ¼°¡ ºñ±³ ´ë»óº¸´Ù Å©¸é 1
-		// ºñ±³ ÁÖÃ¼°¡ ºñ±³ ´ë»óº¸´Ù ÀÛÀ¸¸é -1 ==> ¿À¸§Â÷¼ø
+		// ë¹„êµ ì£¼ì²´.comareTo(ë¹„êµëŒ€ìƒ)
+		// ë¹„êµ ì£¼ì²´ê°€ ë¹„êµ ëŒ€ìƒê³¼ ê°™ìœ¼ë©´ 0
+		// ë¹„êµ ì£¼ì²´ê°€ ë¹„êµ ëŒ€ìƒë³´ë‹¤ í¬ë©´ 1
+		// ë¹„êµ ì£¼ì²´ê°€ ë¹„êµ ëŒ€ìƒë³´ë‹¤ ì‘ìœ¼ë©´ -1 ==> ì˜¤ë¦„ì°¨ìˆœ
 		
 //		return 0;
 		
 		return name.compareTo(otherName);
 		
-		// ¸¸ÀÏ ³»¸²Â÷¼øÀ» ¿øÇÏ¸é °á°ú °ªÀ» ¹İ´ë·Î¸¸ µÚÁıÀ¸¸é µÊ ==> - (¸¶ÀÌ³Ê½º) ºÙÀÌ±â
+		// ë§Œì¼ ë‚´ë¦¼ì°¨ìˆœì„ ì›í•˜ë©´ ê²°ê³¼ ê°’ì„ ë°˜ëŒ€ë¡œë§Œ ë’¤ì§‘ìœ¼ë©´ ë¨ ==> - (ë§ˆì´ë„ˆìŠ¤) ë¶™ì´ê¸°
 //		return -name.compareTo(otherName);
 		
 	}

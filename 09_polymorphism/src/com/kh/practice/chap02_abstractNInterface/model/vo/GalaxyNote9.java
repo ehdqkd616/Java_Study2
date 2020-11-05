@@ -3,32 +3,32 @@ package com.kh.practice.chap02_abstractNInterface.model.vo;
 public class GalaxyNote9 extends SmartPhone implements NotePen{
 
 	public GalaxyNote9() {
-		super.setMaker("»ï¼º");
+		super.setMaker("ì‚¼ì„±");
 	}
 
 	@Override
 	public String charge() {
-		return "°í¼ÓÃæÀü, °í¼Ó ¹«¼± ÃæÀü";
+		return "ê³ ì†ì¶©ì „, ê³ ì† ë¬´ì„  ì¶©ì „";
 	}
 
 	@Override
 	public String makeCall() {
-		return "¹øÈ£¸¦ ´©¸£°í ÅëÈ­¹öÆ°À» ´©¸§";
+		return "ë²ˆí˜¸ë¥¼ ëˆ„ë¥´ê³  í†µí™”ë²„íŠ¼ì„ ëˆ„ë¦„";
 	}
 
 	@Override
 	public String takeCall() {
-		return "ÀüÈ­¹Ş±â ¹öÆ°À» ´©¸§";
+		return "ì „í™”ë°›ê¸° ë²„íŠ¼ì„ ëˆ„ë¦„";
 	}
 
 	@Override
 	public String picture() {
-		return "1300¸¸ µà¾óÄ«¸Ş¶ó";
+		return "1300ë§Œ ë“€ì–¼ì¹´ë©”ë¼";
 	}
 
 	@Override
 	public String touch() {
-		return "Á¤Àü½Ä, ¿ÍÄŞÆæ Áö¿ø";
+		return "ì •ì „ì‹, ì™€ì½¤íœ ì§€ì›";
 	}
 
 	@Override
@@ -38,9 +38,9 @@ public class GalaxyNote9 extends SmartPhone implements NotePen{
 
 	@Override
 	public String printInformation() {
-		return "°¶·°½Ã ³ëÆ®9Àº " + getMaker() + "¿¡¼­ ¸¸µé¾îÁ³°í Á¦¿øÀº ´ÙÀ½°ú °°´Ù.\n"
+		return "ê°¤ëŸ­ì‹œ ë…¸íŠ¸9ì€ " + getMaker() + "ì—ì„œ ë§Œë“¤ì–´ì¡Œê³  ì œì›ì€ ë‹¤ìŒê³¼ ê°™ë‹¤.\n"
 				+ makeCall() + "\n" + takeCall() + "\n" + picture() + "\n"
 				+ charge() + "\n" + touch() + "\n" 
-				+ "ºí·çÅõ½º Ææ Å¾Àç ¿©ºÎ : " + bluetoothPen();
+				+ "ë¸”ë£¨íˆ¬ìŠ¤ íœ íƒ‘ì¬ ì—¬ë¶€ : " + bluetoothPen();
 	}
 }

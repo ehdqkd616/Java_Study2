@@ -9,13 +9,13 @@ public class Run {
 		NonStaticMethod nsm = new NonStaticMethod();
 		
 		
-		Trainee t = new Trainee("±è¿¬¿ì", 'G', "09:00 - 15:30", 100.0);
+		Trainee t = new Trainee("ê¹€ì—°ìš°", 'G', "09:00 - 15:30", 100.0);
 		
-		t.changeName("±è¹Ùº¸");
+		t.changeName("ê¹€ë°”ë³´");
 		System.out.println(t.printName());
 		t.info();
 		
-		Trainee t2 = nsm.method6(); // ¾èÀº º¹»ç
+		Trainee t2 = nsm.method6(); // ì–•ì€ ë³µì‚¬
 		System.out.println("Run t : " + t);
 		String name = t2.printName();
 		System.out.println(name);

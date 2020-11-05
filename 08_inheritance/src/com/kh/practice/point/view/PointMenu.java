@@ -13,102 +13,102 @@ public class PointMenu {
 	public void mainMenu() {
 		int menu = 0;
 		do {
-			System.out.println("===== ¸Ş´º =====");
-			System.out.println("1. ¿ø");
-			System.out.println("2. »ç°¢Çü");
-			System.out.println("9. ³¡³»±â");
-			System.out.print("¸Ş´º ¹øÈ£ : ");
+			System.out.println("===== ë©”ë‰´ =====");
+			System.out.println("1. ì›");
+			System.out.println("2. ì‚¬ê°í˜•");
+			System.out.println("9. ëë‚´ê¸°");
+			System.out.print("ë©”ë‰´ ë²ˆí˜¸ : ");
 			
 			menu = sc.nextInt();
 			
 			switch(menu) {
 			case 1: circleMenu(); break;
 			case 2: rectangleMenu(); break;
-			case 9: System.out.println("Á¾·áÇÕ´Ï´Ù."); break;
-			default: System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù."); break;
+			case 9: System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤."); break;
+			default: System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤."); break;
 			}
 		} while(menu != 9);
 	}
 	
 	public void circleMenu() {
-		System.out.println("===== ¿ø ¸Ş´º =====");
-		System.out.println("1. ¿ø µÑ·¹");
-		System.out.println("2. ¿ø ³ĞÀÌ");
-		System.out.println("9. ¸ŞÀÎÀ¸·Î");
-		System.out.print("¸Ş´º ¹øÈ£ : ");
+		System.out.println("===== ì› ë©”ë‰´ =====");
+		System.out.println("1. ì› ë‘˜ë ˆ");
+		System.out.println("2. ì› ë„“ì´");
+		System.out.println("9. ë©”ì¸ìœ¼ë¡œ");
+		System.out.print("ë©”ë‰´ ë²ˆí˜¸ : ");
 		
 		int menu = sc.nextInt();
 		
 		switch(menu) {
 		case 1: calcCircum(); break;
 		case 2: calcCircleArea(); break;
-		case 9: System.out.println("¸ŞÀÎÀ¸·Î µ¹¾Æ°©´Ï´Ù."); break;
-		default: System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù."); break;
+		case 9: System.out.println("ë©”ì¸ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤."); break;
+		default: System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤."); break;
 		}		
 	}
 	
 	public void rectangleMenu() {
-		System.out.println("===== »ç°¢Çü ¸Ş´º =====");
-		System.out.println("1. »ç°¢Çü µÑ·¹");
-		System.out.println("2. »ç°¢Çü ³ĞÀÌ");
-		System.out.println("9. ¸ŞÀÎÀ¸·Î");
-		System.out.print("¸Ş´º ¹øÈ£ : ");
+		System.out.println("===== ì‚¬ê°í˜• ë©”ë‰´ =====");
+		System.out.println("1. ì‚¬ê°í˜• ë‘˜ë ˆ");
+		System.out.println("2. ì‚¬ê°í˜• ë„“ì´");
+		System.out.println("9. ë©”ì¸ìœ¼ë¡œ");
+		System.out.print("ë©”ë‰´ ë²ˆí˜¸ : ");
 		
 		int menu = sc.nextInt();
 		
 		switch(menu) {
 		case 1: calcPerimeter(); break;
 		case 2: calcRectArea(); break;
-		case 9: System.out.println("¸ŞÀÎÀ¸·Î µ¹¾Æ°©´Ï´Ù."); break;
-		default: System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù."); break;
+		case 9: System.out.println("ë©”ì¸ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤."); break;
+		default: System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤."); break;
 		}
 	}
 	
 	public void calcCircum() {
-		System.out.print("x ÁÂÇ¥ : ");
+		System.out.print("x ì¢Œí‘œ : ");
 		int x = sc.nextInt();
-		System.out.print("y ÁÂÇ¥ : ");
+		System.out.print("y ì¢Œí‘œ : ");
 		int y = sc.nextInt();
-		System.out.print("¹İÁö¸§ : ");
+		System.out.print("ë°˜ì§€ë¦„ : ");
 		int r = sc.nextInt();
 		
-		System.out.println("µÑ·¹ : " + cc.calcCircum(x, y, r));
+		System.out.println("ë‘˜ë ˆ : " + cc.calcCircum(x, y, r));
 	}
 	
 	public void calcCircleArea() {
-		System.out.print("x ÁÂÇ¥ : ");
+		System.out.print("x ì¢Œí‘œ : ");
 		int x = sc.nextInt();
-		System.out.print("y ÁÂÇ¥ : ");
+		System.out.print("y ì¢Œí‘œ : ");
 		int y = sc.nextInt();
-		System.out.print("¹İÁö¸§ : ");
+		System.out.print("ë°˜ì§€ë¦„ : ");
 		int r = sc.nextInt();
 		
-		System.out.println("¸éÀû : " + cc.calcArea(x, y, r));
+		System.out.println("ë©´ì  : " + cc.calcArea(x, y, r));
 	}
 	
 	public void calcPerimeter() {
-		System.out.print("x ÁÂÇ¥ : ");
+		System.out.print("x ì¢Œí‘œ : ");
 		int x = sc.nextInt();
-		System.out.print("y ÁÂÇ¥ : ");
+		System.out.print("y ì¢Œí‘œ : ");
 		int y = sc.nextInt();
-		System.out.print("³ôÀÌ : ");
+		System.out.print("ë†’ì´ : ");
 		int height = sc.nextInt();
-		System.out.print("³Êºñ : ");
+		System.out.print("ë„ˆë¹„ : ");
 		int width = sc.nextInt();
 		
-		System.out.println("µÑ·¹ : " + rc.calcPerimeter(x, y, height, width));
+		System.out.println("ë‘˜ë ˆ : " + rc.calcPerimeter(x, y, height, width));
 	}
 	
 	public void calcRectArea() {
-		System.out.print("x ÁÂÇ¥ : ");
+		System.out.print("x ì¢Œí‘œ : ");
 		int x = sc.nextInt();
-		System.out.print("y ÁÂÇ¥ : ");
+		System.out.print("y ì¢Œí‘œ : ");
 		int y = sc.nextInt();
-		System.out.print("³ôÀÌ : ");
+		System.out.print("ë†’ì´ : ");
 		int height = sc.nextInt();
-		System.out.print("³Êºñ : ");
+		System.out.print("ë„ˆë¹„ : ");
 		int width = sc.nextInt();
 		
-		System.out.println("¸éÀû : " + rc.calcArea(x, y, height, width));
+		System.out.println("ë©´ì  : " + rc.calcArea(x, y, height, width));
 	}
 }

@@ -2,11 +2,11 @@ package com.kh.example.chap03_sync.resource;
 
 public class Resources {
 	private int data;
-	private boolean empty = true; // data¿¡ °ªÀÌ ¾øÀ» ¶§ true
+	private boolean empty = true; // dataì— ê°’ì´ ì—†ì„ ë•Œ true
 	
 	public synchronized void getData() {
 		
-		while(empty) { // data¿¡ °ªÀÌ ¾øÀ¸¸é
+		while(empty) { // dataì— ê°’ì´ ì—†ìœ¼ë©´
 			try {
 				wait();
 			} catch (InterruptedException e) {
@@ -15,13 +15,13 @@ public class Resources {
 		}
 		
 		empty = true;
-		System.out.println("¼ÒºñÀÚ : " + data + "¹ø »óÇ°À» ¼ÒºñÇÏ¿´½À´Ï´Ù.");
+		System.out.println("ì†Œë¹„ì : " + data + "ë²ˆ ìƒí’ˆì„ ì†Œë¹„í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		notify();
 	}
 	
 	public synchronized void setData(int data) {
 		
-		while(!empty) { // data¿¡ °ªÀÌ ÀÖÀ¸¸é
+		while(!empty) { // dataì— ê°’ì´ ìˆìœ¼ë©´
 			try {
 				wait();
 			} catch (InterruptedException e) {
@@ -31,7 +31,7 @@ public class Resources {
 		
 		this.data = data;
 		empty = false;
-		System.out.println("»ı»êÀÚ : " + data + "¹ø »óÇ°À» »ı»êÇÏ¿´½À´Ï´Ù.");
+		System.out.println("ìƒì‚°ì : " + data + "ë²ˆ ìƒí’ˆì„ ìƒì‚°í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		notify();
 	}
 	

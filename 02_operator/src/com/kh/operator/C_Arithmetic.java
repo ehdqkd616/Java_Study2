@@ -1,7 +1,7 @@
 package com.kh.operator;
 
 public class C_Arithmetic {
-	// ¿ì¸®°¡ ÈçÈ÷ °è»êÇÒ ¶§ ¾²ÀÌ´Â ¿¬»êÀÚ
+	// ìš°ë¦¬ê°€ í”íˆ ê³„ì‚°í•  ë•Œ ì“°ì´ëŠ” ì—°ì‚°ì
 	
 	public void method1() {
 		int num1 = 10;

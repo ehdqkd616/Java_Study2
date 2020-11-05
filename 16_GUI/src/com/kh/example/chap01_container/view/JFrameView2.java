@@ -7,12 +7,12 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
-// ÄÁÅ×ÀÌ³Ê »ı¼º ¹æ¹ı 2 : JFrame°´Ã¼ »ı¼º
+// ì»¨í…Œì´ë„ˆ ìƒì„± ë°©ë²• 2 : JFrameê°ì²´ ìƒì„±
 public class JFrameView2 {
 	
 	public void showJFrame() {
 		
-		// ÇÁ·¹ÀÓ °´Ã¼ »ı¼º ¹× ÀÌ¸§ ¼³Á¤
+		// í”„ë ˆì„ ê°ì²´ ìƒì„± ë° ì´ë¦„ ì„¤ì •
 //		JFrame frame = new JFrame();
 //		frame.setTitle("My Second Frame");
 		JFrame frame = new JFrame("My Real Second Frame");

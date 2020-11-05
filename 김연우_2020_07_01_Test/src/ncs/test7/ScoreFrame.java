@@ -22,69 +22,69 @@ public class ScoreFrame extends JFrame{
 	
 	public ScoreFrame() {
 		
-		// ÇÁ·¹ÀÓ Á¤ÀÇ ¹× À§Ä¡, Å©±â Á¶Á¤ ¹× ·¹ÀÌ¾Æ¿ô ¼³Á¤
-		setTitle("¹®Á¦ 7");
+		// í”„ë ˆì„ ì •ì˜ ë° ìœ„ì¹˜, í¬ê¸° ì¡°ì • ë° ë ˆì´ì•„ì›ƒ ì„¤ì •
+		setTitle("ë¬¸ì œ 7");
 		setBounds(750, 300, 500, 400);
 		getContentPane().setLayout(null);
 		
-		// Å¸ÀÌÆ² ¶óº§ ¼±¾ğ ¹× ÃÊ±âÈ­ ¹× À§Ä¡, Å©±â Á¶Á¤
-		JLabel title = new JLabel("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
-		title.setFont(new Font("±¼¸²", Font.BOLD, 45));
+		// íƒ€ì´í‹€ ë¼ë²¨ ì„ ì–¸ ë° ì´ˆê¸°í™” ë° ìœ„ì¹˜, í¬ê¸° ì¡°ì •
+		JLabel title = new JLabel("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
+		title.setFont(new Font("êµ´ë¦¼", Font.BOLD, 45));
 		title.setBounds(45, 20, 500, 40);
 		
-		// ÅØ½ºÆ®ÇÊµå ¹× ¹öÆ° ÃÊ±âÈ­
+		// í…ìŠ¤íŠ¸í•„ë“œ ë° ë²„íŠ¼ ì´ˆê¸°í™”
 		javaScore = new JTextField();
 		sqlScore = new JTextField();
 		total = new JTextField();
 		average = new JTextField();
-		calcBtn = new JButton("°è»êÇÏ±â");
+		calcBtn = new JButton("ê³„ì‚°í•˜ê¸°");
 		
-		// ¶óº§ ¼±¾ğ ¹× ÃÊ±âÈ­
-		JLabel lJavaScore = new JLabel("ÀÚ¹Ù : ");
+		// ë¼ë²¨ ì„ ì–¸ ë° ì´ˆê¸°í™”
+		JLabel lJavaScore = new JLabel("ìë°” : ");
 		JLabel lSqlScore = new JLabel("SQL : ");
-		JLabel lTotal = new JLabel("ÃÑÁ¡ : ");
-		JLabel lAverage = new JLabel("Æò±Õ : ");
+		JLabel lTotal = new JLabel("ì´ì  : ");
+		JLabel lAverage = new JLabel("í‰ê·  : ");
 		
-		// ÅØ½ºÆ® ÇÊµå ¹× ¹öÆ° Å©±â, À§Ä¡ Á¶Á¤
+		// í…ìŠ¤íŠ¸ í•„ë“œ ë° ë²„íŠ¼ í¬ê¸°, ìœ„ì¹˜ ì¡°ì •
 		javaScore.setBounds(80, 100, 120, 30);
 		sqlScore.setBounds(320, 100, 120, 30);
 		total.setBounds(80, 300, 120, 30);
 		average.setBounds(320, 300, 120, 30);
 		calcBtn.setBounds(200, 200, 100, 30);
 		
-		// ¶óº§ Å©±â, À§Ä¡ Á¶Á¤
+		// ë¼ë²¨ í¬ê¸°, ìœ„ì¹˜ ì¡°ì •
 		lJavaScore.setBounds(40, 100, 50, 30);
 		lSqlScore.setBounds(280, 100, 50, 30);
 		lTotal.setBounds(40, 300, 50, 30);
 		lAverage.setBounds(280, 300, 50, 30);
 		
-		// ¶óº§ Ãß°¡
+		// ë¼ë²¨ ì¶”ê°€
 		getContentPane().add(title);
 		getContentPane().add(lJavaScore);
 		getContentPane().add(lSqlScore);
 		getContentPane().add(lTotal);
 		getContentPane().add(lAverage);
 		
-		// ÅØ½ºÆ®ÇÊµå Ãß°¡
+		// í…ìŠ¤íŠ¸í•„ë“œ ì¶”ê°€
 		getContentPane().add(javaScore);
 		getContentPane().add(sqlScore);
 		getContentPane().add(total);
 		getContentPane().add(average);
 		
-		// ¹öÆ° Ãß°¡
+		// ë²„íŠ¼ ì¶”ê°€
 		getContentPane().add(calcBtn);
 		
 		calcBtn.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// ¹®ÀÚ¿­ À¯È¿¼º °ËÁõ
+				// ë¬¸ìì—´ ìœ íš¨ì„± ê²€ì¦
 				if(javaScore.getText().equals("")) {
-					JOptionPane.showMessageDialog(null, "ÀÚ¹Ù Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä", "¸Ş½ÃÁö", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ìë°” ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”", "ë©”ì‹œì§€", JOptionPane.INFORMATION_MESSAGE);
 				}else if(sqlScore.getText().equals("")) {
-					JOptionPane.showMessageDialog(null, "SQL Á¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä", "¸Ş½ÃÁö", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "SQL ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”", "ë©”ì‹œì§€", JOptionPane.INFORMATION_MESSAGE);
 				}else {
-					// ¹öÆ° Å¬¸¯ ¾×¼Ç ÀÌº¥Æ®
+					// ë²„íŠ¼ í´ë¦­ ì•¡ì…˜ ì´ë²¤íŠ¸
 					int java = Integer.parseInt(javaScore.getText());
 					int sql = Integer.parseInt(sqlScore.getText());
 					String stotal = String.valueOf(java+sql);

@@ -8,7 +8,7 @@ public class StudentCompare implements Comparator<Student>{
 
 	@Override
 	public int compare(Student o1, Student o2) {
-		// Á¡¼ö ¿À¸§Â÷¼ø Á¤·Ä
+		// ì ìˆ˜ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 		
 		int standard = o1.getScore();
 		int object = o2.getScore();

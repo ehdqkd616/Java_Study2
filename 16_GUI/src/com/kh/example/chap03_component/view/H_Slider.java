@@ -14,11 +14,11 @@ public class H_Slider {
 		JFrame frame = new JFrame();
 				
 		JPanel panel1 = new JPanel();
-		JLabel label = new JLabel("½½¶óÀÌ´õ¸¦ ¿òÁ÷¿©º¸¼¼¿ä", JLabel.CENTER);
+		JLabel label = new JLabel("ìŠ¬ë¼ì´ë”ë¥¼ ì›€ì§ì—¬ë³´ì„¸ìš”", JLabel.CENTER);
 		panel1.add(label);
 		
 		JPanel panel2 = new JPanel();
-		JSlider slider = new JSlider(0, 30, 15); // ÃÖ¼Ò°ª, ÃÖ´ë°ª, ±âº» °ª
+		JSlider slider = new JSlider(0, 30, 15); // ìµœì†Œê°’, ìµœëŒ€ê°’, ê¸°ë³¸ ê°’
 		
 		slider.setMajorTickSpacing(10);
 		slider.setMinorTickSpacing(1);
@@ -27,11 +27,11 @@ public class H_Slider {
 		
 		panel2.add(slider);
 		
-		JButton button = new JButton("Àü¼Û");
+		JButton button = new JButton("ì „ì†¡");
 		panel2.add(button);
 		
 		JPanel resultPanel = new JPanel();
-		JLabel text = new JLabel("°á°ú °ª : ");
+		JLabel text = new JLabel("ê²°ê³¼ ê°’ : ");
 		resultPanel.add(text);
 		JLabel result = new JLabel();
 		resultPanel.add(result);

@@ -5,58 +5,58 @@ import java.util.Scanner;
 public class CompExample {
 
 	public void practice1() {
-		// Á¤¼ö¸¦ ÀÔ·Â ¹Þ¾Æ ¾ç¼öÀÏ ¶§¸¸ 1ºÎÅÍ ÀÔ·Â ¹ÞÀº ¼ö±îÁö È¦¼ö/Â¦¼ö¸¦ ³ª´²¼­
-		// È¦¼ö¸é ¹Ú, Â¦¼ö¸é ¼ö Ãâ·Â
-		// ¾ç¼ö°¡ ¾Æ´Ï¸é ¾ç¼ö°¡ ¾Æ´Õ´Ï´Ù Ãâ·Â
-		// 4 : ¹Ú¼ö¹Ú¼ö
+		// ì •ìˆ˜ë¥¼ ìž…ë ¥ ë°›ì•„ ì–‘ìˆ˜ì¼ ë•Œë§Œ 1ë¶€í„° ìž…ë ¥ ë°›ì€ ìˆ˜ê¹Œì§€ í™€ìˆ˜/ì§ìˆ˜ë¥¼ ë‚˜ëˆ ì„œ
+		// í™€ìˆ˜ë©´ ë°•, ì§ìˆ˜ë©´ ìˆ˜ ì¶œë ¥
+		// ì–‘ìˆ˜ê°€ ì•„ë‹ˆë©´ ì–‘ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤ ì¶œë ¥
+		// 4 : ë°•ìˆ˜ë°•ìˆ˜
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Á¤¼ö : ");
+		System.out.print("ì •ìˆ˜ : ");
 		int num = sc.nextInt();
 		
 		if(num > 0) {
 			for(int i = 1; i <= num; i++) {
 				if(i % 2 == 0) {
-					System.out.print("¼ö");
+					System.out.print("ìˆ˜");
 				} else {
-					System.out.print("¹Ú");
+					System.out.print("ë°•");
 				}
 			}
 		} else {
-			System.out.println("¾ç¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ì–‘ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 		}
 	}
 	
 	public void practice2() {
-		// À§ ¹®Á¦ ¾ç¼öÀÏ ¶§±îÁö ¹Ýº¹
+		// ìœ„ ë¬¸ì œ ì–‘ìˆ˜ì¼ ë•Œê¹Œì§€ ë°˜ë³µ
 		Scanner sc = new Scanner(System.in);
 		int num = 0;
 		
 		while(true) {
-			System.out.print("Á¤¼ö : ");
+			System.out.print("ì •ìˆ˜ : ");
 			num = sc.nextInt();
 			if(num > 0) {
 				for(int i = 1; i <= num; i++) {
 					if(i % 2 == 0) {
-						System.out.print("¼ö");
+						System.out.print("ìˆ˜");
 					} else {
-						System.out.print("¹Ú");
+						System.out.print("ë°•");
 					}
 				}
 				break;
 			} else {
-				System.out.println("¾ç¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+				System.out.println("ì–‘ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 			}
 		}
 	}
 	
 	public void practice3() {
-		// ¹®ÀÚ¿­À» ÀÔ·Â ¹Þ°í ¹®ÀÚ¿­¿¡¼­ °Ë»öµÉ ¹®ÀÚ¸¦ ÀÔ·Â ¹Þ¾Æ
-		// ¹®ÀÚ¿­¿¡ ±× ¹®ÀÚ°¡ ¸î °³ÀÖ´ÂÁö °³¼ö Ãâ·Â
+		// ë¬¸ìžì—´ì„ ìž…ë ¥ ë°›ê³  ë¬¸ìžì—´ì—ì„œ ê²€ìƒ‰ë  ë¬¸ìžë¥¼ ìž…ë ¥ ë°›ì•„
+		// ë¬¸ìžì—´ì— ê·¸ ë¬¸ìžê°€ ëª‡ ê°œìžˆëŠ”ì§€ ê°œìˆ˜ ì¶œë ¥
 		// banana , a,  3
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­ : ");
+		System.out.print("ë¬¸ìžì—´ : ");
 		String str = sc.nextLine();
-		System.out.print("¹®ÀÚ : ");
+		System.out.print("ë¬¸ìž : ");
 		char ch = sc.nextLine().charAt(0);
 		
 		int count = 0;
@@ -65,18 +65,18 @@ public class CompExample {
 				count++;
 			}
 		}
-		System.out.println(str + " ¾È¿¡ Æ÷ÇÔµÈ " + ch + " °³¼ö : " + count);
+		System.out.println(str + " ì•ˆì— í¬í•¨ëœ " + ch + " ê°œìˆ˜ : " + count);
 	}
 	
 	public void practice4() {
-		// À§ ¹®Á¦ ´õ ÇÏ½Ã°Ú½À´Ï±î? ¹°¾îºÁ¼­ nÀÌ ³ª¿Ã ¶§±îÁö ¹Ýº¹
+		// ìœ„ ë¬¸ì œ ë” í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ë¬¼ì–´ë´ì„œ nì´ ë‚˜ì˜¬ ë•Œê¹Œì§€ ë°˜ë³µ
 		Scanner sc = new Scanner(System.in);
 		
 		char answer = ' ';
 		do {
-			System.out.print("¹®ÀÚ¿­ : ");
+			System.out.print("ë¬¸ìžì—´ : ");
 			String str = sc.nextLine();
-			System.out.print("¹®ÀÚ : ");
+			System.out.print("ë¬¸ìž : ");
 			char ch = sc.nextLine().charAt(0);
 			
 			int count = 0;
@@ -85,13 +85,13 @@ public class CompExample {
 					count++;
 				}
 			}
-			System.out.println("Æ÷ÇÔµÈ °³¼ö : " + count);
+			System.out.println("í¬í•¨ëœ ê°œìˆ˜ : " + count);
 			
 			while(true) {				
-				System.out.print("´õ ÇÏ½Ã°Ú½À´Ï±î? (y/n) : ");
+				System.out.print("ë” í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y/n) : ");
 				answer = sc.nextLine().charAt(0);
 				if(answer != 'Y' && answer != 'y' && answer != 'n' && answer != 'N') {
-					System.out.println("Àß¸øµÈ ´ë´äÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+					System.out.println("ìž˜ëª»ëœ ëŒ€ë‹µìž…ë‹ˆë‹¤. ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 					continue;
 				}
 				break;
@@ -100,12 +100,12 @@ public class CompExample {
 	}
 	
 	public void practice5() {
-		// °Å½º¸§µ· ÁöÆóº°·Î ¸î Àå ³ª¿À´Â°¡
+		// ê±°ìŠ¤ë¦„ëˆ ì§€íë³„ë¡œ ëª‡ ìž¥ ë‚˜ì˜¤ëŠ”ê°€
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹ÞÀ¸½Å ±Ý¾× : ");
+		System.out.print("ë°›ìœ¼ì‹  ê¸ˆì•¡ : ");
 		int all = sc.nextInt();
-		System.out.print("»óÇ° °¡°Ý : ");
+		System.out.print("ìƒí’ˆ ê°€ê²© : ");
 		int price = sc.nextInt();
 		int remain = all - price;
 		
@@ -120,16 +120,16 @@ public class CompExample {
 			int m50 = ((((((remain % 50000)%10000)%5000)%1000)%500)%100)/50;
 			int m10 = (((((((remain % 50000)%10000)%5000)%1000)%500)%100)%50)/10;
 
-			System.out.println("5¸¸¿ø : " + m50000);
-			System.out.println("1¸¸¿ø : " + m10000);
-			System.out.println("5Ãµ¿ø : " + m5000);
-			System.out.println("1Ãµ¿ø : " + m1000);
-			System.out.println("5¹é¿ø : " + m500);
-			System.out.println("1¹é¿ø : " + m100);
-			System.out.println("5½Ê¿ø : " + m50);
-			System.out.println("1½Ê¿ø : " + m10);
+			System.out.println("5ë§Œì› : " + m50000);
+			System.out.println("1ë§Œì› : " + m10000);
+			System.out.println("5ì²œì› : " + m5000);
+			System.out.println("1ì²œì› : " + m1000);
+			System.out.println("5ë°±ì› : " + m500);
+			System.out.println("1ë°±ì› : " + m100);
+			System.out.println("5ì‹­ì› : " + m50);
+			System.out.println("1ì‹­ì› : " + m10);
 		} else {
-			System.out.println("¿Ö µ·À» ´ú ÁÖ¼¼¿ä..?");
+			System.out.println("ì™œ ëˆì„ ëœ ì£¼ì„¸ìš”..?");
 		}
 	}
 }

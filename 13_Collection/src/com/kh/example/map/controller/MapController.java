@@ -20,31 +20,31 @@ public class MapController {
 		
 		HashMap<String, Snack> map = new HashMap<String, Snack>();
 		
-		// put( : Å°¿Í °ª Ãß°¡
-		map.put("»õ¿ì±ø", new Snack("Â§¸À", 1500));
-		map.put("´ÙÀÌÁ¦", new Snack("´Ü¸À", 2500));
-		map.put("Æ÷Å×ÅäÄ¨", new Snack("Â§¸À", 1500));
-		map.put("°í¼Ò¹Ì", new Snack("°í¼ÒÇÑ¸À", 1000));
+		// put( : í‚¤ì™€ ê°’ ì¶”ê°€
+		map.put("ìƒˆìš°ê¹¡", new Snack("ì§ ë§›", 1500));
+		map.put("ë‹¤ì´ì œ", new Snack("ë‹¨ë§›", 2500));
+		map.put("í¬í…Œí† ì¹©", new Snack("ì§ ë§›", 1500));
+		map.put("ê³ ì†Œë¯¸", new Snack("ê³ ì†Œí•œë§›", 1000));
 		
 		System.out.println("map : " + map);
 		
-		map.put("»õ¿ì±ø", new Snack("¸Å¿î¸À", 1500));
+		map.put("ìƒˆìš°ê¹¡", new Snack("ë§¤ìš´ë§›", 1500));
 		
 		System.out.println("map : " + map);
 		
 		// containsKey(Object key)
 		// containsValue(Object value)
-		System.out.println(map.containsKey("»õ¿ì±ø"));
-		System.out.println(map.containsValue(new Snack("Â§¸À", 1500)));
+		System.out.println(map.containsKey("ìƒˆìš°ê¹¡"));
+		System.out.println(map.containsValue(new Snack("ì§ ë§›", 1500)));
 		
-		System.out.println(map.get("»õ¿ì±ø"));
-		System.out.println(map.get("È¨·±º¼"));
+		System.out.println(map.get("ìƒˆìš°ê¹¡"));
+		System.out.println(map.get("í™ˆëŸ°ë³¼"));
 		
-		// map ¿¤¸®¸ÕÆ® Á¢±ÙÇÏ±â
-		// 1. values() : ¸ğµç valueµéÀ» Collection¿¡ ´ã¾Æ ¹İÈ¯
+		// map ì—˜ë¦¬ë¨¼íŠ¸ ì ‘ê·¼í•˜ê¸°
+		// 1. values() : ëª¨ë“  valueë“¤ì„ Collectionì— ë‹´ì•„ ë°˜í™˜
 		System.out.println(map.values());
 
-		// 2-1. keySet() : ¸ğµç key¸¦ set¿¡ ´ã¾Æ ¹İÈ¯
+		// 2-1. keySet() : ëª¨ë“  keyë¥¼ setì— ë‹´ì•„ ë°˜í™˜
 		Set<String> set1 = map.keySet();
 		System.out.println("set1 : " + set1);
 		Iterator<String> it1 = set1.iterator();
@@ -69,7 +69,7 @@ public class MapController {
 		
 		System.out.println();
         
-		// 3. entrySet() : ¸ğµç entry(Å°+°ªÀÇ ½Ö)°´Ã¼¸¦ set¿¡ ´ã¾Æ ¹İÈ¯
+		// 3. entrySet() : ëª¨ë“  entry(í‚¤+ê°’ì˜ ìŒ)ê°ì²´ë¥¼ setì— ë‹´ì•„ ë°˜í™˜
 		Set<Entry<String, Snack>> set2 = map.entrySet();
 		Iterator<Entry<String, Snack>> it2 = set2.iterator();
 		while(it2.hasNext()) {
@@ -96,20 +96,20 @@ public class MapController {
 		map3.putAll(map);
 		System.out.println(map3);
 		
-		// size() : map¿¡ ÀúÀåµÈ entry ¼ö ¹İÈ¯
+		// size() : mapì— ì €ì¥ëœ entry ìˆ˜ ë°˜í™˜
 		System.out.println(map.size());
 		
-		// remove(Object key) : key¿¡ ÇØ´çÇÏ´Â °´Ã¼ »èÁ¦, ÇØ´ç °ª ¹İÈ¯
-		System.out.println(map.remove("´ÙÀÌÁ¦"));
+		// remove(Object key) : keyì— í•´ë‹¹í•˜ëŠ” ê°ì²´ ì‚­ì œ, í•´ë‹¹ ê°’ ë°˜í™˜
+		System.out.println(map.remove("ë‹¤ì´ì œ"));
 		
-		// remove(Object key, Object value) : ÇØ´ç Å°¿Í °ªÀÌ ¸ÂÀ¸¸é »èÁ¦ ÈÄ true ¹İÈ¯
-		System.out.println(map.remove("°í¼Ò¹Ì", new Snack("°í¼ÒÇÑ¸À",1000)));
-		System.out.println(map.remove("Æ÷Å×ÀÌÅä", new Snack("Â§¸À",1500)));
+		// remove(Object key, Object value) : í•´ë‹¹ í‚¤ì™€ ê°’ì´ ë§ìœ¼ë©´ ì‚­ì œ í›„ true ë°˜í™˜
+		System.out.println(map.remove("ê³ ì†Œë¯¸", new Snack("ê³ ì†Œí•œë§›",1000)));
+		System.out.println(map.remove("í¬í…Œì´í† ", new Snack("ì§ ë§›",1500)));
 		
 		System.out.println("map : " + map);
 		
-		// clear() : ¸ğµç entry »èÁ¦
-		// isEmpty() : mapÀÌ ºñ¾îÀÖÀ¸¸é true ¹İÈ¯
+		// clear() : ëª¨ë“  entry ì‚­ì œ
+		// isEmpty() : mapì´ ë¹„ì–´ìˆìœ¼ë©´ true ë°˜í™˜
 		map.clear();
 		System.out.println(map);
 		System.out.println(map.isEmpty());
@@ -119,27 +119,27 @@ public class MapController {
 		Properties prop = new Properties();
 //		prop.put(1, 10);
 //		System.out.println(prop);
-//		Properties´Â HashTableÀ» »ó¼Ó¹Ş¾Æ¼­ put¸Ş¼­µå¸¦ »ç¿ëÇÏ¸é Å°,°ªÀÌ StringÀ¸·Î ¼ÂÆÃµÇÁö ¾Ê´Â´Ù
+//		PropertiesëŠ” HashTableì„ ìƒì†ë°›ì•„ì„œ putë©”ì„œë“œë¥¼ ì‚¬ìš©í•˜ë©´ í‚¤,ê°’ì´ Stringìœ¼ë¡œ ì…‹íŒ…ë˜ì§€ ì•ŠëŠ”ë‹¤
 		
-		prop.setProperty("Ã¤¼Ò", "¿ÀÀÌ");
-		prop.setProperty("°úÀÏ", "»ç°ú");
-		prop.setProperty("°£½Ä", "Á©¸®");
-		
-		System.out.println(prop);
-		
-		prop.setProperty("Ã¤¼Ò", "ÇÇ¸Á");
+		prop.setProperty("ì±„ì†Œ", "ì˜¤ì´");
+		prop.setProperty("ê³¼ì¼", "ì‚¬ê³¼");
+		prop.setProperty("ê°„ì‹", "ì ¤ë¦¬");
 		
 		System.out.println(prop);
 		
-		// getProperty(String key) : key¸¦ ÅëÇØ value ¹İÈ¯
-		System.out.println(prop.getProperty("Ã¤¼Ò"));
-		System.out.println(prop.getProperty("°ß°ú"));
+		prop.setProperty("ì±„ì†Œ", "í”¼ë§");
+		
+		System.out.println(prop);
+		
+		// getProperty(String key) : keyë¥¼ í†µí•´ value ë°˜í™˜
+		System.out.println(prop.getProperty("ì±„ì†Œ"));
+		System.out.println(prop.getProperty("ê²¬ê³¼"));
 		
 		
 //		prop.getProperty(String key, String defaultValue)
-//		: key¸¦ ÅëÇØ value¸¦ ¹İÈ¯ÇÏ´Âµ¥ ÀÌ ¶§ ÇØ´ç key°¡ ¾øÀ¸¸é ÁöÁ¤ defaultValue ¹İÈ¯
-		System.out.println(prop.getProperty("Ã¤¼Ò", "¶¥²Ç"));
-		System.out.println(prop.getProperty("°ß°ú", "¶¥²Ç"));
+//		: keyë¥¼ í†µí•´ valueë¥¼ ë°˜í™˜í•˜ëŠ”ë° ì´ ë•Œ í•´ë‹¹ keyê°€ ì—†ìœ¼ë©´ ì§€ì • defaultValue ë°˜í™˜
+		System.out.println(prop.getProperty("ì±„ì†Œ", "ë•…ê½"));
+		System.out.println(prop.getProperty("ê²¬ê³¼", "ë•…ê½"));
 	}
 	
 	public void fileSave() {
@@ -154,11 +154,11 @@ public class MapController {
 			
 			// store(OuputStream out, String comments)
 			// store(Writer writer, String comments)
-			// : ÀúÀåµÈ Á¤º¸¸¦ ¹ÙÀÌÆ®/¹®ÀÚ ½ºÆ®¸²À¸·Î Ãâ·Â ÀúÀå, comments´Â ÁÖ¼®À¸·Î ÀúÀå
+			// : ì €ì¥ëœ ì •ë³´ë¥¼ ë°”ì´íŠ¸/ë¬¸ì ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ì¶œë ¥ ì €ì¥, commentsëŠ” ì£¼ì„ìœ¼ë¡œ ì €ì¥
 			prop.store(fos, "Properties Test File");
 			
 			// prop.storeToXML(OutputStream os, String comment);
-			// : ÀúÀåµÈ Á¤º¸¸¦ ¹ÙÀÌÆ® ½ºÆ®¸²À¸·Î xml·Î Ãâ·Â ÀúÀå
+			// : ì €ì¥ëœ ì •ë³´ë¥¼ ë°”ì´íŠ¸ ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ xmlë¡œ ì¶œë ¥ ì €ì¥
 //			prop.storeToXML(fos, "storeToXML Test");
 			
 		} catch (FileNotFoundException e) {
@@ -176,12 +176,12 @@ public class MapController {
 			
 			Properties prop = new Properties();
 			
-			// loadFromXML (InputStream in) : ¹ÙÀÌÆ®½ºÆ®¸²À¸·Î ÀúÀåµÈ xmlÆÄÀÏÀÇ ³»¿ëÀ» ÀĞ¾î¿Í¼­ propertis°´Ã¼¿¡ ÀúÀå
+			// loadFromXML (InputStream in) : ë°”ì´íŠ¸ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ì €ì¥ëœ xmlíŒŒì¼ì˜ ë‚´ìš©ì„ ì½ì–´ì™€ì„œ propertisê°ì²´ì— ì €ì¥
 //			prop.loadFromXML(fis);			
 			
 			// load(InputStream in)
 			// load(Reader reader)
-			// : ¹ÙÀÌÆ®/¹®ÀÚ ½ºÆ®¸²À¸·Î ÀúÀåµÈ ÆÄÀÏÀÇ ³»¿ëÀ» ÀĞ¾î¿Í¼­ properties°´Ã¼¿¡ ÀúÀå
+			// : ë°”ì´íŠ¸/ë¬¸ì ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œ ì €ì¥ëœ íŒŒì¼ì˜ ë‚´ìš©ì„ ì½ì–´ì™€ì„œ propertiesê°ì²´ì— ì €ì¥
 			prop.load(fis);
 			
 			System.out.println(prop);

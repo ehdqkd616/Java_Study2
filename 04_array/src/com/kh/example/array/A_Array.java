@@ -17,8 +17,8 @@ public class A_Array {
 		int num8 = 80;
 		int num9 = 90;
 		
-		int[] arr = new int[9]; // ¹è¿­ ÇÒ´ç
-		// ÀÎµ¦½º ÀÌ¿ë
+		int[] arr = new int[9]; // ë°°ì—´ í• ë‹¹
+		// ì¸ë±ìŠ¤ ì´ìš©
 		arr[0] = 10;
 		arr[1] = 20;
 		arr[2] = 30;
@@ -31,7 +31,7 @@ public class A_Array {
 //		arr[9] = 100;
 		// java.lang.ArrayIndexOutOfBoundsException : 9
 		
-		// for¹® ÀÌ¿ë
+		// forë¬¸ ì´ìš©
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = 10 * (i+1);
 		}
@@ -41,7 +41,7 @@ public class A_Array {
 			System.out.println(arr[i]);
 		}
 		
-		// ¼±¾ğ°ú µ¿½Ã¿¡ ÃÊ±âÈ­
+		// ì„ ì–¸ê³¼ ë™ì‹œì— ì´ˆê¸°í™”
 		int arr2[] = {1, 2, 3, 4, 5};
 		for(int i = 0; i < arr2.length; i++) {
 			System.out.println(arr[i]);
@@ -66,7 +66,7 @@ public class A_Array {
 		System.out.println();
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¹è¿­ÀÇ Å©±â : ");
+		System.out.println("ë°°ì—´ì˜ í¬ê¸° : ");
 		int size = sc.nextInt();
 		
 		double[] dArr = new double[size];
@@ -76,7 +76,7 @@ public class A_Array {
 //		}
 		System.out.println("dArr.length : " + dArr.length);
 		
-		System.out.println("dArrÀÇ Å©±â¸¦ 30À¸·Î º¯°æ");
+		System.out.println("dArrì˜ í¬ê¸°ë¥¼ 30ìœ¼ë¡œ ë³€ê²½");
 		dArr = new double[30];
 		System.out.println("dARr.length : " + dArr.length);
 		

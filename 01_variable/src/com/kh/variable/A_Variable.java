@@ -3,16 +3,16 @@ package com.kh.variable;
 public class A_Variable {
 
 	public static void main(String[] args) {
-		// º¯¼ö ¼±¾ğ ÈÄ ÃÊ±âÈ­
-		// A. qustn tjsdjsd
-		// 1. ³í¸®Çü
+		// ë³€ìˆ˜ ì„ ì–¸ í›„ ì´ˆê¸°í™”
+		// A. ë³€ìˆ˜ ì„ ì–¸
+		// 1. ë…¼ë¦¬í˜•
 		boolean isTrue;
-		// 2. ¹®ÀÚÇü
-		// 2-1. ¹®ÀÚ
+		// 2. ë¬¸ìí˜•
+		// 2-1. ë¬¸ì
 		char ch;
-		// 2-2. ¹®ÀÚ¿­
+		// 2-2. ë¬¸ìì—´
 		String str;
-		// 3. ¼ıÀÚÇü
+		// 3. ìˆ«ìí˜•
 		byte bNum;
 		short sNum;
 		int iNum;
@@ -22,7 +22,7 @@ public class A_Variable {
 		double dNum;
 		
 		
-		// B. ÃÊ±âÈ­
+		// B. ì´ˆê¸°í™”
 		isTrue = true;
 		
 		ch = 'A';
@@ -36,21 +36,21 @@ public class A_Variable {
 		fNum = 4.0f;
 		dNum = 8.0;
 		
-		System.out.println("isTrueÀÇ °ª : " + isTrue);
+		System.out.println("isTrueì˜ ê°’ : " + isTrue);
 		
-		System.out.println("chÀÇ °ª : " + ch);
-		System.out.println("strÀÇ °ª : " + str);
+		System.out.println("chì˜ ê°’ : " + ch);
+		System.out.println("strì˜ ê°’ : " + str);
 		
-		System.out.println("bNumÀÇ °ª : " + bNum);
-		System.out.println("sNumÀÇ °ª : " + sNum);
-		System.out.println("iNumÀÇ °ª : " + iNum);
-		System.out.println("lNumÀÇ °ª : " + lNum);
+		System.out.println("bNumì˜ ê°’ : " + bNum);
+		System.out.println("sNumì˜ ê°’ : " + sNum);
+		System.out.println("iNumì˜ ê°’ : " + iNum);
+		System.out.println("lNumì˜ ê°’ : " + lNum);
 		
-		System.out.println("fNumÀÇ °ª : " + fNum);
-		System.out.println("dNumÀÇ °ª : " + dNum);
+		System.out.println("fNumì˜ ê°’ : " + fNum);
+		System.out.println("dNumì˜ ê°’ : " + dNum);
 		
 		System.out.println();
-		//º¯¼ö ¼±¾ğ°ú µ¿½Ã¿¡ ÃÊ±âÈ­
+		//ë³€ìˆ˜ ì„ ì–¸ê³¼ ë™ì‹œì— ì´ˆê¸°í™”
 		boolean isTrue2 = true;;
 		
 		char ch2 = 'A';
@@ -64,18 +64,18 @@ public class A_Variable {
 		float fNum2 = 4.0f;
 		double dNum2 = 8.0d;
 		
-		System.out.println("isTrue2ÀÇ °ª : " + isTrue);
+		System.out.println("isTrue2ì˜ ê°’ : " + isTrue);
 		
-		System.out.println("ch2ÀÇ °ª : " + ch2);
-		System.out.println("str2ÀÇ °ª : " + str2);
+		System.out.println("ch2ì˜ ê°’ : " + ch2);
+		System.out.println("str2ì˜ ê°’ : " + str2);
 		
-		System.out.println("bNum2ÀÇ °ª : " + bNum2);
-		System.out.println("sNum2ÀÇ °ª : " + sNum2);
-		System.out.println("iNum2ÀÇ °ª : " + iNum2);
-		System.out.println("lNum2ÀÇ °ª : " + lNum2);
+		System.out.println("bNum2ì˜ ê°’ : " + bNum2);
+		System.out.println("sNum2ì˜ ê°’ : " + sNum2);
+		System.out.println("iNum2ì˜ ê°’ : " + iNum2);
+		System.out.println("lNum2ì˜ ê°’ : " + lNum2);
 		
-		System.out.println("fNum2ÀÇ °ª : " + fNum2);
-		System.out.println("dNum2ÀÇ °ª : " + dNum2);
+		System.out.println("fNum2ì˜ ê°’ : " + fNum2);
+		System.out.println("dNum2ì˜ ê°’ : " + dNum2);
 		
 	}
 

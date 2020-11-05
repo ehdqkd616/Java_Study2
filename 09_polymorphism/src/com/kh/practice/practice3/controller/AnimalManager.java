@@ -7,11 +7,11 @@ import com.kh.practice.practice3.model.vo.Dog;
 public class AnimalManager {
 	public static void main(String[] args) {
 		Animal[] a = new Animal[5];
-		a[0] = new Dog("╦П╦П", "г╙╣И", 2);
-		a[1] = new Dog("юл╣Г", "г╙╣И", 5);
-		a[2] = new Cat("╪Ё╬ф", "╧ла╓", "╧ла╓", "╧ла╓");
-		a[3] = new Dog("╦╤ю╫", "╦╩ф╪", 3);
-		a[4] = new Cat("╫г╧Ж", "╦П╦╖", "╦П╦╖", "х╦╩Ж");
+		a[0] = new Dog("К╙╗К╙╗", "М▒╦К⌠╓", 2);
+		a[1] = new Dog("Л²╢К⌠═", "М▒╦К⌠╓", 5);
+		a[2] = new Cat("Л└╓Л∙└", "К╞╦Л═∙", "К╞╦Л═∙", "К╞╦Л═∙");
+		a[3] = new Dog("К╖┬Л²▄", "К╖░М▀╟", 3);
+		a[4] = new Cat("Л▀╓К╡└", "К╙╗К╕└", "К╙╗К╕└", "М ▄Л┐┴");
 		
 		for(int i = 0; i < a.length; i++) {
 			a[i].speak();

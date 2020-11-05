@@ -10,22 +10,22 @@ public class SnackMenu {
 	
 	public void menu() {
 		
-		System.out.println("½º³¼·ù¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.print("Á¾·ù : ");
+		System.out.println("ìŠ¤ë‚µë¥˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.print("ì¢…ë¥˜ : ");
 		String kind = sc.nextLine();
-		System.out.print("ÀÌ¸§ : ");
+		System.out.print("ì´ë¦„ : ");
 		String name = sc.nextLine();
-		System.out.print("¸À : ");
+		System.out.print("ë§› : ");
 		String flavor = sc.nextLine();
-		System.out.print("°³¼ö : ");
+		System.out.print("ê°œìˆ˜ : ");
 		int numOf = Integer.parseInt(sc.nextLine());
-		System.out.print("°¡°İ : ");
+		System.out.print("ê°€ê²© : ");
 		int price = Integer.parseInt(sc.nextLine());
 		
 		String result = scr.saveData(kind, name, flavor, numOf, price);
 		System.out.println(result);
 		
-		System.out.print("ÀúÀåÇÑ Á¤º¸¸¦ È®ÀÎÇÏ½Ã°Ú½À´Ï±î?(y/n) : ");
+		System.out.print("ì €ì¥í•œ ì •ë³´ë¥¼ í™•ì¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y/n) : ");
 		String answer = sc.nextLine();
 		if(answer.toUpperCase().equals("Y")) {
 			System.out.println(scr.confirmData());

@@ -3,24 +3,24 @@ package com.kh.variable;
 public class D_Cast {
 	public void rule1() {
 		
-		int num = 'A'; // ÀÚµ¿ Çüº¯È¯
-		// char´Â À¯´ÏÄÚµå·Î ÀúÀå (Á¤¼ö °ª ÀúÀå)
-		System.out.println("numÀÇ À¯´ÏÄÚµå °ª : " + num);
-		// char´Â À¯´ÏÄÚµå·Î ÀúÀå (Á¤¼ö °ª ÀúÀå)
+		int num = 'A'; // ìë™ í˜•ë³€í™˜
+		// charëŠ” ìœ ë‹ˆì½”ë“œë¡œ ì €ì¥ (ì •ìˆ˜ ê°’ ì €ì¥)
+		System.out.println("numì˜ ìœ ë‹ˆì½”ë“œ ê°’ : " + num);
+		// charëŠ” ìœ ë‹ˆì½”ë“œë¡œ ì €ì¥ (ì •ìˆ˜ ê°’ ì €ì¥)
 		
-		char ch = 97; // ÀÚµ¿ Çüº¯È¯
+		char ch = 97; // ìë™ í˜•ë³€í™˜
 		System.out.println("ch : " + ch);
 		
 //		char ch2 = num;
 //		Type mismatch : cannot convert from int to char		
 		char ch2 = (char)num;
-		System.out.println("numÀÇ char º¯È¯ °ª : " + ch2);
+		System.out.println("numì˜ char ë³€í™˜ ê°’ : " + ch2);
 		
 		int num2 = -97;
 		
 //		char ch3 = num2;
 		char ch3 = (char)num2;
-		System.out.println("num2ÀÇ char º¯È¯ °ª : " + ch3);
+		System.out.println("num2ì˜ char ë³€í™˜ ê°’ : " + ch3);
 	}
 	
 	public void rule2() {
@@ -29,20 +29,20 @@ public class D_Cast {
 		long lNum = 100;
 		
 		// int sum = iNum + lNum;
-		// ¿¬»êÀº Å« ÀÚ·áÇüÀ¸·Î ÀÚµ¿ Çüº¯È¯ ÈÄ ¿¬»êÃ³¸®°¡ µÇ±â ¶§¹®¿¡ iNumÀÌ longÇüÀ¸·Î ¹Ù²î°í
-		// longÇü + longÇüÀ¸·Î °á°ú±îÁö longÇüÀ¸·Î µÇ¾úÀ½
-		// longÇüÀÇ °á°ú °ªÀº intÇü¿¡ ´ã±æ ¼ö ¾øÀ¸¹Ç·Î ÄÄÆÄÀÏ ¿¡·¯
+		// ì—°ì‚°ì€ í° ìë£Œí˜•ìœ¼ë¡œ ìë™ í˜•ë³€í™˜ í›„ ì—°ì‚°ì²˜ë¦¬ê°€ ë˜ê¸° ë•Œë¬¸ì— iNumì´ longí˜•ìœ¼ë¡œ ë°”ë€Œê³ 
+		// longí˜• + longí˜•ìœ¼ë¡œ ê²°ê³¼ê¹Œì§€ longí˜•ìœ¼ë¡œ ë˜ì—ˆìŒ
+		// longí˜•ì˜ ê²°ê³¼ ê°’ì€ intí˜•ì— ë‹´ê¸¸ ìˆ˜ ì—†ìœ¼ë¯€ë¡œ ì»´íŒŒì¼ ì—ëŸ¬
 		
 //		int sum1 = iNum + lNum;
-		// ÇØ°á 1. ¼öÇà °úÁ¦¸¦ int·Î °­Á¦ Çüº¯È¯ 
+		// í•´ê²° 1. ìˆ˜í–‰ ê³¼ì œë¥¼ intë¡œ ê°•ì œ í˜•ë³€í™˜ 
 		int sum1 = (int)(iNum + lNum);
 		System.out.println("sum1 : " + sum1);
 		
-		// ÇØ°á 2. longÇüÀ» int·Î °­Á¦ Çüº¯È¯
+		// í•´ê²° 2. longí˜•ì„ intë¡œ ê°•ì œ í˜•ë³€í™˜
 		int sum2 = iNum + (int)lNum;
 		System.out.println("sum2 : " + sum2);
 		
-		// ÇØ°á 3. longÇüÀ¸·Î ÀÚ·áÇüÀ» ¹ŞÀ½
+		// í•´ê²° 3. longí˜•ìœ¼ë¡œ ìë£Œí˜•ì„ ë°›ìŒ
 		long sum3 = iNum + lNum;
 		System.out.println("sum3 : " + sum3);
 		

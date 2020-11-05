@@ -12,17 +12,17 @@ import java.util.Scanner;
 public class Client {
 	public void startClient() {
 		try {
-			// 0. ¼­¹öIP, ¼­¹ö Æ÷Æ®¹øÈ£
+			// 0. ì„œë²„IP, ì„œë²„ í¬íŠ¸ë²ˆí˜¸
 			int port = 8500;
 			String serverIP = InetAddress.getLocalHost().getHostAddress();
 
-			// 1. ¼­¹öÀÇ IPÁÖ¼Ò¿Í ¼­¹ö°¡ Á¤ÇÑ Æ÷Æ® ¹øÈ£¸¦ ¸Å°³º¯¼ö·Î ÇØ¼­ Å¬¶óÀÌ¾ğÆ®¿ë ¼ÒÄÏ°´Ã¼ »ı¼º
-			Socket socket = new Socket(serverIP, port); // ¿¬°á¿¡ ½ÇÆĞÇÒ °æ¿ì null¹İÈ¯
+			// 1. ì„œë²„ì˜ IPì£¼ì†Œì™€ ì„œë²„ê°€ ì •í•œ í¬íŠ¸ ë²ˆí˜¸ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ í•´ì„œ í´ë¼ì´ì–¸íŠ¸ìš© ì†Œì¼“ê°ì²´ ìƒì„±
+			Socket socket = new Socket(serverIP, port); // ì—°ê²°ì— ì‹¤íŒ¨í•  ê²½ìš° nullë°˜í™˜
 
-			// ¼­¹ö¿Í ¿¬°áÀÌ ¼º°øÇÑ °æ¿ì¿¡¸¸ ½ºÆ®¸² ¿ÀÇÂ
+			// ì„œë²„ì™€ ì—°ê²°ì´ ì„±ê³µí•œ ê²½ìš°ì—ë§Œ ìŠ¤íŠ¸ë¦¼ ì˜¤í”ˆ
 			if (socket != null) {
-				// 2. ¼­¹ö¿ÍÀÇ ÀÔÃâ·Â ½ºÆ®¸² ¿ÀÇÂ
-				// 3. º¸Á¶½ºÆ®¸²À» ÅëÇØ ¼º´É °³¼±
+				// 2. ì„œë²„ì™€ì˜ ì…ì¶œë ¥ ìŠ¤íŠ¸ë¦¼ ì˜¤í”ˆ
+				// 3. ë³´ì¡°ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì„±ëŠ¥ ê°œì„ 
 				BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 				// 1. InputStream input = client.getInputStream();
 				// 2. InputStreamReader isr = new InputStreamReader(input);
@@ -34,10 +34,10 @@ public class Client {
 
 				Scanner sc = new Scanner(System.in);
 				do {
-					System.out.println("´ëÈ­ ÀÔ·Â : ");
+					System.out.println("ëŒ€í™” ì…ë ¥ : ");
 					String message = sc.nextLine();
 
-					// 4. ½ºÆ®¸²À» ÅëÇØ ÀĞ°í ¾²±â
+					// 4. ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì½ê³  ì“°ê¸°
 					pw.println(message);
 					pw.flush();
 
@@ -50,7 +50,7 @@ public class Client {
 
 				} while (true);
 
-				// 5. Åë½Å Á¾·á
+				// 5. í†µì‹  ì¢…ë£Œ
 				pw.close();
 				br.close();
 				socket.close();

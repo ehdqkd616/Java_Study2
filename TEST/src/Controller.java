@@ -13,7 +13,7 @@ public class Controller {
 	
 	public void fileSave(String fileName) {
 		
-		Book1 book = new Book1("ÀÚ¹Ù¸¦ Àâ¾Æ¶ó", 30000);
+		Book1 book = new Book1("ìë°”ë¥¼ ì¡ì•„ë¼", 30000);
 		File file = new File(fileName);
 		
 		try (FileOutputStream fos = new FileOutputStream(file)) {

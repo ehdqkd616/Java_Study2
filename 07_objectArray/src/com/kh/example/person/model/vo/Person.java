@@ -26,8 +26,8 @@ public class Person {
 	}
 	
 	public String personInfo() {
-		return "ÀÌ¸§ : " + name + ", ³ªÀÌ : " + age + ", ¼ºº° : " + gender + ", Å° : " + height + 
-				", ¸ö¹«°Ô " + weight;
+		return "ì´ë¦„ : " + name + ", ë‚˜ì´ : " + age + ", ì„±ë³„ : " + gender + ", í‚¤ : " + height + 
+				", ëª¸ë¬´ê²Œ " + weight;
 	}
 	
 	

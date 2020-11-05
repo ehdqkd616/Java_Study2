@@ -22,7 +22,7 @@ public class ArrayPractice {
 	
 	public void practice3() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¾çÀÇ Á¤¼ö : ");
+		System.out.print("ì–‘ì˜ ì •ìˆ˜ : ");
 		int num = sc.nextInt();
 		
 		int[] arr = new int[num];
@@ -34,26 +34,26 @@ public class ArrayPractice {
 	
 	public void practice4() {
 		String[] arr = new String[5];
-		arr[0] = "»ç°ú";
-		arr[1] = "±Ö";
-		arr[2] = "Æ÷µµ";
-		arr[3] = "º¹¼ş¾Æ";
-		arr[4] = "Âü¿Ü";
+		arr[0] = "ì‚¬ê³¼";
+		arr[1] = "ê·¤";
+		arr[2] = "í¬ë„";
+		arr[3] = "ë³µìˆ­ì•„";
+		arr[4] = "ì°¸ì™¸";
 		
 		System.out.println(arr[1]);
 	}
 	
 	public void practice5() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­ : ");
+		System.out.print("ë¬¸ìì—´ : ");
 		String str = sc.nextLine();
-		System.out.print("¹®ÀÚ : ");
+		System.out.print("ë¬¸ì : ");
 		char ch = sc.nextLine().charAt(0);
 		
 		char[] chArr = new char[str.length()];
 		int count = 0;
 		
-		System.out.print(str + "¿¡ " + ch + "°¡ Á¸ÀçÇÏ´Â À§Ä¡(ÀÎµ¦½º) : ");
+		System.out.print(str + "ì— " + ch + "ê°€ ì¡´ì¬í•˜ëŠ” ìœ„ì¹˜(ì¸ë±ìŠ¤) : ");
 		for(int i = 0; i < str.length(); i++) {
 			chArr[i] = str.charAt(i);
 			
@@ -64,31 +64,31 @@ public class ArrayPractice {
 		}
 		
 		System.out.println();
-		System.out.println(ch + " °³¼ö : " + count);
+		System.out.println(ch + " ê°œìˆ˜ : " + count);
 	}
 	
 	public void practice6() {
-		String[] strArr = {"¿ù", "È­", "¼ö", "¸ñ", "±İ", "Åä", "ÀÏ"};
+		String[] strArr = {"ì›”", "í™”", "ìˆ˜", "ëª©", "ê¸ˆ", "í† ", "ì¼"};
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("0 ~ 6 »çÀÌ ¼ıÀÚ ÀÔ·Â : ");
+		System.out.print("0 ~ 6 ì‚¬ì´ ìˆ«ì ì…ë ¥ : ");
 		int num = sc.nextInt();
 		if(num >= 0 && num <= 6) {			
-			System.out.println(strArr[num] + "¿äÀÏ");
+			System.out.println(strArr[num] + "ìš”ì¼");
 		} else {
-			System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+			System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 		}
 	}
 	
 	public void practice7() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Á¤¼ö : ");
+		System.out.print("ì •ìˆ˜ : ");
 		int num = sc.nextInt();
 		int[] arr = new int[num];
 		
 		int sum = 0;
 		for(int i = 0; i < arr.length; i++) {
-			System.out.print("¹è¿­ " + i + "¹øÂ° ÀÎµ¦½º¿¡ ³ÖÀ» °ª : ");
+			System.out.print("ë°°ì—´ " + i + "ë²ˆì§¸ ì¸ë±ìŠ¤ì— ë„£ì„ ê°’ : ");
 			arr[i] = sc.nextInt();
 		}
 		
@@ -97,7 +97,7 @@ public class ArrayPractice {
 			System.out.print(arr[i] + " ");
 		}
 		System.out.println();
-		System.out.println("ÃÑ ÇÕ : " + sum);
+		System.out.println("ì´ í•© : " + sum);
 	}
 	
 	public void practice8() {
@@ -105,7 +105,7 @@ public class ArrayPractice {
 		
 		int[] arr;
 		while(true) {
-			System.out.print("Á¤¼ö : ");
+			System.out.print("ì •ìˆ˜ : ");
 			int num = sc.nextInt();
 			
 			if(num >= 3 && num % 2 != 0) {
@@ -119,7 +119,7 @@ public class ArrayPractice {
 				}
 				break;
 			} else {
-				System.out.println("´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.");
+				System.out.println("ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.");
 			}
 		}
 		
@@ -133,10 +133,10 @@ public class ArrayPractice {
 	}
 	
 	public void practice9() {
-		String[] arr = {"ÈÄ¶óÀÌµå", "¾ç³ä", "ÆÄ´ß", "¸ÅÄŞ", "Ä¡Áî", "°£Àå"};
+		String[] arr = {"í›„ë¼ì´ë“œ", "ì–‘ë…", "íŒŒë‹­", "ë§¤ì½¤", "ì¹˜ì¦ˆ", "ê°„ì¥"};
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Ä¡Å² ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì¹˜í‚¨ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String chicken = sc.nextLine();
 		
 		boolean check = false;
@@ -148,15 +148,15 @@ public class ArrayPractice {
 		}
 		
 		if(check) {
-			System.out.println(chicken + "Ä¡Å² ¹è´Ş °¡´É");
+			System.out.println(chicken + "ì¹˜í‚¨ ë°°ë‹¬ ê°€ëŠ¥");
 		} else {
-			System.out.println(chicken + "Ä¡Å²Àº ¾ø´Â ¸Ş´ºÀÔ´Ï´Ù.");
+			System.out.println(chicken + "ì¹˜í‚¨ì€ ì—†ëŠ” ë©”ë‰´ì…ë‹ˆë‹¤.");
 		}
 	}
 	
 	public void practice10() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÁÖ¹Îµî·Ï¹øÈ£(-Æ÷ÇÔ) : ");
+		System.out.print("ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸(-í¬í•¨) : ");
 		String id = sc.nextLine();
 		
 		char[] chArr = new char[id.length()];
@@ -214,8 +214,8 @@ public class ArrayPractice {
 		}
 		
 		System.out.println();
-		System.out.println("ÃÖ´ë°ª : " + max);
-		System.out.println("ÃÖ¼Ò°ª : " + min);
+		System.out.println("ìµœëŒ€ê°’ : " + max);
+		System.out.println("ìµœì†Œê°’ : " + min);
 	}
 	
 	public void practice13() {
@@ -276,7 +276,7 @@ public class ArrayPractice {
 	
 	public void practice15() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­ : ");
+		System.out.print("ë¬¸ìì—´ : ");
 		String str = sc.nextLine();
 		
 		char[] chArr = new char[str.length()];
@@ -303,7 +303,7 @@ public class ArrayPractice {
 		}
 		
 		int count = 0;
-		System.out.print("¹®ÀÚ¿­¿¡ ÀÖ´Â ¹®ÀÚ : ");
+		System.out.print("ë¬¸ìì—´ì— ìˆëŠ” ë¬¸ì : ");
 		for(int i = 0; i < chArr.length; i++) {
 			if(chArr[i] != '\u0000') {
 				if(i == chArr.length -1) {
@@ -318,12 +318,12 @@ public class ArrayPractice {
 				count++;
 			}
 		}
-		System.out.println("¹®ÀÚ °³¼ö : " + count);
+		System.out.println("ë¬¸ì ê°œìˆ˜ : " + count);
 	}
 	
 	public void practice15_1() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­ : ");
+		System.out.print("ë¬¸ìì—´ : ");
 		String str = sc.nextLine();
 		
 		char[] chArr = new char[str.length()];
@@ -348,7 +348,7 @@ public class ArrayPractice {
 		}
 		
 		int count = 0;
-		System.out.print("¹®ÀÚ¿­¿¡ ÀÖ´Â ¹®ÀÚ : ");
+		System.out.print("ë¬¸ìì—´ì— ìˆëŠ” ë¬¸ì : ");
 		for(int i = 0; i < chArr.length; i++) {
 			if(chArr[i] != '\u0000') {
 				if(i == chArr.length -1) {
@@ -363,12 +363,12 @@ public class ArrayPractice {
 				count++;
 			}
 		}
-		System.out.println("¹®ÀÚ °³¼ö : " + count);
+		System.out.println("ë¬¸ì ê°œìˆ˜ : " + count);
 	}
 	
 	public void practice15_2() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­ : ");
+		System.out.print("ë¬¸ìì—´ : ");
 		String str = sc.nextLine();
 		
 		char[] chArr = new char[str.length()];
@@ -393,7 +393,7 @@ public class ArrayPractice {
 		}
 		
 		int count = 0;
-		System.out.print("¹®ÀÚ¿­¿¡ ÀÖ´Â ¹®ÀÚ : ");
+		System.out.print("ë¬¸ìì—´ì— ìˆëŠ” ë¬¸ì : ");
 		for(int i = 0; i < chArr.length; i++) {
 			if(chArr[i] != '\u0000') {
 				if(i == chArr.length -1) {
@@ -408,28 +408,28 @@ public class ArrayPractice {
 				count++;
 			}
 		}
-		System.out.println("¹®ÀÚ °³¼ö : " + count);
+		System.out.println("ë¬¸ì ê°œìˆ˜ : " + count);
 	}
 	
 	public void practice16() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹è¿­ÀÇ Å©±â¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë°°ì—´ì˜ í¬ê¸°ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		String[] strArr = new String[sc.nextInt()];
 		
 		sc.nextLine();
 		
 		for(int i = 0; i < strArr.length; i++) {
-			System.out.print(i+1 + "¹øÂ° ¹®ÀÚ¿­ : ");
+			System.out.print(i+1 + "ë²ˆì§¸ ë¬¸ìì—´ : ");
 			strArr[i] = sc.nextLine();
 		}
 		
 		String user = null;
 		do {
-			System.out.print("´õ °ªÀ» ÀÔ·ÂÇÏ½Ã°Ú½À´Ï±î?(Y/N) : ");
+			System.out.print("ë” ê°’ì„ ì…ë ¥í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(Y/N) : ");
 			user = sc.nextLine();
 			
 			if(user.toUpperCase().equals("Y")) {
-				System.out.print("´õ ÀÔ·ÂÇÏ°í ½ÍÀº °³¼ö : ");
+				System.out.print("ë” ì…ë ¥í•˜ê³  ì‹¶ì€ ê°œìˆ˜ : ");
 				int add = sc.nextInt();
 				String[] newArr = new String[strArr.length + add];
 				System.arraycopy(strArr, 0, newArr, 0, strArr.length);
@@ -437,7 +437,7 @@ public class ArrayPractice {
 				sc.nextLine();
 				
 				for(int i = strArr.length; i < newArr.length; i++) {
-					System.out.print(i+1 + "¹øÂ° ¹®ÀÚ¿­ : ");
+					System.out.print(i+1 + "ë²ˆì§¸ ë¬¸ìì—´ : ");
 					newArr[i] = sc.nextLine();
 				}
 				

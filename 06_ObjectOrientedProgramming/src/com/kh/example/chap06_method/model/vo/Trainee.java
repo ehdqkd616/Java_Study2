@@ -36,8 +36,8 @@ public class Trainee {
 	}
 	
 	public void info() {
-		System.out.println("ÀÌ¸§ : " + name + ", °­ÀÇ½Ç : " + classRoom + 
-				", ÇĞ¿ø : " + ACADEMY + ", ¼ö¾÷ ½Ã°£ : " + time + ", Á¡¼ö : " +score);
+		System.out.println("ì´ë¦„ : " + name + ", ê°•ì˜ì‹¤ : " + classRoom + 
+				", í•™ì› : " + ACADEMY + ", ìˆ˜ì—… ì‹œê°„ : " + time + ", ì ìˆ˜ : " +score);
 	}
 	
 	

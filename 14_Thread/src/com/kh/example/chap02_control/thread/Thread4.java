@@ -2,11 +2,11 @@ package com.kh.example.chap02_control.thread;
 
 public class Thread4 implements Runnable {
 	
-	// sleep() : ÁöÁ¤µÈ ½Ã°£µ¿¾È ½º·¹µå¸¦ ÀÏ½ÃÁ¤Áö ½ÃÅ°´Â ¸Ş¼Òµå
-	// ÁöÁ¤½Ã°£ÀÌ ´Ù µÇ°Å³ª interrupt()°¡ È£ÃâµÇ¸é
-	// sleep¿¡¼­ ±ú¾î³ª ½ÇÇà´ë±â »óÅÂ°¡ µÊ
-	// interruptÈ£Ãâ ½Ã InterruptException ¿¹¿Ü°¡
-	// ¹ß»ıµÇ¹Ç·Î try-catch¸¦ ÅëÇØ Ã³¸®ÇÒ ¼ö ÀÖÀ½
+	// sleep() : ì§€ì •ëœ ì‹œê°„ë™ì•ˆ ìŠ¤ë ˆë“œë¥¼ ì¼ì‹œì •ì§€ ì‹œí‚¤ëŠ” ë©”ì†Œë“œ
+	// ì§€ì •ì‹œê°„ì´ ë‹¤ ë˜ê±°ë‚˜ interrupt()ê°€ í˜¸ì¶œë˜ë©´
+	// sleepì—ì„œ ê¹¨ì–´ë‚˜ ì‹¤í–‰ëŒ€ê¸° ìƒíƒœê°€ ë¨
+	// interruptí˜¸ì¶œ ì‹œ InterruptException ì˜ˆì™¸ê°€
+	// ë°œìƒë˜ë¯€ë¡œ try-catchë¥¼ í†µí•´ ì²˜ë¦¬í•  ìˆ˜ ìˆìŒ
 	
 	
 	
@@ -15,12 +15,12 @@ public class Thread4 implements Runnable {
 		try {
 			for (int i = 0; i <= 10; i++) {
 				Thread.sleep(1000);
-				System.out.println(i + "ÃÊ");
+				System.out.println(i + "ì´ˆ");
 			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println("Ä«¿îÆ® Á¾·á");
+		System.out.println("ì¹´ìš´íŠ¸ ì¢…ë£Œ");
 	}
 }

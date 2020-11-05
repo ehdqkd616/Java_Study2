@@ -12,37 +12,37 @@ public class TokenMenu {
 		int menuNum = 0;
 		
 		do {
-			System.out.println("1. ÁöÁ¤ ¹®ÀÚ¿­");
-			System.out.println("2. ÀÔ·Â ¹®ÀÚ¿­");
-			System.out.println("9. ÇÁ·Î±×·¥ ³¡³»±â");
-			System.out.print("¸Ş´º ¹øÈ£ : ");
+			System.out.println("1. ì§€ì • ë¬¸ìì—´");
+			System.out.println("2. ì…ë ¥ ë¬¸ìì—´");
+			System.out.println("9. í”„ë¡œê·¸ë¨ ëë‚´ê¸°");
+			System.out.print("ë©”ë‰´ ë²ˆí˜¸ : ");
 			menuNum = sc.nextInt();
 			
 			switch(menuNum) {
 			case 1: tokenMenu(); break;
 			case 2: inputMenu(); break;
-			case 9: System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù."); break;
-			default: System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.");
+			case 9: System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤."); break;
+			default: System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.");
 			}
 		} while(menuNum != 9);
 	}
 	
 	public void tokenMenu() {
 		String str = "J a v a P r o g r a m ";
-		System.out.println("ÅäÅ« Ã³¸® Àü ±ÛÀÚ : " + str);
-		System.out.println("ÅäÅ« Ã³¸® Àü °³¼ö : " + str.length());
+		System.out.println("í† í° ì²˜ë¦¬ ì „ ê¸€ì : " + str);
+		System.out.println("í† í° ì²˜ë¦¬ ì „ ê°œìˆ˜ : " + str.length());
 		String result = tc.afterToken(str);
-		System.out.println("ÅäÅ« Ã³¸® ÈÄ ±ÛÀÚ : " + result);
-		System.out.println("ÅäÅ« Ã³¸® ÈÄ °³¼ö : " + result.length());
-		System.out.println("¸ğµÎ ´ë¹®ÀÚ·Î º¯È¯ : " + result.toUpperCase());
+		System.out.println("í† í° ì²˜ë¦¬ í›„ ê¸€ì : " + result);
+		System.out.println("í† í° ì²˜ë¦¬ í›„ ê°œìˆ˜ : " + result.length());
+		System.out.println("ëª¨ë‘ ëŒ€ë¬¸ìë¡œ ë³€í™˜ : " + result.toUpperCase());
 	}
 	
 	public void inputMenu() {
-		System.out.print("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String input = sc.next();
-		System.out.println("Ã¹ ±ÛÀÚ ´ë¹®ÀÚ : " + tc.firstCap(input));
-		System.out.print("Ã£À» ¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì²« ê¸€ì ëŒ€ë¬¸ì : " + tc.firstCap(input));
+		System.out.print("ì°¾ì„ ë¬¸ì í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		char one = sc.next().charAt(0);
-		System.out.println(one + " ¹®ÀÚ°¡ µé¾î°£ °³¼ö : " + tc.findChar(input, one));
+		System.out.println(one + " ë¬¸ìê°€ ë“¤ì–´ê°„ ê°œìˆ˜ : " + tc.findChar(input, one));
 	}
 }

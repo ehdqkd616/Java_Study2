@@ -1,31 +1,31 @@
 package com.kh.operator;
 
 public class B_InDecrease {
-	// Áõ°¨ ¿¬»êÀÚ : ++, --
-	// 1¾¿ Áõ°¡ÇÏ°Å³ª °¨¼ÒÇÏ´Â ¿¬»êÀÚ
-	// À§Ä¡¿¡ µû¶ó¼­ ÀüÀ§ ¿¬»êÀÚ È¤Àº ÈÄÀ§ ¿¬»êÀÚ·Î ³ª´¸
+	// ì¦ê° ì—°ì‚°ì : ++, --
+	// 1ì”© ì¦ê°€í•˜ê±°ë‚˜ ê°ì†Œí•˜ëŠ” ì—°ì‚°ì
+	// ìœ„ì¹˜ì— ë”°ë¼ì„œ ì „ìœ„ ì—°ì‚°ì í˜¹ì€ í›„ìœ„ ì—°ì‚°ìë¡œ ë‚˜ë‰¨
 	
 	public void method1() {
-		// ÀüÀ§ Áõ°¨ ¿¬»êÀÚ Å×½ºÆ®
+		// ì „ìœ„ ì¦ê° ì—°ì‚°ì í…ŒìŠ¤íŠ¸
 		int num1 = 10;
-		System.out.println("ÀüÀ§ Áõ°¨ ¿¬»êÀÚ Àû¿ë Àü : " + num1);
-		System.out.println("++num1À» 1È¸ ¼öÇà ÈÄ °á°ú : " + (++num1));
-		System.out.println("++num1À» 2È¸ ¼öÇà ÈÄ °á°ú : " + (++num1));
-		System.out.println("++num1À» 3È¸ ¼öÇà ÈÄ °á°ú : " + (++num1));
-		System.out.println("++num1À» 4È¸ ¼öÇà ÈÄ °á°ú : " + (++num1));
-		System.out.println("++num1À» 5È¸ ¼öÇà ÈÄ °á°ú : " + (++num1));
-		System.out.println("ÀüÀ§ Áõ°¨ ¿¬»êÀÚ Àû¿ë ÈÄ : " + num1);
+		System.out.println("ì „ìœ„ ì¦ê° ì—°ì‚°ì ì ìš© ì „ : " + num1);
+		System.out.println("++num1ì„ 1íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (++num1));
+		System.out.println("++num1ì„ 2íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (++num1));
+		System.out.println("++num1ì„ 3íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (++num1));
+		System.out.println("++num1ì„ 4íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (++num1));
+		System.out.println("++num1ì„ 5íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (++num1));
+		System.out.println("ì „ìœ„ ì¦ê° ì—°ì‚°ì ì ìš© í›„ : " + num1);
 		
-		// ÈÄÀ§ Áõ°¨ ¿¬»êÀÚ Å×½ºÆ®
+		// í›„ìœ„ ì¦ê° ì—°ì‚°ì í…ŒìŠ¤íŠ¸
 		int num2 = 10;
 
-		System.out.println("ÀüÀ§ Áõ°¨ ¿¬»êÀÚ Àû¿ë Àü : " + num2);
-		System.out.println("num2++À» 1È¸ ¼öÇà ÈÄ °á°ú : " + (num2++));
-		System.out.println("num2++À» 2È¸ ¼öÇà ÈÄ °á°ú : " + (num2++));
-		System.out.println("num2++À» 3È¸ ¼öÇà ÈÄ °á°ú : " + (num2++));
-		System.out.println("num2++À» 4È¸ ¼öÇà ÈÄ °á°ú : " + (num2++));
-		System.out.println("num2++À» 5È¸ ¼öÇà ÈÄ °á°ú : " + (num2++));
-		System.out.println("ÈÄÀ§ Áõ°¨ ¿¬»êÀÚ Àû¿ë ÈÄ : " + num2);
+		System.out.println("ì „ìœ„ ì¦ê° ì—°ì‚°ì ì ìš© ì „ : " + num2);
+		System.out.println("num2++ì„ 1íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (num2++));
+		System.out.println("num2++ì„ 2íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (num2++));
+		System.out.println("num2++ì„ 3íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (num2++));
+		System.out.println("num2++ì„ 4íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (num2++));
+		System.out.println("num2++ì„ 5íšŒ ìˆ˜í–‰ í›„ ê²°ê³¼ : " + (num2++));
+		System.out.println("í›„ìœ„ ì¦ê° ì—°ì‚°ì ì ìš© í›„ : " + num2);
 		
 	}
 	
@@ -33,8 +33,8 @@ public class B_InDecrease {
 		
 		int age = 20;
 		
-		System.out.println("age--´Â? " + age--); // 21 --> 20
-		System.out.println("ÇöÀç ³ªÀÌ´Â ? " + age); // 20
+		System.out.println("age--ëŠ”? " + age--); // 21 --> 20
+		System.out.println("í˜„ì¬ ë‚˜ì´ëŠ” ? " + age); // 20
 		
 	}
 	

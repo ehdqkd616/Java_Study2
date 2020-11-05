@@ -1,12 +1,12 @@
 package com.kh.operator;
 
 public class G_Triple {
-	// Á¶°Ç½Ä ? ½Ä1 : ½Ä2;
-	// Á¶°Ç½ÄÀÇ °á°ú´Â Ç×»ó ³í¸®°ª(true/false)ÀÌ ³ª¿À°Ô ÇØ¾ß ÇÔ
+	// ì¡°ê±´ì‹ ? ì‹1 : ì‹2;
+	// ì¡°ê±´ì‹ì˜ ê²°ê³¼ëŠ” í•­ìƒ ë…¼ë¦¬ê°’(true/false)ì´ ë‚˜ì˜¤ê²Œ í•´ì•¼ í•¨
 	
 	public void method1() {
-		// ÀÔ·ÂÇÑ Á¤¼ö°¡ ÇÔ¼öÀÎÁö ¾Æ´ÑÁö ÆÇº°
-		// ¾ç¼ö¸é "¾ç¼ö´Ù", ¾ç¼ö°¡ ¾Æ´Ï¸é "¾ç¼ö°¡ ¾Æ´Ï´Ù"¶ó´Â ¹®Àå Ãâ·Â (ÀÌ ¶§, 0µµ ¾ç¼ö·Î ÇÔ²² º½)
+		// ìž…ë ¥í•œ ì •ìˆ˜ê°€ í•¨ìˆ˜ì¸ì§€ ì•„ë‹Œì§€ íŒë³„
+		// ì–‘ìˆ˜ë©´ "ì–‘ìˆ˜ë‹¤", ì–‘ìˆ˜ê°€ ì•„ë‹ˆë©´ "ì–‘ìˆ˜ê°€ ì•„ë‹ˆë‹¤"ë¼ëŠ” ë¬¸ìž¥ ì¶œë ¥ (ì´ ë•Œ, 0ë„ ì–‘ìˆ˜ë¡œ í•¨ê»˜ ë´„)
 		
 		
 		

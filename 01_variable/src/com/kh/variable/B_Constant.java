@@ -2,23 +2,23 @@ package com.kh.variable;
 
 public class B_Constant {
 	public void finalConstant() {
-		//¸Ş¼Òµå ±â´É ±¸Çö
+		//ë©”ì†Œë“œ ê¸°ëŠ¥ êµ¬í˜„
 		int age;
 		final int AGE;
 		
 		age = 20;
 		AGE = 20;
 		
-		System.out.println("º¯¼ö age °ª : "+age);
-		System.out.println("»ó¼ö AGE °ª : "+AGE);
+		System.out.println("ë³€ìˆ˜ age ê°’ : "+age);
+		System.out.println("ìƒìˆ˜ AGE ê°’ : "+AGE);
 		
-		// 20À¸·Î µÇ¾î ÀÖ´Â °ªÀ» 30À¸·Î º¯°æ
+		// 20ìœ¼ë¡œ ë˜ì–´ ìˆëŠ” ê°’ì„ 30ìœ¼ë¡œ ë³€ê²½
 		age = 30;
 		// AGE = 30;
 		// The final local variable AGE may already have been assigned
 		
-		System.out.println("º¯¼ö age °ª : "+age);
-		System.out.println("»ó¼ö AGE °ª : "+AGE);
+		System.out.println("ë³€ìˆ˜ age ê°’ : "+age);
+		System.out.println("ìƒìˆ˜ AGE ê°’ : "+AGE);
 		
 	}
 

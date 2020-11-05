@@ -149,14 +149,14 @@ public class DateController {
 
 	public String printDate(int year, int month, int day) {
 		Calendar c = new GregorianCalendar(year, month, day);
-		SimpleDateFormat sdf = new SimpleDateFormat("E¿äÀÏ");
+		SimpleDateFormat sdf = new SimpleDateFormat("Eìš”ì¼");
 		String result = sdf.format(c);
 		return result;
 	}
 
 	public String printToday() {
 		Calendar c = new GregorianCalendar();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy³â mm¿ù ddÀÏ E¿äÀÏ");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyë…„ mmì›” ddì¼ Eìš”ì¼");
 		String result = sdf.format(c);
 		return result;
 	}

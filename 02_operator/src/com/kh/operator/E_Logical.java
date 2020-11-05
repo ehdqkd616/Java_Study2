@@ -3,44 +3,44 @@ package com.kh.operator;
 import java.util.Scanner;
 
 public class E_Logical {
-	// && : ±×¸®°í, ~ÇÏ¸é¼­(~¸é¼­)
-	// || : ¶Ç´Â, ~ÀÌ°Å³ª(~°Å³ª)
+	// && : ê·¸ë¦¬ê³ , ~í•˜ë©´ì„œ(~ë©´ì„œ)
+	// || : ë˜ëŠ”, ~ì´ê±°ë‚˜(~ê±°ë‚˜)
 	
 	public void method1() {
-		// ÀÔ·ÂÇÑ Á¤¼ö °ªÀÌ 1 ~ 100 »çÀÌÀÇ ¼ıÀÚÀÎÁö È®ÀÎ
+		// ì…ë ¥í•œ ì •ìˆ˜ ê°’ì´ 1 ~ 100 ì‚¬ì´ì˜ ìˆ«ìì¸ì§€ í™•ì¸
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Á¤¼ö ÇÏ³ª ÀÔ·Â : ");
+		System.out.println("ì •ìˆ˜ í•˜ë‚˜ ì…ë ¥ : ");
 		int num = sc.nextInt();
 		
-		// 1 ~ 100 »çÀÌÀÇ ¼ıÀÚ
-		// ¼ıÀÚ°¡ 1º¸´Ù Å©°Å³ª °°°í 100º¸´Ù ÀÛ°Å³ª °°´Ù
+		// 1 ~ 100 ì‚¬ì´ì˜ ìˆ«ì
+		// ìˆ«ìê°€ 1ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ê³  100ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ë‹¤
 		boolean result = (num >= 1 && num <= 100);
-		System.out.println("1ºÎÅÍ 100»çÀÌÀÇ ¼ıÀÚÀÔ´Ï±î? " + result);
+		System.out.println("1ë¶€í„° 100ì‚¬ì´ì˜ ìˆ«ìì…ë‹ˆê¹Œ? " + result);
 			
 	}
 	
 	public void method2() {
-		// ÀÔ·ÂÇÑ ¹®ÀÚ °ªÀÌ ´ë¹®ÀÚÀÎÁö È®ÀÎ
+		// ì…ë ¥í•œ ë¬¸ì ê°’ì´ ëŒ€ë¬¸ìì¸ì§€ í™•ì¸
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("¹®ÀÚ ÇÏ³ª ÀÔ·Â : ");
+		System.out.println("ë¬¸ì í•˜ë‚˜ ì…ë ¥ : ");
 		String str = sc.nextLine();
 		char ch = str.charAt(0);
 		
-		// ÀÔ·ÂÇÑ ¹®ÀÚ °ªÀÌ ´ë¹®ÀÚ´Ù
-		// ch°¡ AºÎÅÍ Z »çÀÌ¿¡ ÀÖ´Ù
-		// ch°¡ Aº¸´Ù Å©°Å³ª °°°í ch°¡ Zº¸´Ù ÀÛ°Å³ª °°´Ù
+		// ì…ë ¥í•œ ë¬¸ì ê°’ì´ ëŒ€ë¬¸ìë‹¤
+		// chê°€ Aë¶€í„° Z ì‚¬ì´ì— ìˆë‹¤
+		// chê°€ Aë³´ë‹¤ í¬ê±°ë‚˜ ê°™ê³  chê°€ Zë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ë‹¤
 		boolean result = (ch >= 'A' && ch <= 'Z');
-		System.out.println("¿µ¾î ´ë¹®ÀÚ°¡ ¸Â½À´Ï±î? " + result);
+		System.out.println("ì˜ì–´ ëŒ€ë¬¸ìê°€ ë§ìŠµë‹ˆê¹Œ? " + result);
 				
-		System.out.println("°è¼Ó ÇÏ½Ã·Á¸é y È¤Àº Y¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		// y È¤Àº YÀÎÁö È®ÀÎ
+		System.out.println("ê³„ì† í•˜ì‹œë ¤ë©´ y í˜¹ì€ Yë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		// y í˜¹ì€ Yì¸ì§€ í™•ì¸
 		str = sc.nextLine();
 		ch = str.charAt(0);
 		
 		boolean result2 = (ch == 'y' || ch == 'Y');
-		System.out.println("°è¼Ó ÇÏ°Ú´Ù°í ÇÏ¼Ì½À´Ï±î? " + result2);
+		System.out.println("ê³„ì† í•˜ê² ë‹¤ê³  í•˜ì…¨ìŠµë‹ˆê¹Œ? " + result2);
 		
 	}
 	

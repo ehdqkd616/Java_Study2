@@ -35,9 +35,9 @@ public class Member {
 	
 	
 	public void memberInfo() {
-		System.out.println("¾ÆÀÌµğ : " + memberId + ", ºñ¹Ğ¹øÈ£ : " + memberPwd + 
-				", ÀÌ¸§ : " + memberName + ", ³ªÀÌ : " + age + ", ¼ºº° : " + gender +
-				", ÀüÈ­¹øÈ£ : " + phone + ", ÀÌ¸ŞÀÏ : " + email);
+		System.out.println("ì•„ì´ë”” : " + memberId + ", ë¹„ë°€ë²ˆí˜¸ : " + memberPwd + 
+				", ì´ë¦„ : " + memberName + ", ë‚˜ì´ : " + age + ", ì„±ë³„ : " + gender +
+				", ì „í™”ë²ˆí˜¸ : " + phone + ", ì´ë©”ì¼ : " + email);
 	}
 	
 }

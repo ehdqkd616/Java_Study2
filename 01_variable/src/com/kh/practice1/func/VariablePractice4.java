@@ -6,18 +6,18 @@ public class VariablePractice4 {
 	
 	public void practiceMethod() {
 		
-	// ¿µ¾î ¹®ÀÚ¿­ °ªÀ» Å°º¸µå·Î ÀÔ·Â ¹Ş¾Æ ¹®ÀÚ¿¡¼­ ¾Õ¿¡¼­ ¼¼ °³¸¦ Ãâ·ÂÇÏ¼¼¿ä.
+	// ì˜ì–´ ë¬¸ìì—´ ê°’ì„ í‚¤ë³´ë“œë¡œ ì…ë ¥ ë°›ì•„ ë¬¸ìì—ì„œ ì•ì—ì„œ ì„¸ ê°œë¥¼ ì¶œë ¥í•˜ì„¸ìš”.
 	
 		Scanner sc = new Scanner(System.in);
 		
 		String str;
 		int i;
 		
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		str = sc.nextLine();
 		
 		for(i=0; i<3; i++) {
-			System.out.printf("%d ¹øÂ° ¹®ÀÚ : %c \n", i+1, str.charAt(i));
+			System.out.printf("%d ë²ˆì§¸ ë¬¸ì : %c \n", i+1, str.charAt(i));
 		}
 		
 	}

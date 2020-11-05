@@ -9,10 +9,10 @@ public class FILE {
 		String serverIP;
 		try {
 		serverIP = InetAddress.getLocalHost().getHostAddress();
-		// 2. ¼ÒÄÏ °´Ã¼ »ı¼º : »ı¼º°ú µ¿½Ã¿¡ ¼­¹ö¿¡ ¿¬°á ¿äÃ»µÊ
+		// 2. ì†Œì¼“ ê°ì²´ ìƒì„± : ìƒì„±ê³¼ ë™ì‹œì— ì„œë²„ì— ì—°ê²° ìš”ì²­ë¨
 		Socket socket = new Socket(serverIP, port);
-		// ¿¬°á ½ÇÆĞ´Â null ¸®ÅÏµÊ
-		//ÀÌÇÏ ÄÚµå Áß°£ »ı·«.....
+		// ì—°ê²° ì‹¤íŒ¨ëŠ” null ë¦¬í„´ë¨
+		//ì´í•˜ ì½”ë“œ ì¤‘ê°„ ìƒëµ.....
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

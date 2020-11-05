@@ -7,7 +7,7 @@ public class Run {
 
 	public static void main(String[] args) {
 	
-		Person p1 = new Person("±è¿¬¿ì", 24, 'M', 180.1, 65.6);
+		Person p1 = new Person("ê¹€ì—°ìš°", 24, 'M', 180.1, 65.6);
 		
 		System.out.println(p1.personInfo());
 	

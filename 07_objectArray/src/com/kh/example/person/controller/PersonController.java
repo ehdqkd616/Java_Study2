@@ -3,17 +3,17 @@ package com.kh.example.person.controller;
 import com.kh.example.person.model.vo.Person;
 
 public class PersonController {
-	// °´Ã¼ ¹è¿­ == °´Ã¼(·¹ÆÛ·±½º º¯¼ö)¿¡ ´ëÇÑ ¹è¿­
+	// ê°ì²´ ë°°ì—´ == ê°ì²´(ë ˆí¼ëŸ°ìŠ¤ ë³€ìˆ˜)ì— ëŒ€í•œ ë°°ì—´
 	
 	public void method1() {
 		Person[] pArr = new Person[5];
-		// Person°´Ã¼°¡ µé¾î°¥ ¼ö ÀÖ´Â 5°³ÀÇ °ø°£ »ı¼º
+		// Personê°ì²´ê°€ ë“¤ì–´ê°ˆ ìˆ˜ ìˆëŠ” 5ê°œì˜ ê³µê°„ ìƒì„±
 		
-		pArr[0] = new Person("±è¿¬¿ì", 24, 'M', 180.1, 65.6);
-		pArr[1] = new Person("±è¹Ùº¸", 24, 'W', 185.2, 50.7);
-		pArr[2] = new Person("±è¶Ë°³", 24, 'M', 175.3, 70.8);
-		pArr[3] = new Person("±è·çµğ", 24, 'M', 170.4, 75.9);
-		pArr[4] = new Person("±è¿¬¾Æ", 24, 'W', 160.5, 45.1);
+		pArr[0] = new Person("ê¹€ì—°ìš°", 24, 'M', 180.1, 65.6);
+		pArr[1] = new Person("ê¹€ë°”ë³´", 24, 'W', 185.2, 50.7);
+		pArr[2] = new Person("ê¹€ë˜¥ê°œ", 24, 'M', 175.3, 70.8);
+		pArr[3] = new Person("ê¹€ë£¨ë””", 24, 'M', 170.4, 75.9);
+		pArr[4] = new Person("ê¹€ì—°ì•„", 24, 'W', 160.5, 45.1);
 		
 		System.out.println("pArr : " + pArr);
 		
@@ -23,7 +23,7 @@ public class PersonController {
 			System.out.println("pArr[" + i + "] : " + pArr[i]);
 		}
 		
-		// ÀÎµ¦½º º°·Î °´Ã¼¸¦ »ı¼ºÇØ¼­ ´ëÀÔÇØ¾ß ÇÔ
+		// ì¸ë±ìŠ¤ ë³„ë¡œ ê°ì²´ë¥¼ ìƒì„±í•´ì„œ ëŒ€ì…í•´ì•¼ í•¨
 		
 		System.out.println();
 		
@@ -37,9 +37,9 @@ public class PersonController {
 	
 	public void method2() {
 		Person[] pArr = {
-				new Person("½ÅÀ¯¼·", 27, 'W', 173.1, 60.4),
-				new Person("½Å¼·¼·", 7, 'W', 50.2, 6.5),
-				new Person("½ÅÂ¯±¸", 17, 'W', 170.3, 65.6)};
+				new Person("ì‹ ìœ ì„­", 27, 'W', 173.1, 60.4),
+				new Person("ì‹ ì„­ì„­", 7, 'W', 50.2, 6.5),
+				new Person("ì‹ ì§±êµ¬", 17, 'W', 170.3, 65.6)};
 		
 		System.out.println("pArr : " + pArr);
 		
@@ -49,7 +49,7 @@ public class PersonController {
 			System.out.println("pArr[" + i + "] : " + pArr[i]);
 		}
 		
-		// ÀÎµ¦½º º°·Î °´Ã¼¸¦ »ı¼ºÇØ¼­ ´ëÀÔÇØ¾ß ÇÔ
+		// ì¸ë±ìŠ¤ ë³„ë¡œ ê°ì²´ë¥¼ ìƒì„±í•´ì„œ ëŒ€ì…í•´ì•¼ í•¨
 		
 		System.out.println();
 		

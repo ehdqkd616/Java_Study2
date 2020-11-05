@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class F_KeyboardInput {
 	
 	public void inputScanner1() {
-		// ÀÌ¸§, ³ªÀÌ, Å°(¼Ò¼öÁ¡)¸¦ ¹Ş¾Æ¿Í Ãâ·ÂÇÔ
+		// ì´ë¦„, ë‚˜ì´, í‚¤(ì†Œìˆ˜ì )ë¥¼ ë°›ì•„ì™€ ì¶œë ¥í•¨
 		Scanner sc = new Scanner(System.in);
 		
 		
-		String name = "±è¿¬¿ì";
+		String name = "ê¹€ì—°ìš°";
 		int age = 24;
 		double height = 172.1;
 		
-		System.out.println(name + "´ÔÀº" + age + "¼¼ÀÌ¸ç, Å°´Â" + height + "cmÀÔ´Ï´Ù.");
+		System.out.println(name + "ë‹˜ì€" + age + "ì„¸ì´ë©°, í‚¤ëŠ”" + height + "cmì…ë‹ˆë‹¤.");
 		
-		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		name = sc.next();
 		
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		age = sc.nextInt();
 		
-		System.out.println("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		height = sc.nextDouble();
 				
-		System.out.println(name + "´ÔÀº " + age + "¼¼ÀÌ¸ç, Å°´Â" + height + "cmÀÔ´Ï´Ù.");
+		System.out.println(name + "ë‹˜ì€ " + age + "ì„¸ì´ë©°, í‚¤ëŠ”" + height + "cmì…ë‹ˆë‹¤.");
 		
 		sc.close();
 		
@@ -38,78 +38,78 @@ public class F_KeyboardInput {
 //		int age = 0;
 //		String address;
 //		
-//		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 //		name = sc.next();
 //		
-//		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //		age = sc.nextInt();
 //		
-//		System.out.println("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-//		address = sc.next(); // °­³²±¸ ¿ª»ïµ¿ÀÌ¶ó°í ÇÏ¸é °­³²±¸¸¸ ³ª¿È(¶ç¾î¾²±â·Î ±¸ºĞÁş±â ¶§¹®¿¡)
+//		System.out.println("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+//		address = sc.next(); // ê°•ë‚¨êµ¬ ì—­ì‚¼ë™ì´ë¼ê³  í•˜ë©´ ê°•ë‚¨êµ¬ë§Œ ë‚˜ì˜´(ë„ì–´ì“°ê¸°ë¡œ êµ¬ë¶„ì§“ê¸° ë•Œë¬¸ì—)
 //		address = sc.nextLine();
 		
 		
 		/** 
 		next()
-			¶ç¾î¾²±â ºÒ°¡(¶ç¾î¾²±â¸¦ ±¸ºĞÀÚ·Î ¹ŞÀ½)
+			ë„ì–´ì“°ê¸° ë¶ˆê°€(ë„ì–´ì“°ê¸°ë¥¼ êµ¬ë¶„ìë¡œ ë°›ìŒ)
 		nextLine()
-			¶ç¾î¾²±â °¡´É(¶ç¾î¾²±â±îÁö ¸ğµÎ ¹®ÀÚ¿­·Î ¹Ş¾Æ¼­ °¡Áö°í ¿È)		
+			ë„ì–´ì“°ê¸° ê°€ëŠ¥(ë„ì–´ì“°ê¸°ê¹Œì§€ ëª¨ë‘ ë¬¸ìì—´ë¡œ ë°›ì•„ì„œ ê°€ì§€ê³  ì˜´)		
 		*/
 		
-		// ÁÖ¼Ò¸¦ ¹ŞÀ» ¶§ nextLine() »ì¸®±â
-		// »ì¸®±â 1. nextLine() Ãß°¡
+		// ì£¼ì†Œë¥¼ ë°›ì„ ë•Œ nextLine() ì‚´ë¦¬ê¸°
+		// ì‚´ë¦¬ê¸° 1. nextLine() ì¶”ê°€
 //		String name;
 //		int age = 0;
 //		String address;
 //		
-//		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 //		name = sc.next();
 //		
-//		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //		age = sc.nextInt();
 //		
 //		sc.nextLine();
 //		
-//		System.out.println("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //		address = sc.nextLine();
 		
-		// »ì¸®±â 2. age¸¦ ¹ŞÀ» ¶§ ¿£ÅÍ°¡ ³²Áö ¾Êµµ·Ï nextLine()À» ¾´ ÈÄ ÆÄ½ÌÇÏ±â
-		// ÆÄ½Ì(parsing) : ¹®ÀÚ¿­(String)·Î ¹Ş¾Æ¿Â °ÍÀ» ´Ù¸¥ ÇüÀ¸·Î ¹Ù²ãÁÖ´Â °Í
+		// ì‚´ë¦¬ê¸° 2. ageë¥¼ ë°›ì„ ë•Œ ì—”í„°ê°€ ë‚¨ì§€ ì•Šë„ë¡ nextLine()ì„ ì“´ í›„ íŒŒì‹±í•˜ê¸°
+		// íŒŒì‹±(parsing) : ë¬¸ìì—´(String)ë¡œ ë°›ì•„ì˜¨ ê²ƒì„ ë‹¤ë¥¸ í˜•ìœ¼ë¡œ ë°”ê¿”ì£¼ëŠ” ê²ƒ
 //		String name;
 //		String stringAge;
 //		int age;
 //		String address;
 //		
-//		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 //		name = sc.next();
 //		
-//		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //		stringAge = sc.nextLine();
 //		age = Integer.parseInt(stringAge);
 //		
-//		System.out.println("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //		address = sc.nextLine();
 		
 //		String name;
 //		int age = 0;
 //		String address;
 //		
-//		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 //		name = sc.nextLine();
 //		
-//		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //		try { 
 //			age = Integer.parseInt(sc.nextLine());
 //		} catch(NumberFormatException e) {
 //			e.printStackTrace();
 //		}
 //		
-//		System.out.println("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.println("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //		address = sc.nextLine();
 		
 		
 		
-//		System.out.println(name + "´ÔÀº " + age + "¼¼ÀÌ¸ç, »ç´Â °÷Àº " + address + "ÀÔ´Ï´Ù.");
+//		System.out.println(name + "ë‹˜ì€ " + age + "ì„¸ì´ë©°, ì‚¬ëŠ” ê³³ì€ " + address + "ì…ë‹ˆë‹¤.");
 		
 		
 		String name;
@@ -119,22 +119,22 @@ public class F_KeyboardInput {
 		char gender;
 		String stringGender;
 		
-		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		name = sc.next();
 		
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		stringAge = sc.nextLine();
 		age = Integer.parseInt(stringAge);
 		
-		System.out.println("ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		address = sc.nextLine();
 		
-		System.out.println("¼ºº°À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì„±ë³„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 //		gender = sc.nextLine().charAt(0);
 		stringGender = sc.nextLine();
 		gender = stringGender.charAt(0);
 		
-		System.out.println(name + "´ÔÀº " + age + "¼¼ÀÌ¸ç, ¼ºº°Àº  " + gender + "ÀÔ´Ï´Ù.");
+		System.out.println(name + "ë‹˜ì€ " + age + "ì„¸ì´ë©°, ì„±ë³„ì€  " + gender + "ì…ë‹ˆë‹¤.");
 		
 		sc.close();
 		

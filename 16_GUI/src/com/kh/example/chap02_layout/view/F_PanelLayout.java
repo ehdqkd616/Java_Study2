@@ -14,10 +14,10 @@ public class F_PanelLayout extends JFrame{
 		
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
-		// ·¹ÀÌ¾Æ¿ôÀ» ¼³Á¤ÇÏÁö ¾Ê´Â´Ù¸é ±âº»ÀûÀ¸·Î BorderLayout
-		// ±âº» ·¹ÀÌ¾Æ¿ô±îÁö ¾ø¾Ö°Ú´Ù´Â ¶æ
+		// ë ˆì´ì•„ì›ƒì„ ì„¤ì •í•˜ì§€ ì•ŠëŠ”ë‹¤ë©´ ê¸°ë³¸ì ìœ¼ë¡œ BorderLayout
+		// ê¸°ë³¸ ë ˆì´ì•„ì›ƒê¹Œì§€ ì—†ì• ê² ë‹¤ëŠ” ëœ»
 		
-		JLabel lb = new JLabel("ÀÌ¸§ : ");
+		JLabel lb = new JLabel("ì´ë¦„ : ");
 		lb.setLocation(50, 100);
 		lb.setSize(150, 50);
 		panel.add(lb);
@@ -26,7 +26,7 @@ public class F_PanelLayout extends JFrame{
 		tf.setBounds(110, 100, 200, 50);
 		panel.add(tf);
 		
-		JButton btn = new JButton("Ãß °¡");
+		JButton btn = new JButton("ì¶” ê°€");
 		btn.setBounds(350, 100, 100, 50);
 		panel.add(btn);
 		

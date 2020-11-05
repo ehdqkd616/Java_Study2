@@ -6,7 +6,7 @@ public class VariablePractice1 {
 	
 	public void practiceMethod() {
 		
-		// ÀÌ¸§, ¼ºº°, ³ªÀÌ, Å°¸¦ »ç¿ëÀÚ¿¡°Ô ÀÔ·Â ¹Ş¾Æ °¢°¢ÀÇ °ªÀ» º¯¼ö¿¡ ´ã°í Ãâ·ÂÇÏ¼¼¿ä.
+		// ì´ë¦„, ì„±ë³„, ë‚˜ì´, í‚¤ë¥¼ ì‚¬ìš©ìì—ê²Œ ì…ë ¥ ë°›ì•„ ê°ê°ì˜ ê°’ì„ ë³€ìˆ˜ì— ë‹´ê³  ì¶œë ¥í•˜ì„¸ìš”.
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -16,25 +16,25 @@ public class VariablePractice1 {
 		char gender;
 		
 		
-		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		name = sc.nextLine();
 		
-		System.out.println("¼ºº°À» ÀÔ·ÂÇÏ¼¼¿ä(³²/¿©) : ");
+		System.out.println("ì„±ë³„ì„ ì…ë ¥í•˜ì„¸ìš”(ë‚¨/ì—¬) : ");
 		gender = sc.nextLine().charAt(0);
 		
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		try { 
 			age = Integer.parseInt(sc.nextLine());
 		} catch(NumberFormatException e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä(cm) : ");
+		System.out.println("í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš”(cm) : ");
 		height = sc.nextDouble();
 		
 		sc.nextLine();
 		
-		System.out.printf("Å° %3.1fÀÎ %cÀÚ %s´Ô ¹İ°©½À´Ï´Ù^^ \n", height, gender, age, name);
+		System.out.printf("í‚¤ %3.1fì¸ %cì %së‹˜ ë°˜ê°‘ìŠµë‹ˆë‹¤^^ \n", height, gender, age, name);
 	}
 	
 }

@@ -23,22 +23,22 @@ public class A_Text {
 		panel.setLayout(new GridLayout(3, 2));
 //		panel.setSize(800, 500);
 		
-		// TextField : ±ÛÀ» ÀÔ·ÂÇÒ ¼ö ÀÖ´Â ÅØ½ºÆ® »óÀÚ
+		// TextField : ê¸€ì„ ì…ë ¥í•  ìˆ˜ ìˆëŠ” í…ìŠ¤íŠ¸ ìƒì
 		JTextField id = new JTextField(30);
 		panel.add(new JLabel("ID"));
 		panel.add(id);
 		
-		// PasswordField : ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÒ ¼ö ÀÖ´Â TextField
-		// ÀÔ·ÂµÇ´Â °ªÀ» È­¸é »ó¿¡¼­ º¼ ¼ö ¾øÀ¸¸ç, ÇÑ±Û ÀÔ·Â ºÒ°¡
+		// PasswordField : ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•  ìˆ˜ ìˆëŠ” TextField
+		// ì…ë ¥ë˜ëŠ” ê°’ì„ í™”ë©´ ìƒì—ì„œ ë³¼ ìˆ˜ ì—†ìœ¼ë©°, í•œê¸€ ì…ë ¥ ë¶ˆê°€
 		JPasswordField password = new JPasswordField(30);
 		panel.add(new JLabel("PASSWORD"));
 		panel.add(password);
 		
-		// TextArea : ¿©·¯ ÁÙÀÇ ÅØ½ºÆ®¸¦ ÀÔ·ÂÇÒ ¼ö ÀÖ´Â »óÀÚ
+		// TextArea : ì—¬ëŸ¬ ì¤„ì˜ í…ìŠ¤íŠ¸ë¥¼ ì…ë ¥í•  ìˆ˜ ìˆëŠ” ìƒì
 		JTextArea textArea = new JTextArea(10, 30);
 		textArea.setEditable(false);
 		
-		JButton btn = new JButton("º¸³»±â");
+		JButton btn = new JButton("ë³´ë‚´ê¸°");
 		
 		frame.add(panel, BorderLayout.NORTH);
 		frame.add(textArea, BorderLayout.CENTER);

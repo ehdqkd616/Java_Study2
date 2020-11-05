@@ -7,21 +7,21 @@ public class CastingPractice2_Answer {
 	public void method() {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("±¹¾î : ");
+		System.out.print("êµ­ì–´ : ");
 		double kor = sc.nextDouble();
-		System.out.print("¿µ¾î : ");
+		System.out.print("ì˜ì–´ : ");
 		double eng = sc.nextDouble();
-		System.out.print("¼öÇĞ : ");
+		System.out.print("ìˆ˜í•™ : ");
 		double math = sc.nextDouble();
 		
 //		double sum = kor + eng + math;
 //		double avg = sum / 3;
-//		System.out.println("ÃÑÁ¡ : " + sum);
-//		System.out.println("Æò±Õ : " + avg);
+//		System.out.println("ì´ì  : " + sum);
+//		System.out.println("í‰ê·  : " + avg);
 		int sum = (int)(kor + eng + math);
 		int avg = sum / 3;
-		System.out.println("ÃÑÁ¡ : " + sum);
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("ì´ì  : " + sum);
+		System.out.println("í‰ê·  : " + avg);
 	}
 	
 	

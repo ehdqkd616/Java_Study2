@@ -6,23 +6,23 @@ public class VariablePractice2 {
 	
 	public void practiceMethod() {
 		
-		// Å°º¸µå·Î Á¤¼ö µÎ °³¸¦ ÀÔ·Â ¹Ş¾Æ µÎ ¼öÀÇ ÇÕ, Â÷, °ö, ³ª´©±âÇÑ ¸òÀ» Ãâ·ÂÇÏ¼¼¿ä.
+		// í‚¤ë³´ë“œë¡œ ì •ìˆ˜ ë‘ ê°œë¥¼ ì…ë ¥ ë°›ì•„ ë‘ ìˆ˜ì˜ í•©, ì°¨, ê³±, ë‚˜ëˆ„ê¸°í•œ ëª«ì„ ì¶œë ¥í•˜ì„¸ìš”.
 		
 		Scanner sc = new Scanner(System.in);
 		
 		int a;
 		int b;
 		
-		System.out.println("Ã¹ ¹øÂ° Á¤¼ö : ");
+		System.out.println("ì²« ë²ˆì§¸ ì •ìˆ˜ : ");
 		a = sc.nextInt();
 		
-		System.out.println("µÎ ¹øÂ° Á¤¼ö : ");
+		System.out.println("ë‘ ë²ˆì§¸ ì •ìˆ˜ : ");
 		b = sc.nextInt();
 		
-		System.out.printf("´õÇÏ±â °á°ú : %d\n", a+b);
-		System.out.printf("»©±â °á°ú : %d\n", a-b);
-		System.out.printf("°öÇÏ±â °á°ú : %d\n", a*b);
-		System.out.printf("³ª´©±â °á°ú : %d\n", a/b);
+		System.out.printf("ë”í•˜ê¸° ê²°ê³¼ : %d\n", a+b);
+		System.out.printf("ë¹¼ê¸° ê²°ê³¼ : %d\n", a-b);
+		System.out.printf("ê³±í•˜ê¸° ê²°ê³¼ : %d\n", a*b);
+		System.out.printf("ë‚˜ëˆ„ê¸° ê²°ê³¼ : %d\n", a/b);
 	}
 	
 }

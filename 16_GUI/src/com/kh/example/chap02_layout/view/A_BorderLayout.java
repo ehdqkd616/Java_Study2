@@ -14,15 +14,15 @@ public class A_BorderLayout extends JFrame {
 		setBounds(300, 200, 800, 500);
 		
 		// BorderLayout
-		//		±¸¿ªÀ» 5°³(µ¿, ¼­, ³², ºÏ, °¡¿îµ¥)·Î ³ª´©¾î ¹èÄ¡
+		//		êµ¬ì—­ì„ 5ê°œ(ë™, ì„œ, ë‚¨, ë¶, ê°€ìš´ë°)ë¡œ ë‚˜ëˆ„ì–´ ë°°ì¹˜
 		setLayout(new BorderLayout());
 		
-		// ¹öÆ°(ÄÄÆ÷³ÍÆ®) »ı¼º
-//		JButton northB = new JButton("ºÏ");
-//		JButton southB = new JButton("³²");
-//		JButton westB = new JButton("¼­");
-//		JButton eastB = new JButton("µ¿");
-//		JButton centerB = new JButton("°¡¿îµ¥");
+		// ë²„íŠ¼(ì»´í¬ë„ŒíŠ¸) ìƒì„±
+//		JButton northB = new JButton("ë¶");
+//		JButton southB = new JButton("ë‚¨");
+//		JButton westB = new JButton("ì„œ");
+//		JButton eastB = new JButton("ë™");
+//		JButton centerB = new JButton("ê°€ìš´ë°");
 //		
 //		add(northB, "North");
 //		add(southB, "South");
@@ -30,11 +30,11 @@ public class A_BorderLayout extends JFrame {
 //		add(eastB, "East");
 //		add(centerB, "Center");
 		
-		add(new JButton("ºÏ"), "North");
-		add(new JButton("³²"), "South");
-		add(new JButton("¼­"), "West");
-		add(new JButton("µ¿"), "East");
-		add(new JButton("°¡¿îµ¥"), "Center");
+		add(new JButton("ë¶"), "North");
+		add(new JButton("ë‚¨"), "South");
+		add(new JButton("ì„œ"), "West");
+		add(new JButton("ë™"), "East");
+		add(new JButton("ê°€ìš´ë°"), "Center");
 		
 		
 		setVisible(true);

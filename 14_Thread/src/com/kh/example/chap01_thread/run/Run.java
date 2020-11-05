@@ -22,19 +22,19 @@ public class Run {
 		Thread3 thread3 = new Thread3();
 //		thread3.start();
 		
-		// ¿ì¼±¼øÀ§ ¾Ë¾Æº¸±â
-		System.out.println("thread1ÀÇ ¿ì¼±¼øÀ§ : " + thread1.getPriority());
-		System.out.println("thread2ÀÇ ¿ì¼±¼øÀ§ : " + thread2.getPriority());
-		System.out.println("thread3ÀÇ ¿ì¼±¼øÀ§ : " + thread3.getPriority());
+		// ìš°ì„ ìˆœìœ„ ì•Œì•„ë³´ê¸°
+		System.out.println("thread1ì˜ ìš°ì„ ìˆœìœ„ : " + thread1.getPriority());
+		System.out.println("thread2ì˜ ìš°ì„ ìˆœìœ„ : " + thread2.getPriority());
+		System.out.println("thread3ì˜ ìš°ì„ ìˆœìœ„ : " + thread3.getPriority());
 		
-		// ¿ì¼±¼øÀ§ º¯°æÇÏ±â
+		// ìš°ì„ ìˆœìœ„ ë³€ê²½í•˜ê¸°
 		thread1.setPriority(3);
 		thread2.setPriority(Thread.MAX_PRIORITY);
 		thread3.setPriority(Thread.MIN_PRIORITY);
 		
-		System.out.println("thread1ÀÇ ¿ì¼±¼øÀ§ : " + thread1.getPriority());
-		System.out.println("thread2ÀÇ ¿ì¼±¼øÀ§ : " + thread2.getPriority());
-		System.out.println("thread3ÀÇ ¿ì¼±¼øÀ§ : " + thread3.getPriority());
+		System.out.println("thread1ì˜ ìš°ì„ ìˆœìœ„ : " + thread1.getPriority());
+		System.out.println("thread2ì˜ ìš°ì„ ìˆœìœ„ : " + thread2.getPriority());
+		System.out.println("thread3ì˜ ìš°ì„ ìˆœìœ„ : " + thread3.getPriority());
 		
 		thread1.start();
 		thread2.start();

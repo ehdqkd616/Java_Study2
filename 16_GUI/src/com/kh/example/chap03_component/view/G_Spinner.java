@@ -22,13 +22,13 @@ public class G_Spinner {
 		JPanel panel = new JPanel();
 		
 		// List Spinner
-		String[] items = {"¼Ò¼³", "ÀâÁö", "Àü°ø¼­Àû", "Ãë¹Ì"};
+		String[] items = {"ì†Œì„¤", "ì¡ì§€", "ì „ê³µì„œì ", "ì·¨ë¯¸"};
 		SpinnerListModel listModel = new SpinnerListModel(items);
 		JSpinner listSpinner = new JSpinner(listModel);
 		panel.add(listSpinner);
 		
 		// Number Spinner
-		SpinnerNumberModel numberModel = new SpinnerNumberModel(1, 0, 9, 1); // ½ÃÀÛ °ª, min, max, Áõ°¡ °ª
+		SpinnerNumberModel numberModel = new SpinnerNumberModel(1, 0, 9, 1); // ì‹œì‘ ê°’, min, max, ì¦ê°€ ê°’
 		JSpinner numberSpinner = new JSpinner(numberModel);
 		panel.add(numberSpinner);
 		
@@ -36,11 +36,11 @@ public class G_Spinner {
 		Calendar calendar = Calendar.getInstance();
 		Date today = calendar.getTime();
 		
-		calendar.add(Calendar.YEAR, -50); // ÇöÀç ³¯Â¥¿¡¼­ 50³âÀÌ °¨¼ÒµÈ ³¯Â¥°¡ calendar¿¡ ¼¼ÆÃµÊ
+		calendar.add(Calendar.YEAR, -50); // í˜„ì¬ ë‚ ì§œì—ì„œ 50ë…„ì´ ê°ì†Œëœ ë‚ ì§œê°€ calendarì— ì„¸íŒ…ë¨
 		Date start = calendar.getTime();
 		
 		calendar.add(Calendar.YEAR, 100);
-		// ÀÌ¹Ì calendar´Â 50³â ÀüÀ¸·Î ¼¼ÆÃÀÌ µÇ¾îÀÖ´Â »óÅÂÀÌ´Ï ÇöÀç·ÎºÎÅÍ 50³â µÚ¸¦ º¸·Á¸é 100À» ´õÇØ¾ß ÇÔ
+		// ì´ë¯¸ calendarëŠ” 50ë…„ ì „ìœ¼ë¡œ ì„¸íŒ…ì´ ë˜ì–´ìˆëŠ” ìƒíƒœì´ë‹ˆ í˜„ì¬ë¡œë¶€í„° 50ë…„ ë’¤ë¥¼ ë³´ë ¤ë©´ 100ì„ ë”í•´ì•¼ í•¨
 		Date end = calendar.getTime(); 
 		
 		SpinnerDateModel dateModel = new SpinnerDateModel(today, start, end, Calendar.YEAR);
@@ -48,7 +48,7 @@ public class G_Spinner {
 		dateSpinner.setEditor(new JSpinner.DateEditor(dateSpinner, "yyyy/MM/dd"));
 		panel.add(dateSpinner);
 		
-		JButton button = new JButton("Àü¼Û");
+		JButton button = new JButton("ì „ì†¡");
 		panel.add(button);
 		
 		frame.add(panel, "North");

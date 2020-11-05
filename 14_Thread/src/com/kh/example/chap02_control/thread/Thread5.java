@@ -2,17 +2,17 @@ package com.kh.example.chap02_control.thread;
 
 public class Thread5 implements Runnable {
 	
-	// interrupt() : ½º·¹µå ÀÛ¾÷À» Ãë¼Ò½ÃÅ°´Â ¸Ş¼Òµå
+	// interrupt() : ìŠ¤ë ˆë“œ ì‘ì—…ì„ ì·¨ì†Œì‹œí‚¤ëŠ” ë©”ì†Œë“œ
 	
 	// void interrupt()
-	//		ÇöÀç ½º·¹µå ³»ºÎ¿¡ interrupted¶ó´Â ÇÊµå °ªÀ»
-	//		true·Î ¹Ù²ãÁÜÀ¸·Î½á ½º·¹µå¿¡ ÇöÀç ÀÛ¾÷À» Ãë¼ÒÇÏ¶ó°í ¿äÃ»
+	//		í˜„ì¬ ìŠ¤ë ˆë“œ ë‚´ë¶€ì— interruptedë¼ëŠ” í•„ë“œ ê°’ì„
+	//		trueë¡œ ë°”ê¿”ì¤Œìœ¼ë¡œì¨ ìŠ¤ë ˆë“œì— í˜„ì¬ ì‘ì—…ì„ ì·¨ì†Œí•˜ë¼ê³  ìš”ì²­
 	
 	// boolean isInterrupted()
-	//		½º·¹µåÀÇ interruptedÇÊµå °ª ¹İÈ¯
+	//		ìŠ¤ë ˆë“œì˜ interruptedí•„ë“œ ê°’ ë°˜í™˜
 	
 	// static boolean interrupted()
-	//		ÇöÀç ½º·¹µåÀÇ interrupted»óÅÂ¸¦ ¹İÈ¯ÇÏ°í false·Î °ªÀ¸·Î ÃÊ±âÈ­
+	//		í˜„ì¬ ìŠ¤ë ˆë“œì˜ interruptedìƒíƒœë¥¼ ë°˜í™˜í•˜ê³  falseë¡œ ê°’ìœ¼ë¡œ ì´ˆê¸°í™”
 	
 	@Override
 	public void run() {
@@ -21,10 +21,10 @@ public class Thread5 implements Runnable {
 		while(count < 10) {
 			try {
 				Thread.sleep(1000);
-				System.out.println((++count) + "ÃÊ");
+				System.out.println((++count) + "ì´ˆ");
 			} catch (InterruptedException e) {
-				System.out.println(count + "ÃÊ¿¡ Ä«¿îÆ® Á¾·á");
-				// InterruptedExceptionÀÌ ¹ß»ıÇÏ¸é¼­ interrupted °ª »óÅÂ¸¦ false·Î ÃÊ±âÈ­
+				System.out.println(count + "ì´ˆì— ì¹´ìš´íŠ¸ ì¢…ë£Œ");
+				// InterruptedExceptionì´ ë°œìƒí•˜ë©´ì„œ interrupted ê°’ ìƒíƒœë¥¼ falseë¡œ ì´ˆê¸°í™”
 				Thread.currentThread().interrupt();
 				break;
 			}

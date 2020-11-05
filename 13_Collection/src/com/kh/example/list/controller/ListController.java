@@ -14,96 +14,96 @@ public class ListController {
 //		ArrayList list1 = new ArrayList(); == ArrayList<Object> list1 = new ArrayList<Object>();
 		
 		ArrayList<String>list1 = new ArrayList<String>();
-		// ÄÃ·º¼Ç ÀåÁ¡ 3. ¿©·¯ °³ Å¸ÀÔ ÀúÀå °¡´É
-		list1.add("±è¿¬¿ì");
+		// ì»¬ë ‰ì…˜ ì¥ì  3. ì—¬ëŸ¬ ê°œ íƒ€ì… ì €ì¥ ê°€ëŠ¥
+		list1.add("ê¹€ì—°ìš°");
 //		list1.add(10);
-//		list1.add(new Student("±è¿¬¿ì", 99));
+//		list1.add(new Student("ê¹€ì—°ìš°", 99));
 		
-//		Student s1 = new Student("Å×½ºÆ®", 20);
+//		Student s1 = new Student("í…ŒìŠ¤íŠ¸", 20);
 //		list1.add(s1);
 		
-		ArrayList<Student> list = new ArrayList<Student>(3); //Å©±â°¡ 3ÀÎ ArrayList »ı¼º
+		ArrayList<Student> list = new ArrayList<Student>(3); //í¬ê¸°ê°€ 3ì¸ ArrayList ìƒì„±
 		
-		list.add(new Student("±è¿¬¿ì", 10));
-		System.out.println("ÇöÀç list¿¡ ´ã±ä element °³¼ö : " + list.size());
+		list.add(new Student("ê¹€ì—°ìš°", 10));
+		System.out.println("í˜„ì¬ listì— ë‹´ê¸´ element ê°œìˆ˜ : " + list.size());
 		System.out.println("list : " + list);
 		
 		
-		list.add(new Student("±è´Ş", 20));
-		System.out.println("ÇöÀç list¿¡ ´ã±ä element °³¼ö : " + list.size());
+		list.add(new Student("ê¹€ë‹¬", 20));
+		System.out.println("í˜„ì¬ listì— ë‹´ê¸´ element ê°œìˆ˜ : " + list.size());
 		System.out.println("list : " + list);
 		
-		list.add(new Student("±èº°", 30));
-		System.out.println("ÇöÀç list¿¡ ´ã±ä element °³¼ö : " + list.size());
+		list.add(new Student("ê¹€ë³„", 30));
+		System.out.println("í˜„ì¬ listì— ë‹´ê¸´ element ê°œìˆ˜ : " + list.size());
 		System.out.println("list : " + list);
-		// ÄÃ·º¼Ç ÀåÁ¡ 1. Å©±â Á¦¾à ¾øÀ½
+		// ì»¬ë ‰ì…˜ ì¥ì  1. í¬ê¸° ì œì•½ ì—†ìŒ
 		
-		// ÄÃ·º¼Ç ÀåÁ¡ 2. Ãß°¡/»èÁ¦/Á¤·Ä µîÀÇ ±â´ÉÃ³¸® °£´Ü
-		// add(int index, E e) : index¹øÂ° ÀÎµ¦½º¿¡ e Ãß°¡
-		list.add(0, new Student("±è¹ä", 100));
-		System.out.println("ÇöÀç list¿¡ ´ã±ä element °³¼ö : " + list.size());
-		System.out.println("list : " + list);
-		
-		// 3ÀÎµ¦½º¿¡ °­°Ç°­ ÇĞ»ı 40Á¡ »ğÀÔ
-		list.add(3, new Student("°­°Ç°­", 40));
-		System.out.println("ÇöÀç list¿¡ ´ã±ä element °³¼ö : " + list.size());
+		// ì»¬ë ‰ì…˜ ì¥ì  2. ì¶”ê°€/ì‚­ì œ/ì •ë ¬ ë“±ì˜ ê¸°ëŠ¥ì²˜ë¦¬ ê°„ë‹¨
+		// add(int index, E e) : indexë²ˆì§¸ ì¸ë±ìŠ¤ì— e ì¶”ê°€
+		list.add(0, new Student("ê¹€ë°¥", 100));
+		System.out.println("í˜„ì¬ listì— ë‹´ê¸´ element ê°œìˆ˜ : " + list.size());
 		System.out.println("list : " + list);
 		
-		// remove(int index) : index¹øÂ° °´Ã¼ »èÁ¦
+		// 3ì¸ë±ìŠ¤ì— ê°•ê±´ê°• í•™ìƒ 40ì  ì‚½ì…
+		list.add(3, new Student("ê°•ê±´ê°•", 40));
+		System.out.println("í˜„ì¬ listì— ë‹´ê¸´ element ê°œìˆ˜ : " + list.size());
+		System.out.println("list : " + list);
+		
+		// remove(int index) : indexë²ˆì§¸ ê°ì²´ ì‚­ì œ
 		list.remove(1);
-		System.out.println("ÇöÀç list¿¡ ´ã±ä element °³¼ö : " + list.size());
+		System.out.println("í˜„ì¬ listì— ë‹´ê¸´ element ê°œìˆ˜ : " + list.size());
 		System.out.println("list : " + list);
 		
-		// remove(Object obj) Student¿¡¼­ equals ±¸ÇöÇØÁà¾ß ÇÔ
-		list.remove(new Student("°­°Ç°­", 40));
-		System.out.println("ÇöÀç list¿¡ ´ã±ä element °³¼ö : " + list.size());
+		// remove(Object obj) Studentì—ì„œ equals êµ¬í˜„í•´ì¤˜ì•¼ í•¨
+		list.remove(new Student("ê°•ê±´ê°•", 40));
+		System.out.println("í˜„ì¬ listì— ë‹´ê¸´ element ê°œìˆ˜ : " + list.size());
 		System.out.println("list : " + list);
 		
-		// Á¤·Ä 1. Collections ÀÌ¿ë
-//		list1.add("±è¹Ùº¸");
-//		list1.add("±è¹äÆÃ");
-//		list1.add("±è°³¶Ë");
-//		System.out.println("list1 Á¤·Ä Àü : " + list1);
+		// ì •ë ¬ 1. Collections ì´ìš©
+//		list1.add("ê¹€ë°”ë³´");
+//		list1.add("ê¹€ë°¥íŒ…");
+//		list1.add("ê¹€ê°œë˜¥");
+//		System.out.println("list1 ì •ë ¬ ì „ : " + list1);
 //		Collections.sort(list1);
-//		System.out.println("list1 Á¤·Ä ÈÄ : " + list1);
+//		System.out.println("list1 ì •ë ¬ í›„ : " + list1);
 		
-		System.out.println("list Á¤·Ä Àü(Collections) : " + list);
+		System.out.println("list ì •ë ¬ ì „(Collections) : " + list);
 		Collections.sort(list);
-		System.out.println("list Á¤·Ä ÈÄ(Collections) : " + list);
+		System.out.println("list ì •ë ¬ í›„(Collections) : " + list);
 		
-		list.add(new Student("Å×½ºÆ®", 85));
+		list.add(new Student("í…ŒìŠ¤íŠ¸", 85));
 				
 		
-		// Á¤·Ä 2. List ¾È¿¡ ÀÖ´Â sort()¸Ş¼Òµå ÀÌ¿ë
+		// ì •ë ¬ 2. List ì•ˆì— ìˆëŠ” sort()ë©”ì†Œë“œ ì´ìš©
 		list.sort(new StudentCompare());
-		System.out.println("list Á¤·Ä ÈÄ(list.sort()) : " + list);
+		System.out.println("list ì •ë ¬ í›„(list.sort()) : " + list);
 		
-		// set(int index, E e) : index¹øÂ° ÀÎµ¦½º¿¡ ÀÖ´Â ¿ä¼Ò E¿ä¼Ò ¼öÁ¤
-		list.set(2, new Student("±è·çµğ", 90));
+		// set(int index, E e) : indexë²ˆì§¸ ì¸ë±ìŠ¤ì— ìˆëŠ” ìš”ì†Œ Eìš”ì†Œ ìˆ˜ì •
+		list.set(2, new Student("ê¹€ë£¨ë””", 90));
 		System.out.println("list : " + list);
 		
-		// get(int index) : index¹øÂ° ÀÎµ¦½º¿¡ ÀÖ´Â ¿ä¼Ò °¡Áö°í ¿È
+		// get(int index) : indexë²ˆì§¸ ì¸ë±ìŠ¤ì— ìˆëŠ” ìš”ì†Œ ê°€ì§€ê³  ì˜´
 		Student getStudent = list.get(2);
 		System.out.println(getStudent);
 		System.out.println("list : " + list);
 		
-		// contains(Objact o) : o°¡ ¸®½ºÆ®¿¡ Á¸ÀçÇÑ´Ù¸é true¹İÈ¯
-		// indexOf(Object o) : o°¡ ¸®½ºÆ®¿¡ À§Ä¡ÇÏ´Â ÀÎµ¦½º ¹øÈ£ ¹İÈ¯
-		boolean bool1 = list.contains(new Student("±è·çµğ", 90));
-		System.out.println("90Á¡ÀÎ ±è·çµğ ÇĞ»ıÀÌ ÀÖ½À´Ï±î? " + bool1);
-		boolean bool2 = list.contains(new Student("±è·çµğ", 14));
-		System.out.println("90Á¡ÀÎ ±è·çµğ ÇĞ»ıÀÌ ÀÖ½À´Ï±î? " + bool2);
+		// contains(Objact o) : oê°€ ë¦¬ìŠ¤íŠ¸ì— ì¡´ì¬í•œë‹¤ë©´ trueë°˜í™˜
+		// indexOf(Object o) : oê°€ ë¦¬ìŠ¤íŠ¸ì— ìœ„ì¹˜í•˜ëŠ” ì¸ë±ìŠ¤ ë²ˆí˜¸ ë°˜í™˜
+		boolean bool1 = list.contains(new Student("ê¹€ë£¨ë””", 90));
+		System.out.println("90ì ì¸ ê¹€ë£¨ë”” í•™ìƒì´ ìˆìŠµë‹ˆê¹Œ? " + bool1);
+		boolean bool2 = list.contains(new Student("ê¹€ë£¨ë””", 14));
+		System.out.println("90ì ì¸ ê¹€ë£¨ë”” í•™ìƒì´ ìˆìŠµë‹ˆê¹Œ? " + bool2);
 		
-		int index1 = list.indexOf(new Student("±è·çµğ", 90));
-		System.out.println("90Á¡ÀÎ ±è·çµğ ÇĞ»ıÀº ¸î ¹øÂ°¿¡ ÀÖ½À´Ï±î? " + index1);
-		int index2 = list.indexOf(new Student("±è·çµğ", 14));
-		System.out.println("14Á¡ÀÎ ±è·çµğ ÇĞ»ıÀº ¸î ¹øÂ°¿¡ ÀÖ½À´Ï±î? " + index2);
+		int index1 = list.indexOf(new Student("ê¹€ë£¨ë””", 90));
+		System.out.println("90ì ì¸ ê¹€ë£¨ë”” í•™ìƒì€ ëª‡ ë²ˆì§¸ì— ìˆìŠµë‹ˆê¹Œ? " + index1);
+		int index2 = list.indexOf(new Student("ê¹€ë£¨ë””", 14));
+		System.out.println("14ì ì¸ ê¹€ë£¨ë”” í•™ìƒì€ ëª‡ ë²ˆì§¸ì— ìˆìŠµë‹ˆê¹Œ? " + index2);
 		
-		// clear() : ÀúÀåµÈ ¸ğµç °´Ã¼ »èÁ¦
-		// isEmpty() : ¸®½ºÆ®°¡ ºñ¾úÀ» ¶§ true ¹İÈ¯
-		System.out.println("list°¡ ºñ¾ú½À´Ï±î? " + list.isEmpty());
+		// clear() : ì €ì¥ëœ ëª¨ë“  ê°ì²´ ì‚­ì œ
+		// isEmpty() : ë¦¬ìŠ¤íŠ¸ê°€ ë¹„ì—ˆì„ ë•Œ true ë°˜í™˜
+		System.out.println("listê°€ ë¹„ì—ˆìŠµë‹ˆê¹Œ? " + list.isEmpty());
 		list.clear();
-		System.out.println("list°¡ ÁøÂ¥ ºñ¾ú½À´Ï°¡? " + list.isEmpty());
+		System.out.println("listê°€ ì§„ì§œ ë¹„ì—ˆìŠµë‹ˆê°€? " + list.isEmpty());
 		System.out.println("list : " + list);
 	}
 	

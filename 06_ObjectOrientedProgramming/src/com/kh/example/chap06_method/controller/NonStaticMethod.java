@@ -8,7 +8,7 @@ public class NonStaticMethod {
 	
 	
 	public Trainee method6() {
-		Trainee t = new Trainee("±è¿¬¿ì", 'G', "¿ÀÀü", 90.0);
+		Trainee t = new Trainee("ê¹€ì—°ìš°", 'G', "ì˜¤ì „", 90.0);
 		System.out.println("NonStaticMethod t : " + t);
 		
 		return t;

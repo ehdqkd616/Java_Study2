@@ -8,11 +8,11 @@ public class StudentController {
 	public static final int CUT_LINE = 60;
 	
 	public StudentController() {
-		sArr[0] = new Student("¹Ú½Å¿ì", "ÀÚ¹Ù", 100);
-		sArr[1] = new Student("¹éµ¿Çö", "µğºñ", 50);
-		sArr[2] = new Student("°­º¸¶÷", "È­¸é", 85);
-		sArr[3] = new Student("±è¿ë½Â", "¼­¹ö", 60);
-		sArr[4] = new Student("¹Ú¼­Áø", "ÀÚ¹Ù", 20);
+		sArr[0] = new Student("ë°•ì‹ ìš°", "ìë°”", 100);
+		sArr[1] = new Student("ë°±ë™í˜„", "ë””ë¹„", 50);
+		sArr[2] = new Student("ê°•ë³´ëŒ", "í™”ë©´", 85);
+		sArr[3] = new Student("ê¹€ìš©ìŠ¹", "ì„œë²„", 60);
+		sArr[4] = new Student("ë°•ì„œì§„", "ìë°”", 20);
 	}
 	
 	public Student[] printStudent() {

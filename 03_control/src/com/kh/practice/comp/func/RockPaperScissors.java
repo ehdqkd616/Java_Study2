@@ -3,13 +3,13 @@ package com.kh.practice.comp.func;
 import java.util.Scanner;
 
 public class RockPaperScissors {
-	// ÄÄÇ»ÅÍ¿Í °¡À§¹ÙÀ§º¸ ÇÏ´Â °ÔÀÓ
+	// ì»´í“¨í„°ì™€ ê°€ìœ„ë°”ìœ„ë³´ í•˜ëŠ” ê²Œì„
 	public void rps() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("´ç½ÅÀÇ ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+		System.out.print("ë‹¹ì‹ ì˜ ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 		String name = sc.nextLine();
 		
-//		String userStr = ""; //null·Î ÇÏ¸é null.equals°¡ µé¾î°¡±â ¶§¹®¿¡ ¿¡·¯³²
+//		String userStr = ""; //nullë¡œ í•˜ë©´ null.equalsê°€ ë“¤ì–´ê°€ê¸° ë•Œë¬¸ì— ì—ëŸ¬ë‚¨
 		int count = 0;
 		int win = 0;
 		int draw = 0;
@@ -19,38 +19,38 @@ public class RockPaperScissors {
 			int comInt = (int)(Math.random() * 3); // 0, 1, 2
 			String comStr = null;
 			switch(comInt) {
-			case 0: comStr = "°¡À§"; break;
-			case 1: comStr = "¹ÙÀ§"; break;
-			case 2: comStr = "º¸"; break;
+			case 0: comStr = "ê°€ìœ„"; break;
+			case 1: comStr = "ë°”ìœ„"; break;
+			case 2: comStr = "ë³´"; break;
 			}
 			
-			System.out.print("°¡À§¹ÙÀ§º¸ : ");
+			System.out.print("ê°€ìœ„ë°”ìœ„ë³´ : ");
 			String userStr = sc.nextLine();
 			
 			
 			String result = null;
-			String winStr = "ÀÌ°å½À´Ï´Ù !";
-			String loseStr = "Á³½À´Ï´Ù ¤Ğ¤Ğ";
+			String winStr = "ì´ê²¼ìŠµë‹ˆë‹¤ !";
+			String loseStr = "ì¡ŒìŠµë‹ˆë‹¤ ã… ã… ";
 			
-			if(userStr.equals("¹ÙÀ§") || userStr.equals("°¡À§") || userStr.equals("º¸")) {				
+			if(userStr.equals("ë°”ìœ„") || userStr.equals("ê°€ìœ„") || userStr.equals("ë³´")) {				
 				if(comStr.equals(userStr)) {
-					result = "ºñ°å½À´Ï´Ù.";
+					result = "ë¹„ê²¼ìŠµë‹ˆë‹¤.";
 					draw++;
 				} else {
-					if(comStr.equals("°¡À§")) {
+					if(comStr.equals("ê°€ìœ„")) {
 						switch(userStr) {
-						case "¹ÙÀ§": result = winStr; win++; break;
-						case "º¸": result = loseStr; break;
+						case "ë°”ìœ„": result = winStr; win++; break;
+						case "ë³´": result = loseStr; break;
 						}
-					} else if(comStr.equals("¹ÙÀ§")) {
-						if(userStr.equals("º¸")) {
+					} else if(comStr.equals("ë°”ìœ„")) {
+						if(userStr.equals("ë³´")) {
 							result = winStr;
 							win++;
 						} else {
 							result = loseStr;
 						}
 					} else {
-						result = userStr.equals("°¡À§") ? winStr : loseStr;
+						result = userStr.equals("ê°€ìœ„") ? winStr : loseStr;
 						if(result.equals(winStr)) {
 							win++;
 						}
@@ -58,20 +58,20 @@ public class RockPaperScissors {
 				}
 //				count++;
 			} else if(!userStr.equals("exit")){
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+				System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 				System.out.println();
 				continue;
 			} else {
 				break;
 			}
 			count++;
-			System.out.println("ÄÄÇ»ÅÍ : " + comStr);
+			System.out.println("ì»´í“¨í„° : " + comStr);
 			System.out.println(name + " : " + userStr);
 			System.out.println(result);
 			System.out.println();
 		}
 		
-//		System.out.println(count + "Àü " + win + "½Â " + draw + "¹« " + (count-win-draw) + "ÆĞ");
-		System.out.printf("%dÀü %d½Â %d¹« %dÆĞ", count, win, draw, (count-win-draw));
+//		System.out.println(count + "ì „ " + win + "ìŠ¹ " + draw + "ë¬´ " + (count-win-draw) + "íŒ¨");
+		System.out.printf("%dì „ %dìŠ¹ %dë¬´ %díŒ¨", count, win, draw, (count-win-draw));
 	}
 }

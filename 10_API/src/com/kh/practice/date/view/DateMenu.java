@@ -15,12 +15,12 @@ public class DateMenu {
 		int menuNum = 0;
 		
 		do {
-			System.out.println("1. µğµ¥ÀÌ ±¸ÇÏ±â");
-			System.out.println("2. ±âÁØ ÀÏ·ÎºÎÅÍ NÀÏ Â° µÇ´Â ³¯ ±¸ÇÏ±â");
-			System.out.println("3. ÇØ´ç ³¯Â¥ ¿äÀÏ ±¸ÇÏ±â");
-			System.out.println("4. ¿À´Ã ³¯Â¥ ±¸ÇÏ±â");
-			System.out.println("9. ³¡³»±â");
-			System.out.print("¸Ş´º ¹øÈ£ : ");
+			System.out.println("1. ë””ë°ì´ êµ¬í•˜ê¸°");
+			System.out.println("2. ê¸°ì¤€ ì¼ë¡œë¶€í„° Nì¼ ì§¸ ë˜ëŠ” ë‚  êµ¬í•˜ê¸°");
+			System.out.println("3. í•´ë‹¹ ë‚ ì§œ ìš”ì¼ êµ¬í•˜ê¸°");
+			System.out.println("4. ì˜¤ëŠ˜ ë‚ ì§œ êµ¬í•˜ê¸°");
+			System.out.println("9. ëë‚´ê¸°");
+			System.out.print("ë©”ë‰´ ë²ˆí˜¸ : ");
 			menuNum = sc.nextInt();
 			
 			switch(menuNum) {
@@ -28,76 +28,76 @@ public class DateMenu {
 			case 2: calcDay(); break;
 			case 3: printDate(); break;
 			case 4: printToday(); break;
-			case 9: System.out.println("Á¾·áÇÕ´Ï´Ù."); break;
-			default: System.out.println("¾ø´Â ¸Ş´º ¹øÈ£ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			case 9: System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤."); break;
+			default: System.out.println("ì—†ëŠ” ë©”ë‰´ ë²ˆí˜¸ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			}
 		}while(menuNum != 9);
 	}
 	
 	public void calcDDay() {
-		System.out.print("¿À´Ã ³¯Â¥°¡ °è»ê ³¯Â¥¿¡ µé¾î°¡³ª¿ä?(y/n) : ");
+		System.out.print("ì˜¤ëŠ˜ ë‚ ì§œê°€ ê³„ì‚° ë‚ ì§œì— ë“¤ì–´ê°€ë‚˜ìš”?(y/n) : ");
 		String answer = sc.next();
 		
 		int result = 0;
 		if(answer.toUpperCase().equals("Y")) {
-			System.out.print("µğµ¥ÀÌ ±¸ÇÒ ¿¬µµ : ");
+			System.out.print("ë””ë°ì´ êµ¬í•  ì—°ë„ : ");
 			int year = sc.nextInt();
-			System.out.print("µğµ¥ÀÌ ±¸ÇÒ ¿ù : ");
+			System.out.print("ë””ë°ì´ êµ¬í•  ì›” : ");
 			int month = sc.nextInt();
-			System.out.print("µğµ¥ÀÌ ±¸ÇÒ ÀÏ : ");
+			System.out.print("ë””ë°ì´ êµ¬í•  ì¼ : ");
 			int day = sc.nextInt();
 			
 			result = dc.calcDDay(year, month, day);
 		} else {
-			System.out.print("½ÃÀÛÀÏ ¿¬µµ : ");
+			System.out.print("ì‹œì‘ì¼ ì—°ë„ : ");
 			int sYear = sc.nextInt();
-			System.out.print("½ÃÀÛÀÏ ¿ù : ");
+			System.out.print("ì‹œì‘ì¼ ì›” : ");
 			int sMonth = sc.nextInt();
-			System.out.print("½ÃÀÛÀÏ ÀÏ : ");
+			System.out.print("ì‹œì‘ì¼ ì¼ : ");
 			int sDay = sc.nextInt();
 			
-			System.out.print("Á¾·áÀÏ ¿¬µµ : ");
+			System.out.print("ì¢…ë£Œì¼ ì—°ë„ : ");
 			int eYear = sc.nextInt();
-			System.out.print("Á¾·áÀÏ ¿ù : ");
+			System.out.print("ì¢…ë£Œì¼ ì›” : ");
 			int eMonth = sc.nextInt();
-			System.out.print("Á¾·áÀÏ ÀÏ : ");
+			System.out.print("ì¢…ë£Œì¼ ì¼ : ");
 			int eDay = sc.nextInt();
 			
 			result = dc.calcDDay(sYear, sMonth, sDay, eYear, eMonth, eDay);
 		}
 		
-		System.out.println(result + "ÀÏ");
+		System.out.println(result + "ì¼");
 	}
 	
 	public void calcDay() {
-		System.out.print("±âÁØÀÏ ¿¬µµ : ");
+		System.out.print("ê¸°ì¤€ì¼ ì—°ë„ : ");
 		int year = sc.nextInt();
-		System.out.print("±âÁØÀÏ ¿ù : ");
+		System.out.print("ê¸°ì¤€ì¼ ì›” : ");
 		int month = sc.nextInt();
-		System.out.print("±âÁØÀÏ ÀÏ : ");
+		System.out.print("ê¸°ì¤€ì¼ ì¼ : ");
 		int day = sc.nextInt();
-		System.out.print("°è»êÇÒ NÀÏ : ");
+		System.out.print("ê³„ì‚°í•  Nì¼ : ");
 		int num = sc.nextInt();
 		
 		Date d = dc.calcDay(year, month, day, num);
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy³â mm¿ù ddÀÏ E¿äÀÏÀÔ´Ï´Ù.");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyë…„ mmì›” ddì¼ Eìš”ì¼ì…ë‹ˆë‹¤.");
 		String result = sdf.format(d);
 		System.out.println(result);
 	}
 	
 	public void printDate() {
-		System.out.print("¿¬µµ : ");
+		System.out.print("ì—°ë„ : ");
 		int year = sc.nextInt();
-		System.out.print("¿ù : ");
+		System.out.print("ì›” : ");
 		int month = sc.nextInt();
-		System.out.print("ÀÏ : ");
+		System.out.print("ì¼ : ");
 		int day = sc.nextInt();
 		
 		String result = dc.printDate(year, month, day);
-		System.out.println(year + "³â " + month + "¿ù " + day + "ÀÏÀº " + result + "ÀÔ´Ï´Ù.");
+		System.out.println(year + "ë…„ " + month + "ì›” " + day + "ì¼ì€ " + result + "ì…ë‹ˆë‹¤.");
 	}
 	
 	public void printToday() {
-		System.out.println("¿À´ÃÀº " + dc.printToday() + "ÀÔ´Ï´Ù.");
+		System.out.println("ì˜¤ëŠ˜ì€ " + dc.printToday() + "ì…ë‹ˆë‹¤.");
 	}
 }

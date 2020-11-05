@@ -5,7 +5,7 @@ public class Thread3 extends Thread {
 	@Override
 	public void run() {
 		
-		setName("»ç¶û½º·¯¿î Thread3");
+		setName("ì‚¬ë‘ìŠ¤ëŸ¬ìš´ Thread3");
 		
 		System.out.println(Thread.currentThread().getName() + " ON...");
 		

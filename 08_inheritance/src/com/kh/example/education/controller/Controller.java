@@ -4,7 +4,7 @@ import com.kh.example.education.model.vo.Child;
 
 public class Controller {
 	
-	Child c = new Child("")
+	Child c = new Child();
 	
 	
 	

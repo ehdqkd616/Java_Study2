@@ -9,7 +9,7 @@ public class StudentMenu {
 	
 	public StudentMenu() {
 		
-		System.out.println("==========ÇĞ»ı Á¤º¸ Ãâ·Â==========");
+		System.out.println("==========í•™ìƒ ì •ë³´ ì¶œë ¥==========");
 		Student[] sArr = ssm.printStudent();
 		for(int i = 0; i < sArr.length; i++) {
 			System.out.println(sArr[i].inform());
@@ -17,21 +17,21 @@ public class StudentMenu {
 		
 		System.out.println();
 		
-		System.out.println("==========ÇĞ»ı ¼ºÀû Ãâ·Â==========");
+		System.out.println("==========í•™ìƒ ì„±ì  ì¶œë ¥==========");
 		double[] result = ssm.avgScore();
-		System.out.print("ÇĞ»ı Á¡¼ö ÇÕ°è : ");
+		System.out.print("í•™ìƒ ì ìˆ˜ í•©ê³„ : ");
 		System.out.println((int)result[0]);
-		System.out.print("ÇĞ»ı Á¡¼ö Æò±Õ : ");
+		System.out.print("í•™ìƒ ì ìˆ˜ í‰ê·  : ");
 		System.out.println(result[1]);
 		
 		System.out.println();
 		
-		System.out.println("==========¼ºÀû °á°ú Ãâ·Â==========");
+		System.out.println("==========ì„±ì  ê²°ê³¼ ì¶œë ¥==========");
 		for(int i = 0; i < sArr.length; i++) {
 			if(sArr[i].getScore() < StudentController.CUT_LINE) {
-				System.out.println(sArr[i].getName() + "ÇĞ»ıÀº Àç½ÃÇè ´ë»óÀÔ´Ï´Ù.");
+				System.out.println(sArr[i].getName() + "í•™ìƒì€ ì¬ì‹œí—˜ ëŒ€ìƒì…ë‹ˆë‹¤.");
 			} else{
-				System.out.println(sArr[i].getName() + "ÇĞ»ıÀº Åë°úÀÔ´Ï´Ù.");
+				System.out.println(sArr[i].getName() + "í•™ìƒì€ í†µê³¼ì…ë‹ˆë‹¤.");
 			}
 		}
 	}

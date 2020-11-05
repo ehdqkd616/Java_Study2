@@ -12,10 +12,10 @@ import javax.swing.JRadioButton;
 
 public class B_RadioButton {
 	public void doRadioButton() {
-		JFrame frame = new JFrame("¶óµğ¿À¹öÆ° Å×½ºÆ®");
+		JFrame frame = new JFrame("ë¼ë””ì˜¤ë²„íŠ¼ í…ŒìŠ¤íŠ¸");
 		
 		JPanel topPanel = new JPanel();
-		JLabel label = new JLabel("¾î¶² Å©±âÀÇ À½·á¸¦ ÁÖ¹®ÇÏ½Ã°Ú½À´Ï±î?");
+		JLabel label = new JLabel("ì–´ë–¤ í¬ê¸°ì˜ ìŒë£Œë¥¼ ì£¼ë¬¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 		topPanel.add(label);
 		frame.add(topPanel, "North");
 		
@@ -24,8 +24,8 @@ public class B_RadioButton {
 		JRadioButton medium = new JRadioButton("Medium Size");
 		JRadioButton large = new JRadioButton("Large Size");
 		
-		// ¹öÆ° ±×·ìÀ» ÁöÁ¤ÇØÁÖ±â
-		// ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é º¹¼ö ¼±ÅÃÀÌ µÊ
+		// ë²„íŠ¼ ê·¸ë£¹ì„ ì§€ì •í•´ì£¼ê¸°
+		// ì§€ì •í•˜ì§€ ì•Šìœ¼ë©´ ë³µìˆ˜ ì„ íƒì´ ë¨
 		ButtonGroup sizeGroup = new ButtonGroup();
 		sizeGroup.add(small);
 		sizeGroup.add(medium);
@@ -39,7 +39,7 @@ public class B_RadioButton {
 		frame.add(sizePanel, "Center");
 		
 		JPanel resultPanel = new JPanel();
-		JLabel text = new JLabel("Å©±â°¡ ¼±ÅÃµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+		JLabel text = new JLabel("í¬ê¸°ê°€ ì„ íƒë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 		resultPanel.add(text);
 		
 		frame.add(resultPanel, "South");
@@ -48,7 +48,7 @@ public class B_RadioButton {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				text.setText("small Size°¡ ¼±ÅÃµÇ¾ú½À´Ï´Ù.");
+				text.setText("small Sizeê°€ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤.");
 			}
 		});
 		
@@ -56,7 +56,7 @@ public class B_RadioButton {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				text.setText("medium Size°¡ ¼±ÅÃµÇ¾ú½À´Ï´Ù.");
+				text.setText("medium Sizeê°€ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤.");
 			}
 		});
 		
@@ -64,7 +64,7 @@ public class B_RadioButton {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				text.setText("large Size°¡ ¼±ÅÃµÇ¾ú½À´Ï´Ù.");
+				text.setText("large Sizeê°€ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤.");
 			}
 		});
 		

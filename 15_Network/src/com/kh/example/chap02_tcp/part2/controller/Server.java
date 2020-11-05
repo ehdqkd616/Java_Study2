@@ -12,23 +12,23 @@ import java.util.Scanner;
 
 public class Server {
 	public void serverStart() {
-		// 1. Æ÷Æ® ¹øÈ£ ÁöÁ¤
+		// 1. í¬íŠ¸ ë²ˆí˜¸ ì§€ì •
 		int port = 8500;
 
 		try {
-			// 2. ServerSocket »ı¼ºÇÏ¿© Æ÷Æ® °áÇÕ
+			// 2. ServerSocket ìƒì„±í•˜ì—¬ í¬íŠ¸ ê²°í•©
 			ServerSocket server = new ServerSocket(port);
 			
-			// 3. Å¬¶óÀÌ¾ğÆ®·ÎºÎÅÍ Á¢¼Ó ¿äÃ»ÀÌ ¿Ã ¶§±îÁö ´ë±â
-			System.out.println("Å¬¶óÀÌ¾ğÆ®ÀÇ ¿äÃ»À» ±â´Ù¸®°í ÀÖ½À´Ï´Ù.");
+			// 3. í´ë¼ì´ì–¸íŠ¸ë¡œë¶€í„° ì ‘ì† ìš”ì²­ì´ ì˜¬ ë•Œê¹Œì§€ ëŒ€ê¸°
+			System.out.println("í´ë¼ì´ì–¸íŠ¸ì˜ ìš”ì²­ì„ ê¸°ë‹¤ë¦¬ê³  ìˆìŠµë‹ˆë‹¤.");
 			
-			// 4. Á¢¼Ó ¿äÃ»ÀÌ ¿À¸é ¿äÃ» ¼ö¶ô ÈÄ ÇØ´ç Å¬¶óÀÌ¾ğÆ®¿¡ ´ëÇÑ ¼ÒÄÏ °´Ã¼ »ı¼º
+			// 4. ì ‘ì† ìš”ì²­ì´ ì˜¤ë©´ ìš”ì²­ ìˆ˜ë½ í›„ í•´ë‹¹ í´ë¼ì´ì–¸íŠ¸ì— ëŒ€í•œ ì†Œì¼“ ê°ì²´ ìƒì„±
 			Socket client = server.accept();
 			String clientIP = client.getInetAddress().getHostAddress();
-			System.out.println(clientIP + "°¡ ¿¬°áÀ» ¿äÃ»ÇÔ...");
+			System.out.println(clientIP + "ê°€ ì—°ê²°ì„ ìš”ì²­í•¨...");
 			
-			// 5. ¿¬°áµÈ Å¬¶óÀÌ¾ğÆ®¿Í ÀÔÃâ·Â ½ºÆ®¸² »ı¼º
-			// 6. º¸Á¶½ºÆ®¸²À» ÅëÇØ ¼º´É °³¼±
+			// 5. ì—°ê²°ëœ í´ë¼ì´ì–¸íŠ¸ì™€ ì…ì¶œë ¥ ìŠ¤íŠ¸ë¦¼ ìƒì„±
+			// 6. ë³´ì¡°ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì„±ëŠ¥ ê°œì„ 
 			BufferedReader br = new BufferedReader(new InputStreamReader(client.getInputStream()));
 			// 1. InputStream input = client.getInputStream();
 			// 2. InputStreamReader isr = new InputStreamReader(input);
@@ -38,21 +38,21 @@ public class Server {
 			// 1. OutputStream output = client.getOutputStream();
 			// 2. PrintWriter pw = new PrintWriter(output);
 
-			// 7. ½ºÆ®¸²À» ÅëÇØ ÀĞ°í ¾²±â
+			// 7. ìŠ¤íŠ¸ë¦¼ì„ í†µí•´ ì½ê³  ì“°ê¸°
 			while(true) {
 				String message = br.readLine();
 				
 				if(!message.equals("exil")) {
-					System.out.println(clientIP + "°¡ º¸³½ ¸Ş¼¼Áö : " + message);
-					pw.println("¸Ş¼¼Áö ¹Ş±â ¼º°ø");
+					System.out.println(clientIP + "ê°€ ë³´ë‚¸ ë©”ì„¸ì§€ : " + message);
+					pw.println("ë©”ì„¸ì§€ ë°›ê¸° ì„±ê³µ");
 					pw.flush();
 				} else {
-					System.out.println("Á¢¼Ó Á¾·á");
+					System.out.println("ì ‘ì† ì¢…ë£Œ");
 					break;
 				}
 			}
 			
-			// 8. Åë½Å Á¾·á
+			// 8. í†µì‹  ì¢…ë£Œ
 			br.close();
 			pw.close();
 			server.close();

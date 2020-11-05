@@ -1,24 +1,24 @@
 import java.net.ServerSocket;
 import java.net.Socket;
 
-//	[¼­¹ö¿ë ÇÁ·Î±×·¡¹Ö ÄÚµå]
+//	[ì„œë²„ìš© í”„ë¡œê·¸ë˜ë° ì½”ë“œ]
 public class ServerManager {
 
 	public ServerManager() {}
 
 	public void serverStart() {
-		// 1. port ¹øÈ£ ÁöÁ¤
+		// 1. port ë²ˆí˜¸ ì§€ì •
 		int port = 3000;
-		// 2. ¼­¹ö¿ë ¼ÒÄÏ °´Ã¼ »ı¼º
+		// 2. ì„œë²„ìš© ì†Œì¼“ ê°ì²´ ìƒì„±
 		ServerSocket server;
 
 		try {
 		server = new ServerSocket(port);
-		// 3. Å¬¶óÀÌ¾ğÆ®°¡ ¿¬°áÀ» ¿äÃ»ÇÒ ¶§±îÁö ±â´Ù¸²
+		// 3. í´ë¼ì´ì–¸íŠ¸ê°€ ì—°ê²°ì„ ìš”ì²­í•  ë•Œê¹Œì§€ ê¸°ë‹¤ë¦¼
 		while (true) {
-		// 4. ¿¬°áÀ» ¿äÃ»ÇÑ Å¬¶óÀÌ¾ğÆ®ÀÇ ¿äÃ» ¼ö¶ôÇÔ : ÇØ´ç Å¬¶óÀÌ¾ğÆ® Á¤º¸¸¦ ÀúÀå
+		// 4. ì—°ê²°ì„ ìš”ì²­í•œ í´ë¼ì´ì–¸íŠ¸ì˜ ìš”ì²­ ìˆ˜ë½í•¨ : í•´ë‹¹ í´ë¼ì´ì–¸íŠ¸ ì •ë³´ë¥¼ ì €ì¥
 		Socket client = server.accept();
-		// Áß°£ »ı·«....
+		// ì¤‘ê°„ ìƒëµ....
 		}
 		}catch (Exception e) {
 			// TODO: handle exception

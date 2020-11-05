@@ -13,10 +13,10 @@ public class LeapView {
 		LeapController lc = new LeapController();
 		boolean leap = lc.isLeapYear(year);
 		if(leap) {
-			System.out.println(year + "³âÀº À±³âÀÔ´Ï´Ù.");
+			System.out.println(year + "ë…„ì€ ìœ¤ë…„ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println(year + "³âÀº Æò³âÀÔ´Ï´Ù.");
+			System.out.println(year + "ë…„ì€ í‰ë…„ì…ë‹ˆë‹¤.");
 		}
-		System.out.println("ÃÑ ³¯Â¥ ¼ö : " + lc.leapDate(c));
+		System.out.println("ì´ ë‚ ì§œ ìˆ˜ : " + lc.leapDate(c));
 	}
 }
