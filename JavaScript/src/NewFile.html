@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>그림 옮기기</h1>
+	<table border=1>
+	<tr height=10><td><img src=""></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	<tr height=10><td></td></tr>
+	</table>
+	<button onclick="up();">위로 이동</button>
+	<button onclick="down();">아래로 이동</button>
+	
+	<script>
+		var img = document.getElementsByTagName('img')[0];
+		var tab = document.body.childNodes[3].childNodes[1];
+		var posi = 0;
+		function up(){
+			if(posi>2){
+				var now = tab.childNodes[posi].childNodes[0];
+				var next = tab.childNodes[posi-2].childNodes[0];
+				now.removeChild(now.childNodes[0]);
+				next.appendChild(img);
+				posi += 2;
+				console.log(posi);
+			}
+		}
+		
+	</script>
+	
+</body>
+</html>
