@@ -1,8 +1,8 @@
-package com.kh.first; //ÆĞÅ°Áö
+package com.kh.first; //íŒ¨í‚¤ì§€
 
-public class HelloWorld { //Å¬·¡½º
+public class HelloWorld { //í´ë˜ìŠ¤
 
-	public static void main(String[] args) { //¸Ş¼Òµå
+	public static void main(String[] args) { //ë©”ì†Œë“œ
 		System.out.println("Hello World~!!");
 	}
 
